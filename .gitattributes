@@ -1,0 +1,8 @@
+# Frozen score and generation tables are large, compressible data artifacts.
+# Use Git LFS when publishing this folder as a GitHub repository.
+* text=auto eol=lf
+*.csv filter=lfs diff=lfs merge=lfs -text
+*.jsonl filter=lfs diff=lfs merge=lfs -text
+*.zip filter=lfs diff=lfs merge=lfs -text
+*.tgz filter=lfs diff=lfs merge=lfs -text
+*.tar.gz filter=lfs diff=lfs merge=lfs -text

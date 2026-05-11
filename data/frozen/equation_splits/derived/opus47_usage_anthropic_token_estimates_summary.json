@@ -1,0 +1,24 @@
+{
+  "created_from": "frozen Anthropic Opus 4.7 generation rows",
+  "count_model": "claude-opus-4-7",
+  "count_endpoint": "https://api.anthropic.com/v1/messages/count_tokens",
+  "message_overhead_tokens_subtracted": 11,
+  "method_note": "For each saved Opus row, visible_forecast_anthropic_message_tokens is the Anthropic count_tokens result for z_raw as a single user message. Because count_tokens counts message structure as well as text, visible_forecast_anthropic_tokens subtracts a fixed single-message overhead estimated from a one-character probe. estimated_nonvisible_output_tokens is saved anthropic_usage.output_tokens minus that adjusted visible-token estimate. Anthropic does not expose a separate hidden-thinking token field in these saved rows. Opus 4.7 may also use tokenizer/accounting details not shared with earlier Claude models or OpenAI models.",
+  "overall_n": 2726,
+  "lanes": {
+    "opus47_low": {
+      "n": 1363,
+      "mean_output_tokens": 178.78503301540718,
+      "mean_visible_forecast_anthropic_tokens": 77.42333088774761,
+      "mean_estimated_nonvisible_output_tokens": 101.36170212765957,
+      "median_estimated_nonvisible_output_tokens": 4
+    },
+    "opus47_medium": {
+      "n": 1363,
+      "mean_output_tokens": 364.2002934702861,
+      "mean_visible_forecast_anthropic_tokens": 80.39398385913427,
+      "mean_estimated_nonvisible_output_tokens": 283.80630961115185,
+      "median_estimated_nonvisible_output_tokens": 46
+    }
+  }
+}

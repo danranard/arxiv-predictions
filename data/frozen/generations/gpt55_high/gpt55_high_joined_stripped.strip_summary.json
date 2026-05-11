@@ -1,0 +1,36 @@
+{
+  "created_utc": "2026-05-01T01:50:04.626035+00:00",
+  "script": "scripts/strip_equation_outer_close_from_joined.py",
+  "row_count": 731,
+  "changed_count": 3,
+  "changed": [
+    {
+      "dataset_row_index": 111,
+      "env": "multline",
+      "close": "\\end{multline}",
+      "old_len": 133,
+      "new_len": 106,
+      "old_tail": "mq,l} \\, dz\n                \\\\\n                = \\sum_{m\\in \\Z}(\\Phi(H_{\\alpha,\\lambda,\\theta}))_{j+mq,l}.\n            \\end{multline}",
+      "new_tail": "mq,l} \\, dz\n                \\\\\n                = \\sum_{m\\in \\Z}(\\Phi(H_{\\alpha,\\lambda,\\theta}))_{j+mq,l}."
+    },
+    {
+      "dataset_row_index": 323,
+      "env": "eqnarray",
+      "close": "\\end{eqnarray}",
+      "old_len": 199,
+      "new_len": 184,
+      "old_tail": "_{Z_2}\\otimes U_{Z_1}^{*}\n\\right)\n\\nonumber\\\\\n&&+\n\\sum_Z\n\\mathbb{E}_{\\mathrm{Haar}}\\!\\left(\nU_Z\\otimes U_Z^{*}\\otimes U_Z\\otimes U_Z^{*}\n\\right).\n\\end{eqnarray}",
+      "new_tail": "2}^{*}\\otimes U_{Z_2}\\otimes U_{Z_1}^{*}\n\\right)\n\\nonumber\\\\\n&&+\n\\sum_Z\n\\mathbb{E}_{\\mathrm{Haar}}\\!\\left(\nU_Z\\otimes U_Z^{*}\\otimes U_Z\\otimes U_Z^{*}\n\\right)."
+    },
+    {
+      "dataset_row_index": 387,
+      "env": "align",
+      "close": "\\end{align}",
+      "old_len": 118,
+      "new_len": 106,
+      "old_tail": "\\mathring{\\bigtriangleup}+2si\\frac{\\cos\\theta}{\\sin^2\\theta}\\partial_\\phi+s(1-s\\cot^2\\theta). \\label{l-op} \\end{align}",
+      "new_tail": "\\mathring{\\bigtriangleup}+2si\\frac{\\cos\\theta}{\\sin^2\\theta}\\partial_\\phi+s(1-s\\cot^2\\theta). \\label{l-op}"
+    }
+  ],
+  "frozen_generation_file": "generations/gpt55_high/gpt55_high_joined_stripped.jsonl"
+}

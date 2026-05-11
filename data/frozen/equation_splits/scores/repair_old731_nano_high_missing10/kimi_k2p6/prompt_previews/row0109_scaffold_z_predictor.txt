@@ -1,0 +1,30 @@
+dataset_row_index: 109
+paper_id: 2604.18692
+equation_index: 48
+condition: scaffold_z_predictor
+prompt_chars: 908
+target_chars: 317
+
+=== PROMPT ===
+% First equation:
+\begin{align}
+0&=\hlf\square_A\wtS_\mu-\hlf\nabla_\mu\nabla^\nu\wtS_\nu+\left[ -\hlf L^{-2}\ell(\ell+2)-\hlf\wtL^{-2}(\wtell+1)^2-\frac{1}{4}\Lambda\right]\wtS_\mu\non\\
+&\qquad+\frac{1}{4}\wtL^{-2}(\wtell^2+2\wtell-3)\nabla_\mu\wtK\mp\wtmcL^{-1}\wtL^{-1}(\wtell+1)\wtZ_\mu+\wtmcL^{-1}\nabla_\mu\wtV,\\
+
+0&=\square_A\wtZ_\mu-\nabla_\mu\nabla^\nu\wtZ_\nu\mp 2\wtmcL^{-1}\wtL^{-1}(\wtell+1)\wtS_\mu+\left[-L^{-2}\ell(\ell+2)-\wtL^{-2}(\wtell+1)^2+\hlf\Lambda\right]\wtZ_\mu\non\\
+&\qquad-\hlf\wtL^{-2}(\wtell^2+2\wtell-3)\nabla_\mu\wtK,
+\end{align}
+
+% Same equation:
+\begin{align}
+0&=\hlf\square_A\wtS_\mu-\hlf\nabla_\mu\nabla^\nu\wtS_\nu+\left[ -\hlf L^{-2}\ell(\ell+2)-\hlf\wtL^{-2}(\wtell+1)^2-\frac{1}{4}\Lambda\right]\wtS_\mu\non\\
+&\qquad+\frac{1}{4}\wtL^{-2}(\wtell^2+2\wtell-3)\nabla_\mu\wtK\mp\wtmcL^{-1}\wtL^{-1}(\wtell+1)\wtZ_\mu+\wtmcL^{-1}\nabla_\mu\wtV,\\
+
+0&=\square_A\wtZ_\mu-
+
+=== TARGET ===
+\nabla_\mu\nabla^\nu\wtZ_\nu\mp 2\wtmcL^{-1}\wtL^{-1}(\wtell+1)\wtS_\mu+\left[ -L^{-2}\ell(\ell+2)-\wtL^{-2}(\wtell+1)^2+\hlf\Lambda\right]\wtZ_\mu\non\\
+&\qquad\pm\wtL^{-1}(\wtell+1)\nabla_\mu\wtV,\\
+
+0&=2\square_A\wtV-4\wtmcL^{-1}\nabla^\mu\wtS_\mu\mp 2\wtL^{-1}(\wtell+1)\nabla^\mu\wtZ_\mu-2L^{-2}\ell(\ell+2)\wtV,
+\end{align}

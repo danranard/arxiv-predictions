@@ -1,0 +1,30 @@
+dataset_row_index: 0
+paper_id: 2604.20418
+equation_index: 25
+condition: scaffold_z_predictor
+prompt_chars: 713
+target_chars: 204
+
+=== PROMPT ===
+% First equation:
+\begin{gather}
+c_1= 16 b^2 (d-1) V_\infty^2 Y_\infty^2\,,\nn\\
+		c_2= -4 \left(d + 4 b^2 (d-1) d - 2 b (d^2+d-2) s\right) S_\infty^2 V_\infty Y_\infty^2\,,\nn\\
+		c_3= -2 (d-1) \left(2 (d-1) s^2-d\right) S_\infty^4 Y_\infty^2\,,\nn\\
+		c_4=4 b (d-1) (\gamma-2 b) V_\infty X_\infty Y_\infty\,,\nn\\
+		c_5= \frac12 (d-1) (\gamma-2 b)^2 X_\infty^2\,,\nn\\
+		c_6= (d-1) (\gamma-2 b) (2 s-\gamma) S_\infty^2 X_\infty Y_\infty\,,
+\end{gather}
+
+% Same equation:
+\begin{gather}
+c_1= 16 b^2 (d-1) V_\infty^2 Y_\infty^2\,,\nn\\
+		c_2= -4 \left(d + 4 b^2 (d-1) d - 2 b (d^2+d-2) s\right) S_\infty^2 V_\infty Y_\infty^2\,,\nn\\
+		c_3= -2 (d-1) \left(2 (d-1) s^2-d\right) S_\infty^4 Y_\infty^2\,,\nn\\
+		c_4=
+
+=== TARGET ===
+-8 b \gamma  (d-1) V_\infty X_\infty Y_\infty\,,\nn\\
+		c_5=(d-1)  \gamma^2 X_\infty^2\,,\nn\\
+		c_6= 2 (d-1)  \left(d k \gamma -d \gamma (\gamma +s)-2 \gamma  s +d \right) S_\infty^2 X_\infty Y_\infty\,,
+\end{gather}

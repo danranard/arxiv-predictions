@@ -1,0 +1,29 @@
+dataset_row_index: 109
+paper_id: 2604.18692
+equation_index: 48
+condition: bare_B
+prompt_chars: 682
+target_chars: 317
+
+=== PROMPT ===
+ell^2+2\wtell-3)\wtK+\wtmcL^{-1}\wtV,\\
+\label{eq:l0hl1ZDiv}
+0&=-\nabla^\mu\wtZ_\mu\pm\wtL^{-1}(\wtell+1)\wtV,
+\end{align}
+$(\ell,0)(\wtell,\pm 1)\text{ sectors with } \ell\ge 0,\wtell\ge 2:$
+\be\label{eq:l0hl1KEoM}
+0=\hlf\square_A\wtK-\nabla^\mu\wtS_\mu-\hlf L^{-2}\ell(\ell+2)\wtK,
+\ee
+$(\ell,0)(\wtell,\pm 1)\text{ sectors with } \ell\ge 0,\wtell\ge 1:$
+\begin{align}
+0&=\hlf\square_A\wtS_\mu-\hlf\nabla_\mu\nabla^\nu\wtS_\nu+\left[ -\hlf L^{-2}\ell(\ell+2)-\hlf\wtL^{-2}(\wtell+1)^2-\frac{1}{4}\Lambda\right]\wtS_\mu\non\\
+&\qquad+\frac{1}{4}\wtL^{-2}(\wtell^2+2\wtell-3)\nabla_\mu\wtK\mp\wtmcL^{-1}\wtL^{-1}(\wtell+1)\wtZ_\mu+\wtmcL^{-1}\nabla_\mu\wtV,\\
+
+0&=\square_A\wtZ_\mu-
+
+=== TARGET ===
+\nabla_\mu\nabla^\nu\wtZ_\nu\mp 2\wtmcL^{-1}\wtL^{-1}(\wtell+1)\wtS_\mu+\left[ -L^{-2}\ell(\ell+2)-\wtL^{-2}(\wtell+1)^2+\hlf\Lambda\right]\wtZ_\mu\non\\
+&\qquad\pm\wtL^{-1}(\wtell+1)\nabla_\mu\wtV,\\
+
+0&=2\square_A\wtV-4\wtmcL^{-1}\nabla^\mu\wtS_\mu\mp 2\wtL^{-1}(\wtell+1)\nabla^\mu\wtZ_\mu-2L^{-2}\ell(\ell+2)\wtV,
+\end{align}

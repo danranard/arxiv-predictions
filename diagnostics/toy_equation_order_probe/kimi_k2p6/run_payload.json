@@ -1,0 +1,52 @@
+{
+  "model": "accounts/fireworks/models/kimi-k2p6",
+  "target_includes_closing_delimiter": false,
+  "cases": [
+    {
+      "case_id": "add_ab",
+      "description": "Addition order: true X + A + B, reordered X + B + A",
+      "lhs": "Z =",
+      "true_rhs": " X + A + B",
+      "reordered_rhs": " X + B + A",
+      "wrong_rhs": " X + Y",
+      "recovery_partial": " X + A +",
+      "recovery_true_next": " B"
+    },
+    {
+      "case_id": "add_ba",
+      "description": "Addition order, A/B swapped: true X + B + A, reordered X + A + B",
+      "lhs": "Z =",
+      "true_rhs": " X + B + A",
+      "reordered_rhs": " X + A + B",
+      "wrong_rhs": " X + Y",
+      "recovery_partial": " X + B +",
+      "recovery_true_next": " A"
+    },
+    {
+      "case_id": "mul_ab",
+      "description": "Juxtaposed product: true X + A B, reordered X + B A",
+      "lhs": "Z =",
+      "true_rhs": " X + A B",
+      "reordered_rhs": " X + B A",
+      "wrong_rhs": " X + Y",
+      "recovery_partial": " X + A",
+      "recovery_true_next": " B"
+    },
+    {
+      "case_id": "mul_ba",
+      "description": "Juxtaposed product, A/B swapped: true X + B A, reordered X + A B",
+      "lhs": "Z =",
+      "true_rhs": " X + B A",
+      "reordered_rhs": " X + A B",
+      "wrong_rhs": " X + Y",
+      "recovery_partial": " X + B",
+      "recovery_true_next": " A"
+    }
+  ],
+  "prompt_examples": {
+    "add_ab": "% First equation:\n\\begin{equation}\nZ = X + A + B\n\\end{equation}\n\n% Same equation:\n\\begin{equation}\nZ =[SCORED_TARGET]",
+    "add_ba": "% First equation:\n\\begin{equation}\nZ = X + B + A\n\\end{equation}\n\n% Same equation:\n\\begin{equation}\nZ =[SCORED_TARGET]",
+    "mul_ab": "% First equation:\n\\begin{equation}\nZ = X + A B\n\\end{equation}\n\n% Same equation:\n\\begin{equation}\nZ =[SCORED_TARGET]",
+    "mul_ba": "% First equation:\n\\begin{equation}\nZ = X + B A\n\\end{equation}\n\n% Same equation:\n\\begin{equation}\nZ =[SCORED_TARGET]"
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "created_for": "larger heldout no-Z SFT control",
+  "source_selected_examples": "selected_examples.jsonl",
+  "source_realz_keys": "realz_scored_731_keys.json",
+  "seed": 20260501,
+  "split_method": "paper_level_random_fixed_seed",
+  "fractions_requested": {
+    "train": 0.56,
+    "eval": 0.1,
+    "test": 0.34
+  },
+  "papers": {
+    "train": 42,
+    "eval": 7,
+    "test": 25
+  },
+  "examples": {
+    "train": 3188,
+    "eval": 496,
+    "test": 1484
+  },
+  "realz_overlap_examples": {
+    "train": 363,
+    "eval": 67,
+    "test": 220
+  },
+  "notes": [
+    "This split is made before training/scoring the new control.",
+    "Use test split for the main heldout comparison.",
+    "Eval split is for checkpoint monitoring/selection."
+  ],
+  "historical_note": "Internal staging paths are intentionally omitted; this directory is the canonical frozen SFT-control dataset."
+}

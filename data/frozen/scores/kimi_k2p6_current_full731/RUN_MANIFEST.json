@@ -1,0 +1,14 @@
+{
+  "created_utc": "2026-05-01T11:25:42.060576+00:00",
+  "artifact_role": "canonical frozen judge-score bundle manifest",
+  "judge_model": "accounts/fireworks/models/kimi-k2p6",
+  "scaffold_variant": "current",
+  "score_rows": 7300,
+  "token_rows": 409137,
+  "files": {
+    "combined_equation_scores": "scores/kimi_k2p6_current_full731/combined_equation_scores.csv",
+    "combined_target_token_logprobs": "scores/kimi_k2p6_current_full731/combined_target_token_logprobs.csv",
+    "softened_summary": "scores/kimi_k2p6_current_full731/softened_model_summary.json"
+  },
+  "historical_note": "Internal partial-run/reuse paths are intentionally omitted from the public artifact; the combined CSVs are the source of truth."
+}

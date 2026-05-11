@@ -1,0 +1,82 @@
+{
+  "dataset": "experiments/2026-05-03_equation_cut_prevweek_strict25_all80_fulltexcmd_640_v0/equation_cut_dataset.jsonl",
+  "prompt_variant": "actual_paper_style",
+  "row_count": 640,
+  "exact_y_prompt_match_count": 8,
+  "exclude_row_ids": [
+    152,
+    188,
+    196,
+    362,
+    377,
+    396,
+    409,
+    492
+  ],
+  "rows": [
+    {
+      "dataset_row_index": 152,
+      "paper_id": "2604.25134",
+      "equation_index": 9,
+      "cut_id": 3,
+      "y_len": 60,
+      "reason": "exact_y_string_occurs_in_actual_paper_style_predictor_prompt"
+    },
+    {
+      "dataset_row_index": 188,
+      "paper_id": "2604.26466",
+      "equation_index": 83,
+      "cut_id": 42,
+      "y_len": 51,
+      "reason": "exact_y_string_occurs_in_actual_paper_style_predictor_prompt"
+    },
+    {
+      "dataset_row_index": 196,
+      "paper_id": "2604.26755",
+      "equation_index": 71,
+      "cut_id": 37,
+      "y_len": 56,
+      "reason": "exact_y_string_occurs_in_actual_paper_style_predictor_prompt"
+    },
+    {
+      "dataset_row_index": 362,
+      "paper_id": "2604.27194",
+      "equation_index": 51,
+      "cut_id": 21,
+      "y_len": 80,
+      "reason": "exact_y_string_occurs_in_actual_paper_style_predictor_prompt"
+    },
+    {
+      "dataset_row_index": 377,
+      "paper_id": "2604.26941",
+      "equation_index": 14,
+      "cut_id": 7,
+      "y_len": 51,
+      "reason": "exact_y_string_occurs_in_actual_paper_style_predictor_prompt"
+    },
+    {
+      "dataset_row_index": 396,
+      "paper_id": "2604.27904",
+      "equation_index": 49,
+      "cut_id": 26,
+      "y_len": 172,
+      "reason": "exact_y_string_occurs_in_actual_paper_style_predictor_prompt"
+    },
+    {
+      "dataset_row_index": 409,
+      "paper_id": "2604.24873",
+      "equation_index": 78,
+      "cut_id": 34,
+      "y_len": 55,
+      "reason": "exact_y_string_occurs_in_actual_paper_style_predictor_prompt"
+    },
+    {
+      "dataset_row_index": 492,
+      "paper_id": "2604.26945",
+      "equation_index": 49,
+      "cut_id": 32,
+      "y_len": 255,
+      "reason": "exact_y_string_occurs_in_actual_paper_style_predictor_prompt"
+    }
+  ]
+}

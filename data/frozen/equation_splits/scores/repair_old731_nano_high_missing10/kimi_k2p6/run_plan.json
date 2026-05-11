@@ -1,0 +1,91 @@
+{
+  "created_utc": "2026-05-03T17:04:06.917268+00:00",
+  "script": "scripts/score_equation_cut_generations.py",
+  "joined_path": "bundles\\2026-05-01_equation_splits_premier_v1\\generations\\nano_high_repair_2026-05-03\\nano_high_missing10_repair_joined.jsonl",
+  "judge_model": "accounts/fireworks/models/kimi-k2p6",
+  "base_url": "https://api.fireworks.ai/inference/v1",
+  "batch_size": 20,
+  "target_mode": "body_plus_close",
+  "bare_multipliers": [
+    1.0
+  ],
+  "include_bare_controls": true,
+  "comparison_baseline": "bare_B",
+  "scaffold_variant": "current",
+  "limit": 0,
+  "include_scaffold_empty": false,
+  "include_oracle": false,
+  "include_scaffold_raw_precontext": false,
+  "conditions": [
+    "bare_B",
+    "scaffold_z_predictor"
+  ],
+  "row_count": 10,
+  "job_count": 20,
+  "jobs_preview": [
+    {
+      "dataset_row_index": 0,
+      "paper_id": "2604.20418",
+      "equation_index": 25,
+      "condition": "scaffold_z_predictor",
+      "prompt_chars": 594,
+      "target_chars": 204
+    },
+    {
+      "dataset_row_index": 0,
+      "paper_id": "2604.20418",
+      "equation_index": 25,
+      "condition": "bare_B",
+      "prompt_chars": 483,
+      "target_chars": 204
+    },
+    {
+      "dataset_row_index": 109,
+      "paper_id": "2604.18692",
+      "equation_index": 48,
+      "condition": "scaffold_z_predictor",
+      "prompt_chars": 908,
+      "target_chars": 317
+    },
+    {
+      "dataset_row_index": 109,
+      "paper_id": "2604.18692",
+      "equation_index": 48,
+      "condition": "bare_B",
+      "prompt_chars": 682,
+      "target_chars": 317
+    },
+    {
+      "dataset_row_index": 294,
+      "paper_id": "2604.22463",
+      "equation_index": 110,
+      "condition": "scaffold_z_predictor",
+      "prompt_chars": 455,
+      "target_chars": 222
+    },
+    {
+      "dataset_row_index": 294,
+      "paper_id": "2604.22463",
+      "equation_index": 110,
+      "condition": "bare_B",
+      "prompt_chars": 433,
+      "target_chars": 222
+    },
+    {
+      "dataset_row_index": 318,
+      "paper_id": "2604.24112",
+      "equation_index": 55,
+      "condition": "scaffold_z_predictor",
+      "prompt_chars": 985,
+      "target_chars": 377
+    },
+    {
+      "dataset_row_index": 318,
+      "paper_id": "2604.24112",
+      "equation_index": 55,
+      "condition": "bare_B",
+      "prompt_chars": 786,
+      "target_chars": 377
+    }
+  ]
+}

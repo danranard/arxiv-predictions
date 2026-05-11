@@ -1,0 +1,164 @@
+You are given recent context from a technical paper and the beginning of a LaTeX display equation.
+Continue the equation from exactly where it stops, in about 210 characters or fewer.
+Write only the continuation. Do not write explanatory prose. Do not write \end{gather}.
+
+Recent paper context:
+d back reaction constraints. This, in turn, may explain which compactifications support the multi-branch structure characteristic of first-order phase transitions in the Efimov regime, and when the dynamics instead collapse to a single smooth branch. Such a link would provide a more complete picture of how confining holographic dynamics and axion-induced phase transitions arise from higher-dimensional geometry and topology.
+
+
+	\subsection*{Bulk axions, brane-induced phase structures and a Vafa-Witten-like theorem}
+
+
+	The phase diagrams we have found here, as well as previous works, \cite{Ha1, Ha2}, contain important ``holes". These appear in two contexts, but their significance is similar.
+
+	The first, explained in section \ref{FEP}, involves the confining holographic theories without the axion. In that case, we have found that there is a small range of the parameter $b$ controlling
+	the large field asymptotics of the potential, around the end of the Efimov regime,  for which, during the transition, the free-energy is discontinuous. This is shown in Figure \ref{below}.  This behavior is unphysical, and in most cases,
+	it suggests that other relevant phases that should dominate in this regime are missing.
+
+	This can happen in holographic theories if one truncates the low-energy spectrum of operators.
+	What can happen in such cases is a scalar that is zero in the initial solution (having zero source), turns on because of a vev, and this new solution may be dominant.
+	Multiple examples of this exist in holography.
+
+	However, in this particular case, it is difficult to see what can be another field whose dual operator should obtain an expectation value. In YM-like theories, the only other relevant scalar operator is the topological density, but in QFT, there is the Vafa-Witten theorem that forbids such a vev, \cite{vw}.
+
+	We have indicated in section \ref{VW} that a similar theorem (the holographic Vafa-Witten theorem) can hold in holographic solutions, modulo some caveats associated with D-instantons.
+	It is similarly unlikely that the energy-momentum tensor obtains a vev, as it would break Lorentz invariance in the ground state of the theory.
+
+	There is a second possibility: that this range of $b$ is in the ``swampland". The simplest  compactification  from higher dimensions, \cite{GK},
+	on a single $S^n$ indicates that one obtains a potential for the scale factor that has
+	\be
+	b=\sqrt{\frac{n+d-1}{2n(d-1)}}\,.
+	\ee
+	The Efimov bound corresponds to $n+d=9$. The values of $b$ that are problematic correspond to $n= 6$ ($b=0.5$) and $n=5$ ($b=2/\sqrt{5}$), which would imply a 10 or 11-dimensional origin for the IR limit of the potential.
+	These cases are summarized in figures \ref{bzaxc} and \ref{bzax}.
+	However, it is not clear that an $S^6$ compactification of M-theory exists that will provide a potential with similar characteristics as the one we are using.
+	The previous argument has many loopholes, and further analysis is needed in order to be convinced of its relevance.
+
+
+
+	A similar phenomenon happens in the presence of non-trivial axion solutions. It has been observed in  \cite{Ha1,Ha2},
+	that the space of UV axion sources ($\theta$-angles) is compact, although in field theory and in the large $N_c$ limit, it can take all real values.
+	In \cite{Ha1} the following inequality was shown
+	\be
+	|a_{\textrm{UV}}|\leq \int_0^{\infty}\frac{d\f }{ \sqrt{Y(\f)}}\,,
+	\ee
+	which implies $|a_{\textrm{UV}}|\leq \frac{2}{\gamma\sqrt{Y_0}}$ for $Y=Y_0\; e^{\g \f}$.
+	This upper bound is also confirmed in all solutions obtained in this paper.
+	However, we expect that axionic solutions should not have an upper bound on the source.
+	This is certainly linked to the fact that in several situations, we found phase transitions
+	at finite axion density, where again the free energy is discontinuous, as discussed in section \ref{FEP}.
+
+	However, in the axion case, there is a new possibility that will provide novel solutions.
+	A natural extension is the inclusion of branes in the bulk, which act as localized sources for the charge dual to the axion shift symmetry.
+	In the higher-dimensional picture where the axion descends from a nontrivial form field, this involves bulk branes that are charged minimally under the form field. These will descend to particles in the lower dimension, and a distribution of them can, in principle, appear in the solutions. We have discussed this occurrence in section \ref{VW}.
+
+	In general, we expect to have a lattice of such higher-dimensional branes with a tension $T_n=n T_1$ and charge $Q_n=nQ_1$. In $d$ dimensions, the tension will become a particle mass while the charge will become an axionic charge.  We do expect, however, that results will depend on the choice of $T_1, Q_1$.
+
+	The new solutions are expected to
+	significantly reshape the $(\mathcal{R}, a_{\textrm{UV}})$ phase space. Existing solution branches may change and give rise to entirely new branches,
+	potentially enhancing or suppressing first-order transitions already present in the axion-only setup.
+	By modifying both the boundary conditions and the effective IR dynamics, branes enrich the holographic landscape,
+	creating new regions of multi-valued vacua and potentially revealing novel Efimov-like structures that reflect the interplay between curvature, axion dynamics, and localized sources.
+	We expect to study this in a future publication.
+
+
+
+	\subsection*{On the instanton gas for confining holographic theories on AdS}
+
+
+	It was suggested in \cite{CW} that the nature of the instanton gas in asymptotically free, QCD-like theories is expected to be different than that of flat space.
+	In particular, unlike in the standard confining phase of QCD in flat space, where there is an instanton liquid,
+	on AdS, they expect that instanton interactions are weak and there is an instanton gas instead, like in the case of flat space above the gluon-plasma transition.
+
+	In the holographic case, this would be materialized if at a non-zero $\theta$-angle the vev proportional to $Q$ would vanish\footnote{This is true in large $N_c$ perturbation theory. There would, however, be a non-perturbatively small vev, exponentially small in $N_c$, generated by the instanton gas. This is precisely what happens in the gluon-plasma phase.}.
+
+	We do not observe this in our analysis. The reason may be that this is expected in a gauge theory with electric-type boundary conditions, discussed in \cite{CW}. As already observed in \cite{Ghodsi:2024jxe}.
+	There is no boundary $SU(N_c)$ global symmetry in our solutions, and most probably the holographic theory resembles more a gauge theory on AdS with magnetic boundary conditions.
+	This issue deserves further investigation.
+
+
+
+
+
+
+	\section*{Acknowledgments}
+	\addcontentsline{toc}{section}{Acknowledgments}
+
+	We thank  G. Fournodaylos, A. Porfyriadis, and C. Rosen for useful discussions.
+
+	This work was partially supported by  the H.F.R.I. call ``Basic research Financing" (Horizontal support of all Sciences)
+	under the National Recovery and Resilience Plan ``Greece 2.0" funded by the European Union -NextGenerationEU
+	(H.F.R.I. Project Number: 15384), by the In2p3 grant ``Extreme Dynamics", the ANR grant ``XtremeHolo"
+	(ANR project n.284452), by the H.F.R.I. Project Number: 23770  of the H.F.R.I call
+	``3rd Call for H.F.R.I.'s Research Projects to Support Faculty Members \& Researchers", the ERC starting grant 101078061 SINGinGR, under the European Union's Horizon Europe program for research and innovation"
+	and the UoC grant number 12030.
+
+
+
+
+
+
+	\appendix
+
+	\renewcommand{\theequation}{\thesection.\arabic{equation}}
+	\addcontentsline{toc}{section}{Appendix\label{app}}
+
+
+
+
+
+	\section{IR asymptotic solutions: Details} \label{IRdetails}
+
+
+
+
+	In this appendix, we derive the IR expansion of the solutions to the main equations (\ref{eom2})--(\ref{eom4}). The IR endpoint corresponds to the limit $\f \to +\infty$.
+
+	We assume that, as $\f \to +\infty$, the functions take the asymptotic form
+	\be \label{VY1}
+	V(\varphi)= -V_\infty e^{2b\varphi}+\cdots \sp
+	Y(\varphi)= Y_\infty e^{\g\varphi}+\cdots\,,
+	\ee
+	where $V_\infty$ and $Y_\infty$ are positive constants, and the ellipses denote subleading contributions.
+
+	To determine the behavior of $S$ and $X$ near the IR endpoint, we adopt the following exponential ansatz as $\f \to +\infty$:
+	\be
+	S(\varphi) = S_\infty e^{s\varphi}+ \ss e^{s_1\varphi}+ S_\infty^{(2)} e^{s_2\varphi}+\cdots\,, \nn
+	\ee
+	\be
+	X(\varphi) = X_\infty e^{k\varphi}+ \xx e^{k_1\varphi}+ X_\infty^{(2)} e^{k_2\varphi}+\cdots\,,\label{SXeN}
+	\ee
+	with the ordering $s>s_1>s_2$ and $k>k_1>k_2$. These expansions are then substituted into the equations derived previously in section \ref{FO}. The first equation is \eqref{SX}, which reads
+	\begin{gather}
+		S^3S''-\frac{1}{d}S^2{S'}^2+\frac{d+2}{d}\left(V'+\frac{XY'}{2Y^2}\right)SS'-\frac12 S^4-\frac{1}{d}\left(V'+\frac{XY'}{2Y^2}\right)^2\nn \\
+		-\left(V''+\frac{V}{d-1}+
+		\frac{1}{2 Y^3}\left(Y X' Y'+X Y (Y''+Y)-2 X{Y'}^2\right)\right)S^2=0\,.\label{SXN}
+	\end{gather}
+	Similarly, the second equation follows from substituting \eqref{1} into \eqref{TX}, namely,
+	\be
+	R^{(\zeta)}\left(\frac{X}{Q^2}\right)^\frac{1}{d}=\frac{d-1}{d}\left(S'-\frac{V'}{S}-\frac{XY'}{2SY^2}\right)^2-\frac12 S^2+V-\frac{X}{2Y}\,.
+	\label{5}
+	\ee
+
+	By inserting the leading terms of the asymptotic expansions \eqref{VY1} and \eqref{SXeN} into the differential equations \eqref{SXN} and \eqref{5}, we obtain the following algebraic relations:
+	\be \label{alg1}
+	c_1 + c_2 e^{y \f} + c_3 e^{2y \f}+ c_4 e^{z \f} + c_5 e^{2z \f}+ c_6 e^{(y+z)\f}+\cdots=0\,,
+	\ee
+	and
+	\be \label{alg3}
+	b_1 + b_2 e^{y \f} + b_3 e^{2y \f}+ b_4 e^{z \f} + b_5 e^{2z \f}+ b_6 e^{(y+z)\f}+
+	R^{(\zeta)}\left(\frac{\x}{Q^2}\right)^{\frac{1}{d}} e^{w\f}+\cdots=0\,,
+	\ee
+	where we have defined
+	\be \label{alg2}
+	y=2s-2b \sp z=k-2b-\g \sp w=2s-4b+\frac{k}{d}\,.
+	\ee
+
+	The coefficients appearing in \eqref{alg1} and \eqref{alg3} are given by
+
+Equation prefix:
+\begin{gather}
+c_1= 16 b^2 (d-1) V_\infty^2 Y_\infty^2\,,\nn\\
+		c_2= -4 \left(d + 4 b^2 (d-1) d - 2 b (d^2+d-2) s\right) S_\infty^2 V_\infty Y_\infty^2\,,\nn\\
+		c_3= -2 (d-1) \left(2 (d-1) s^2-d\right) S_\infty^4 Y_\infty^2\,,\nn\\
+		c_4=

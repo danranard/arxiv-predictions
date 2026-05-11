@@ -1,0 +1,36 @@
+{
+  "raw_mean_logprob": {
+    "n": 220,
+    "mean": -0.9969944005312362,
+    "stdev": 0.7247578118787955,
+    "stderr": 0.04886316170878442,
+    "median": -0.8791389622371706
+  },
+  "clip2_mean_logprob": {
+    "n": 220,
+    "mean": -0.3744669033115635,
+    "stdev": 0.22840406425833765,
+    "stderr": 0.015398998870901674,
+    "median": -0.3432617097815748
+  },
+  "clip3_mean_logprob": {
+    "n": 220,
+    "mean": -0.5083923182565634,
+    "stdev": 0.320780398680764,
+    "stderr": 0.02162701006714751,
+    "median": -0.4727636485898783
+  },
+  "clip5_mean_logprob": {
+    "n": 220,
+    "mean": -0.7103547940550274,
+    "stdev": 0.47094648192211225,
+    "stderr": 0.03175120533394358,
+    "median": -0.6388831987929682
+  },
+  "model_name": "Qwen/Qwen3-8B",
+  "adapter_path": "runs_remote/qwen3_8b_holdout33_softresid005_r32_e2_lr2e4_v0/checkpoint-step-350",
+  "examples_jsonl": "data_holdout33_seed20260501_v0/selected_examples.jsonl",
+  "keys_json": "data_holdout33_seed20260501_v0/realz_scored_731_keys.json",
+  "split": "test",
+  "n": 220
+}

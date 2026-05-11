@@ -1,0 +1,93 @@
+{
+  "model_name": "Qwen/Qwen3-8B",
+  "train_jsonl": "data_holdout33_seed20260501_v0/train_completion.jsonl",
+  "eval_jsonl": "data_holdout33_seed20260501_v0/eval_completion.jsonl",
+  "output_dir": "runs_remote/qwen3_8b_holdout33_softresid005_r32_e2_lr2e4_v0",
+  "init_adapter_path": null,
+  "max_length": 1024,
+  "boundary_mode": "full_offset",
+  "allow_truncate": false,
+  "train_limit": null,
+  "eval_limit": null,
+  "tokenize_only": false,
+  "epochs": 2,
+  "batch_size": 4,
+  "eval_batch_size": 16,
+  "grad_accum_steps": 4,
+  "learning_rate": 0.0002,
+  "weight_decay": 0.0,
+  "warmup_ratio": 0.03,
+  "clip_nll": 2.0,
+  "loss_mode": "clip_plus_residual",
+  "residual_nll_weight": 0.05,
+  "lora_r": 32,
+  "lora_alpha": 64,
+  "lora_dropout": 0.05,
+  "target_modules": "q_proj,k_proj,v_proj,o_proj,gate_proj,up_proj,down_proj",
+  "bf16": true,
+  "gradient_checkpointing": true,
+  "attn_implementation": "sdpa",
+  "max_grad_norm": 1.0,
+  "log_every": 10,
+  "eval_every": 50,
+  "save_every": 50,
+  "seed": 20260501,
+  "total_steps": 400,
+  "warmup_steps": 12,
+  "train_examples": 3188,
+  "eval_examples": 496,
+  "train_summary": {
+    "examples": 3188,
+    "prompt_tokens": {
+      "min": 34,
+      "p10": 60,
+      "median": 98,
+      "p90": 218,
+      "max": 634,
+      "mean": 124.541
+    },
+    "target_tokens": {
+      "min": 19,
+      "p10": 33,
+      "median": 52,
+      "p90": 120,
+      "max": 239,
+      "mean": 66.195
+    },
+    "total_tokens": {
+      "min": 63,
+      "p10": 96,
+      "median": 149,
+      "p90": 338,
+      "max": 864,
+      "mean": 190.736
+    }
+  },
+  "eval_summary": {
+    "examples": 496,
+    "prompt_tokens": {
+      "min": 46,
+      "p10": 64,
+      "median": 113,
+      "p90": 234,
+      "max": 542,
+      "mean": 135.024
+    },
+    "target_tokens": {
+      "min": 23,
+      "p10": 33,
+      "median": 57,
+      "p90": 120,
+      "max": 239,
+      "mean": 68.978
+    },
+    "total_tokens": {
+      "min": 69,
+      "p10": 99,
+      "median": 168,
+      "p90": 360,
+      "max": 727,
+      "mean": 204.002
+    }
+  }
+}

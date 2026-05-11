@@ -1,0 +1,180 @@
+\documentclass[10pt]{article}
+\usepackage[margin=0.75in]{geometry}
+\usepackage{amsmath,amssymb,mathtools}
+\usepackage{xcolor}
+\usepackage[hidelinks]{hyperref}
+\pdfinfoomitdate=1
+\pdfsuppressptexinfo=-1
+\pdftrailerid{}
+\hypersetup{pdftitle={},pdfauthor={},pdfsubject={},pdfkeywords={},pdfcreator={},pdfproducer={}}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0.45em}
+\newenvironment{bracket-display}{\[}{\]}
+\providecommand{\bar}{\operatorname{bar}}
+\renewcommand{\d}{\mathrm{d}}
+\providecommand{\implies}{\operatorname{implies}}
+\providecommand{\mathscr}[1]{\mathit{#1}}
+\renewcommand{\mathscr}[1]{\mathit{#1}}
+\providecommand{\setminus}{\operatorname{setminus}}
+\providecommand{\textup}{\operatorname{textup}}
+\providecommand{\tilde}{\operatorname{tilde}}
+\begin{document}
+\appendix
+\section*{Appendix: Examples of Equation Forecasts}
+The examples below show equation-continuation tasks sampled from recent arXiv papers. In each example, the red marker indicates the point where the equation was hidden from the forecasting model. Each display aligns the paper continuation and the model forecast at a shared point before the hidden suffix, so differences after the cut are easier to compare.
+For each example, the score line reports the clipped judge-score gain from conditioning on the forecast instead of a same-budget excerpt of immediately preceding paper context. Positive values mean the forecast made the true hidden suffix more likely under the judge.
+
+\subsection*{Example 1}
+\textit{Source:} \href{https://arxiv.org/abs/2604.24491}{arXiv:2604.24491}. \textit{Score gain over context baseline:} \(+0.171\).
+\vspace{0.2em}
+{\small
+\[
+\begin{aligned}
+&\mathllap{\forall r\in\mathbb{N}^*\ ,\ s\in}{\color{red}\;|\!\mathrm{CUT}\!|\;}\frac{s_1+1}{2}+\mathbb{N}\ , \quad R_{r,s} = 0 \ . \qquad \text{\footnotesize paper}\\[0.45em]
+&\mathllap{\forall r\in\mathbb{N}^*\ ,\ s\in}{\color{red}\;|\!\mathrm{CUT}\!|\;}\mathbb{N}^*\ ,\quad s\geq \frac{s_1+1}{2} \implies R_{r,s}=0 \ . \qquad \text{\footnotesize forecast}
+\end{aligned}
+\]
+}
+\vspace{0.4em}\hrule\vspace{0.8em}
+
+\subsection*{Example 2}
+\textit{Source:} \href{https://arxiv.org/abs/2604.18952}{arXiv:2604.18952}. \textit{Score gain over context baseline:} \(+0.338\).
+\vspace{0.2em}
+{\small
+\[
+\begin{aligned}
+|\ell s| \gtrsim |s\partial_pA_{k-p,\ell-k+p}|
+\ge |t\partial_p A_{k-p,p}| -{}
+&{\color{red}\;|\!\mathrm{CUT}\!|\;}|\partial_p \Phi|
+\ge \theta_0 |kt| - |\partial_p \Phi|
+\ge \theta_0|kt|/2, \qquad \text{\footnotesize paper}\\[0.45em]
+|\ell s| \gtrsim |s\partial_pA_{k-p,\ell-k+p}|
+\ge |t\partial_p A_{k-p,p}| -{}
+&{\color{red}\;|\!\mathrm{CUT}\!|\;}|\partial_p \Phi|
+\ge \frac{\theta_0}{2}|kt|. \qquad \text{\footnotesize forecast}
+\end{aligned}
+\]
+}
+\vspace{0.4em}\hrule\vspace{0.8em}
+
+\subsection*{Example 3}
+\textit{Source:} \href{https://arxiv.org/abs/2604.19881}{arXiv:2604.19881}. \textit{Score gain over context baseline:} \(+0.136\).
+\vspace{0.2em}
+{\footnotesize
+\[
+\begin{aligned}
+Y^{\mu}_{ab}Y_{\mu}^{ab}
+&=\sum_{i=2,3}(\partial_a\partial_b \d x_i-\tfrac{1}{2}\d_{ab}\partial_c\partial^c\d x_i)^2 \\[-0.1em]
+\text{\footnotesize paper}\quad
+&\tfrac{1}{2}\sum_{i={\color{red}\;|\!\mathrm{CUT}\!|\;}2,3}
+\Big((\partial^2_{x_0}\d x_i)^2+(\partial^2_{x_1}\d x_i)^2
++2\,\partial^2_{x_1}\d x_i\cdot \partial^2_{x_0}\d x_i\Big)
+=-\tfrac{1}{2}J(x_0,x_1),\\[0.45em]
+\text{\footnotesize forecast}\quad
+&\tfrac{1}{2}\sum_{i={\color{red}\;|\!\mathrm{CUT}\!|\;}2,3}
+\Big((\partial^2_{x_0}\d x_i-\partial^2_{x_1}\d x_i)^2
++4(\partial_{x_0}\partial_{x_1}\d x_i)^2\Big).
+\end{aligned}
+\]
+}
+\vspace{0.4em}\hrule\vspace{0.8em}
+
+\subsection*{Example 4}
+\textit{Source:} \href{https://arxiv.org/abs/2604.20635}{arXiv:2604.20635}. \textit{Score gain over context baseline:} \(+0.345\).
+\vspace{0.2em}
+{\small
+\[
+\begin{aligned}
+&\mathllap{E=\frac{\partial\mathscr l}{\partial u}\cdot u-\mathscr l, \qquad p=}{\color{red}\;|\!\mathrm{CUT}\!|\;}\mathscr l-\rho\frac{\partial\mathscr l}{\partial\rho}. \qquad \text{\footnotesize paper}\\[0.45em]
+&\mathllap{E=\frac{\partial\mathscr l}{\partial u}\cdot u-\mathscr l, \qquad p=}{\color{red}\;|\!\mathrm{CUT}\!|\;}\mathscr l-\rho\frac{\partial\mathscr l}{\partial \rho} \qquad \text{\footnotesize forecast}
+\end{aligned}
+\]
+}
+\vspace{0.4em}\hrule\vspace{0.8em}
+
+\subsection*{Example 5}
+\textit{Source:} \href{https://arxiv.org/abs/2604.19506}{arXiv:2604.19506}. \textit{Score gain over context baseline:} \(+0.090\).
+\vspace{0.2em}
+{\small
+\[
+\begin{aligned}
+&\mathllap{N^{(2)}(z)=}\begin{cases} \mathcal{E}(z)N^{alg}(z), & z\in{\color{red}\;|\!\mathrm{CUT}\!|\;}\mathbb{C}\setminus\mathcal{D},\quad \mathcal{E}(z)N^{alg}(z)N^{\tilde{\kappa}}(z), z\in\mathcal{D}, \end{cases} \qquad \text{\footnotesize paper}\\[0.45em]
+&\mathllap{N^{(2)}(z)=}\begin{cases} \mathcal{E}(z)N^{alg}(z), & z\in{\color{red}\;|\!\mathrm{CUT}\!|\;}\mathbb{C}\setminus\mathcal{D},\quad \mathcal{E}(z)N^{loc}(z), z\in\mathcal{D}. \end{cases} \qquad \text{\footnotesize forecast}
+\end{aligned}
+\]
+}
+\vspace{0.4em}\hrule\vspace{0.8em}
+
+\subsection*{Example 6}
+\textit{Source:} \href{https://arxiv.org/abs/2604.26927}{arXiv:2604.26927}. \textit{Score gain over context baseline:} \(+0.684\).
+\vspace{0.2em}
+{\small
+\[
+\begin{aligned}
+&\mathllap{\Omega^\textup{cl}(d=2,N,k) =}{\color{red}\;|\!\mathrm{CUT}\!|\;}\frac{1}{N} \frac{k!}{k^k} \sum_{l=0}^k \frac{k^l}{l!}. \qquad \text{\footnotesize paper}\\[0.45em]
+&\mathllap{\Omega^\textup{cl}(d=2,N,k) =}{\color{red}\;|\!\mathrm{CUT}\!|\;}\frac{1}{N} \frac{k!}{k^k} \sum_{l=0}^k \frac{k^l}{l!}. \qquad \text{\footnotesize forecast}
+\end{aligned}
+\]
+}
+\vspace{0.4em}\hrule\vspace{0.8em}
+
+\subsection*{Example 7}
+\textit{Source:} \href{https://arxiv.org/abs/2604.27074}{arXiv:2604.27074}. \textit{Score gain over context baseline:} \(-0.076\).
+\vspace{0.2em}
+{\small
+\[
+\begin{aligned}
+&\mathllap{K_T(x_f,x_i) = \sum_{X:\,x_i\to x_f} \mathcal A[X] =}{\color{red}\;|\!\mathrm{CUT}\!|\;}\sum_{X:\,x_i\to x_f} \sqrt{\mathbb P[X]}\,e^{i\Phi[X]}. \qquad \text{\footnotesize paper}\\[0.45em]
+&\mathllap{K_T(x_f,x_i) = \sum_{X:\,x_i\to x_f} \mathcal A[X] =}{\color{red}\;|\!\mathrm{CUT}\!|\;}\sum_{X:\,x_i\to x_f}\mathcal A_0[X]\,\mathcal Z_T[X], \qquad \text{\footnotesize forecast}
+\end{aligned}
+\]
+}
+\vspace{0.4em}\hrule\vspace{0.8em}
+
+\subsection*{Example 8}
+\textit{Source:} \href{https://arxiv.org/abs/2604.27015}{arXiv:2604.27015}. \textit{Score gain over context baseline:} \(-0.026\).
+\vspace{0.2em}
+{\small
+\[
+\begin{aligned}
+&\begin{aligned} f_0(r) &= r \bmod 2,\\ f_k(r) &={\color{red}\;|\!\mathrm{CUT}\!|\;}\left\lfloor \frac{r}{2^k} \right\rfloor \bmod 2 \qquad (k=1,\dots,K), \end{aligned} \qquad \text{\footnotesize paper}\\[0.45em]
+&\begin{aligned} f_0(r) &= r \bmod 2,\\ f_k(r) &={\color{red}\;|\!\mathrm{CUT}\!|\;}\left\lfloor \frac{r}{\Delta_k} \right\rfloor \bmod 2,\qquad k=1,\dots,K. \end{aligned} \qquad \text{\footnotesize forecast}
+\end{aligned}
+\]
+}
+\vspace{0.4em}\hrule\vspace{0.8em}
+
+\subsection*{Example 9}
+\textit{Source:} \href{https://arxiv.org/abs/2604.24755}{arXiv:2604.24755}. \textit{Score gain over context baseline:} \(-0.136\).
+\vspace{0.2em}
+{\small
+\[
+\begin{aligned}
+&\mathllap{H_\text{child}^\mathrm{eff} =}-\sum_{(E,\mu)}\left(\sum_{P_d} Q_{P_d} -{\color{red}\;|\!\mathrm{CUT}\!|\;}\sum_{P_o} Q_{P_o}^1\right) - \sum_C F_C=H_\text{XC}. \qquad \text{\footnotesize paper}\\[0.45em]
+&\mathllap{H_\text{child}^\mathrm{eff} =}-\sum_{(E,\mu)}\left(\sum_{P_d} Q_{P_d} -{\color{red}\;|\!\mathrm{CUT}\!|\;}\sum_{V_d} \frac{1}{2}\left(B^{1\bar{1}}_{V_d}+B^{\psi\bar{\psi}}_{V_d}\right)\right) \qquad \text{\footnotesize forecast}
+\end{aligned}
+\]
+}
+\vspace{0.4em}\hrule\vspace{0.8em}
+
+\subsection*{Example 10}
+\textit{Source:} \href{https://arxiv.org/abs/2604.24314}{arXiv:2604.24314}. \textit{Score gain over context baseline:} \(+0.051\).
+\vspace{0.2em}
+{\small
+\[
+\begin{aligned}
+v_k(z)&:=\frac{(\eta u_k)(\tilde{z}_k+r_k z)-(\eta u_k)(\tilde{z}_k)}
+{r_k^{\alpha}E_k},\\[0.25em]
+\text{\footnotesize paper}\quad
+w_k(z)&:={\color{red}\;|\!\mathrm{CUT}\!|\;}
+\frac{\eta(\tilde{z}_k)(u_k(\tilde{z}_k+r_k z)-u_k(\tilde{z}_k))}
+{r_k^{\alpha}E_k},\\[0.45em]
+\text{\footnotesize forecast}\quad
+w_k(z)&:={\color{red}\;|\!\mathrm{CUT}\!|\;}
+\frac{u_k(\tilde{z}_k+r_k z)}{r_k^{\alpha}E_k}.
+\end{aligned}
+\]
+}
+\vspace{0.4em}\hrule\vspace{0.8em}
+
+\end{document}

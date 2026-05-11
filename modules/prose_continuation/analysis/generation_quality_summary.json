@@ -1,0 +1,93 @@
+{
+  "gpt54_nano_high": {
+    "rows": 325,
+    "target_first_120_chars_in_z": 0,
+    "target_first_40_chars_in_z": 8,
+    "z_chars_max": 1000,
+    "z_chars_median": 1000,
+    "z_chars_min": 996,
+    "z_chars_p10": 999,
+    "z_chars_p90": 1000,
+    "z_empty": 0,
+    "z_exactly_budgetish_1000_chars": 325,
+    "z_under_200_chars": 0
+  },
+  "gpt54_nano_low": {
+    "rows": 325,
+    "target_first_120_chars_in_z": 0,
+    "target_first_40_chars_in_z": 7,
+    "z_chars_max": 1000,
+    "z_chars_median": 1000,
+    "z_chars_min": 996,
+    "z_chars_p10": 999,
+    "z_chars_p90": 1000,
+    "z_empty": 0,
+    "z_exactly_budgetish_1000_chars": 325,
+    "z_under_200_chars": 0
+  },
+  "gpt54_nano_medium": {
+    "rows": 325,
+    "target_first_120_chars_in_z": 0,
+    "target_first_40_chars_in_z": 8,
+    "z_chars_max": 1000,
+    "z_chars_median": 1000,
+    "z_chars_min": 997,
+    "z_chars_p10": 999,
+    "z_chars_p90": 1000,
+    "z_empty": 0,
+    "z_exactly_budgetish_1000_chars": 325,
+    "z_under_200_chars": 0
+  },
+  "gpt55_high": {
+    "rows": 324,
+    "target_first_120_chars_in_z": 0,
+    "target_first_40_chars_in_z": 12,
+    "z_chars_max": 1000,
+    "z_chars_median": 1000,
+    "z_chars_min": 991,
+    "z_chars_p10": 999,
+    "z_chars_p90": 1000,
+    "z_empty": 0,
+    "z_exactly_budgetish_1000_chars": 323,
+    "z_under_200_chars": 0
+  },
+  "gpt55_low": {
+    "rows": 326,
+    "target_first_120_chars_in_z": 2,
+    "target_first_40_chars_in_z": 15,
+    "z_chars_max": 1000,
+    "z_chars_median": 1000,
+    "z_chars_min": 992,
+    "z_chars_p10": 999,
+    "z_chars_p90": 1000,
+    "z_empty": 0,
+    "z_exactly_budgetish_1000_chars": 325,
+    "z_under_200_chars": 0
+  },
+  "gpt55_medium": {
+    "rows": 326,
+    "target_first_120_chars_in_z": 0,
+    "target_first_40_chars_in_z": 12,
+    "z_chars_max": 1000,
+    "z_chars_median": 1000,
+    "z_chars_min": 995,
+    "z_chars_p10": 999,
+    "z_chars_p90": 1000,
+    "z_empty": 0,
+    "z_exactly_budgetish_1000_chars": 326,
+    "z_under_200_chars": 0
+  },
+  "gpt55_none": {
+    "rows": 326,
+    "target_first_120_chars_in_z": 2,
+    "target_first_40_chars_in_z": 15,
+    "z_chars_max": 1000,
+    "z_chars_median": 1000,
+    "z_chars_min": 996,
+    "z_chars_p10": 999,
+    "z_chars_p90": 1000,
+    "z_empty": 0,
+    "z_exactly_budgetish_1000_chars": 326,
+    "z_under_200_chars": 0
+  }
+}

@@ -1,0 +1,225 @@
+{
+  "created_utc": "2026-05-01T01:50:09.711001+00:00",
+  "script": "scripts/strip_equation_outer_close_from_joined.py",
+  "row_count": 731,
+  "changed_count": 24,
+  "changed": [
+    {
+      "dataset_row_index": 13,
+      "env": "align",
+      "close": "\\end{align}",
+      "old_len": 30,
+      "new_len": 18,
+      "old_tail": "\\nu \\right) } \\, . \\end{align}",
+      "new_tail": "\\nu \\right) } \\, ."
+    },
+    {
+      "dataset_row_index": 18,
+      "env": "align",
+      "close": "\\end{align}",
+      "old_len": 268,
+      "new_len": 256,
+      "old_tail": "2}}{4600}-2\\varepsilon^2 d_1 \\\\\n=&\\, d_1\\left(\\frac{\\sr^{3/2}}{4600}\\varepsilon-2\\varepsilon^2\\right)\\ge d_1\\cdot \\frac{\\sr^{3/2}}{4600}\\varepsilon,\n\\end{align}",
+      "new_tail": "c{d_1\\sr^{3/2}}{4600}-2\\varepsilon^2 d_1 \\\\\n=&\\, d_1\\left(\\frac{\\sr^{3/2}}{4600}\\varepsilon-2\\varepsilon^2\\right)\\ge d_1\\cdot \\frac{\\sr^{3/2}}{4600}\\varepsilon,"
+    },
+    {
+      "dataset_row_index": 50,
+      "env": "align*",
+      "close": "\\end{align*}",
+      "old_len": 102,
+      "new_len": 89,
+      "old_tail": "\\rho_n))-2\\log(2))} \\\\\n&\\leq c_0 n\\left(e^{-\\frac{n c_1}{2}}+e^{-\\frac{n c_2}{2}}\\right),\n\\end{align*}",
+      "new_tail": "\\rho_n))-2\\log(2))} \\\\\n&\\leq c_0 n\\left(e^{-\\frac{n c_1}{2}}+e^{-\\frac{n c_2}{2}}\\right),"
+    },
+    {
+      "dataset_row_index": 103,
+      "env": "equation",
+      "close": "\\end{equation}",
+      "old_len": 23,
+      "new_len": 9,
+      "old_tail": "Schmidt}.\\end{equation}",
+      "new_tail": "Schmidt}."
+    },
+    {
+      "dataset_row_index": 105,
+      "env": "equation",
+      "close": "\\end{equation}",
+      "old_len": 38,
+      "new_len": 24,
+      "old_tail": "y)^{-3/4}\\,|x-y|^{-2}\\,.\\end{equation}",
+      "new_tail": "y)^{-3/4}\\,|x-y|^{-2}\\,."
+    },
+    {
+      "dataset_row_index": 163,
+      "env": "align",
+      "close": "\\end{align}",
+      "old_len": 76,
+      "new_len": 64,
+      "old_tail": "\\qquad  +\\sqrt{\\Delta\\sigma}\\,(\\eta_i)_{ab}(\\sigma)\\ \\Biggr\\}\\ ,\n\\end{align}",
+      "new_tail": "\\qquad  +\\sqrt{\\Delta\\sigma}\\,(\\eta_i)_{ab}(\\sigma)\\ \\Biggr\\}\\ ,"
+    },
+    {
+      "dataset_row_index": 188,
+      "env": "multline",
+      "close": "\\end{multline}",
+      "old_len": 76,
+      "new_len": 61,
+      "old_tail": "\\sigma \\eta'(x))\\cdot \\frac{\\sigma^2}{2}\\eta''(x)\\right)\\,dx. \\end{multline}",
+      "new_tail": "\\sigma \\eta'(x))\\cdot \\frac{\\sigma^2}{2}\\eta''(x)\\right)\\,dx."
+    },
+    {
+      "dataset_row_index": 216,
+      "env": "equation",
+      "close": "\\end{equation}",
+      "old_len": 82,
+      "new_len": 68,
+      "old_tail": "\\quad w_k(z):=\\frac{(\\eta u_k)(\\tilde{z}_k+r_k z)}{r_k^{\\alpha}E_k}.\\end{equation}",
+      "new_tail": "\\quad w_k(z):=\\frac{(\\eta u_k)(\\tilde{z}_k+r_k z)}{r_k^{\\alpha}E_k}."
+    },
+    {
+      "dataset_row_index": 227,
+      "env": "align",
+      "close": "\\end{align}",
+      "old_len": 87,
+      "new_len": 75,
+      "old_tail": "\\widetilde{\\mathcal M}_{x_2 z, x_1}-\\widetilde{\\mathcal M}_{x_1x_2,z}) \\, . \\end{align}",
+      "new_tail": "\\widetilde{\\mathcal M}_{x_2 z, x_1}-\\widetilde{\\mathcal M}_{x_1x_2,z}) \\, ."
+    },
+    {
+      "dataset_row_index": 276,
+      "env": "equation",
+      "close": "\\end{equation}",
+      "old_len": 49,
+      "new_len": 34,
+      "old_tail": "\\mathcal{O}_{d,\\zeta,v}(\\delta)\\,,\n\\end{equation}",
+      "new_tail": "\\mathcal{O}_{d,\\zeta,v}(\\delta)\\,,"
+    },
+    {
+      "dataset_row_index": 285,
+      "env": "bracket-display",
+      "close": "\\]",
+      "old_len": 24,
+      "new_len": 22,
+      "old_tail": "\\theta}{1-\\theta}}n^r.\\]",
+      "new_tail": "\\theta}{1-\\theta}}n^r."
+    },
+    {
+      "dataset_row_index": 295,
+      "env": "equation",
+      "close": "\\end{equation}",
+      "old_len": 55,
+      "new_len": 41,
+      "old_tail": "\\leq \\|v\\|_{L^{\\infty}(\\R^{d})}<\\infty\\,.\\end{equation}",
+      "new_tail": "\\leq \\|v\\|_{L^{\\infty}(\\R^{d})}<\\infty\\,."
+    },
+    {
+      "dataset_row_index": 325,
+      "env": "multline",
+      "close": "\\end{multline}",
+      "old_len": 78,
+      "new_len": 64,
+      "old_tail": "\\mathcal{O}_{d,\\zeta,v}\\left(\\|v-v_{(R)}\\|_{L^1(\\R^d)}\\right)\\,.\\end{multline}",
+      "new_tail": "\\mathcal{O}_{d,\\zeta,v}\\left(\\|v-v_{(R)}\\|_{L^1(\\R^d)}\\right)\\,."
+    },
+    {
+      "dataset_row_index": 362,
+      "env": "equation",
+      "close": "\\end{equation}",
+      "old_len": 66,
+      "new_len": 51,
+      "old_tail": "\\sum_{b \\in \\sigma^{-1}(a)} e^{\\phi(\\pi(b))}\\, g(b)\n\\end{equation}",
+      "new_tail": "\\sum_{b \\in \\sigma^{-1}(a)} e^{\\phi(\\pi(b))}\\, g(b)"
+    },
+    {
+      "dataset_row_index": 365,
+      "env": "equation",
+      "close": "\\end{equation}",
+      "old_len": 61,
+      "new_len": 47,
+      "old_tail": "T/2}^{t} ds\\,d^{d}y\\,\\sigma(t,x;s,y)\\,f(s,y)\\,.\\end{equation}",
+      "new_tail": "T/2}^{t} ds\\,d^{d}y\\,\\sigma(t,x;s,y)\\,f(s,y)\\,."
+    },
+    {
+      "dataset_row_index": 374,
+      "env": "align",
+      "close": "\\end{align}",
+      "old_len": 70,
+      "new_len": 58,
+      "old_tail": "4\\P)\\,{}_s\\check{V}=\\mathcal{T}_s({}_sU),\\label{eqn:VTbnd} \\end{align}",
+      "new_tail": "4\\P)\\,{}_s\\check{V}=\\mathcal{T}_s({}_sU),\\label{eqn:VTbnd}"
+    },
+    {
+      "dataset_row_index": 413,
+      "env": "bracket-display",
+      "close": "\\]",
+      "old_len": 23,
+      "new_len": 21,
+      "old_tail": " \\varepsilon\\right\\}.\\]",
+      "new_tail": " \\varepsilon\\right\\}."
+    },
+    {
+      "dataset_row_index": 450,
+      "env": "equation",
+      "close": "\\end{equation}",
+      "old_len": 62,
+      "new_len": 48,
+      "old_tail": "\\mu^{-1}G^{-},\\quad L\\mapsto L,\\quad H\\mapsto H.\\end{equation}",
+      "new_tail": "\\mu^{-1}G^{-},\\quad L\\mapsto L,\\quad H\\mapsto H."
+    },
+    {
+      "dataset_row_index": 464,
+      "env": "equation",
+      "close": "\\end{equation}",
+      "old_len": 72,
+      "new_len": 58,
+      "old_tail": "\\frac{1}{p_xp_y}+\\frac{1}{p_yp_z}\\right)\\Big|_{p_z^2=0}=0.\\end{equation}",
+      "new_tail": "\\frac{1}{p_xp_y}+\\frac{1}{p_yp_z}\\right)\\Big|_{p_z^2=0}=0."
+    },
+    {
+      "dataset_row_index": 470,
+      "env": "equation",
+      "close": "\\end{equation}",
+      "old_len": 71,
+      "new_len": 56,
+      "old_tail": "1}^{L}\\|\\bm{\\gamma}^{(\\ell)}\\|_2\n\\;=\\;A_{\\rm in}+\\Gamma.\n\\end{equation}",
+      "new_tail": "1}^{L}\\|\\bm{\\gamma}^{(\\ell)}\\|_2\n\\;=\\;A_{\\rm in}+\\Gamma."
+    },
+    {
+      "dataset_row_index": 549,
+      "env": "align",
+      "close": "\\end{align}",
+      "old_len": 96,
+      "new_len": 84,
+      "old_tail": "\\dow_\\sigma D_x X\n    - \\frac{D_x X}{D_\\sigma X}\\dow_\\sigma D_\\sigma X\n    \\Bigg]\\,,\n\\end{align}",
+      "new_tail": "\\dow_\\sigma D_x X\n    - \\frac{D_x X}{D_\\sigma X}\\dow_\\sigma D_\\sigma X\n    \\Bigg]\\,,"
+    },
+    {
+      "dataset_row_index": 588,
+      "env": "bracket-display",
+      "close": "\\]",
+      "old_len": 70,
+      "new_len": 68,
+      "old_tail": "C_{\\mathcal{E}_{y}}\\right\\|_1\\ge \\frac{\\sr^{3/2}}{12800}\\varepsilon.\\]",
+      "new_tail": "C_{\\mathcal{E}_{y}}\\right\\|_1\\ge \\frac{\\sr^{3/2}}{12800}\\varepsilon."
+    },
+    {
+      "dataset_row_index": 598,
+      "env": "align*",
+      "close": "\\end{align*}",
+      "old_len": 101,
+      "new_len": 88,
+      "old_tail": "\\lesssim C_\\alpha(t)\\int \\langle \\ell\\rangle^{-1}B(k,p,\\ell)\\,d\\ell\\lesssim C_\\alpha(t),\n\\end{align*}",
+      "new_tail": "\\lesssim C_\\alpha(t)\\int \\langle \\ell\\rangle^{-1}B(k,p,\\ell)\\,d\\ell\\lesssim C_\\alpha(t),"
+    },
+    {
+      "dataset_row_index": 691,
+      "env": "align",
+      "close": "\\end{align}",
+      "old_len": 199,
+      "new_len": 187,
+      "old_tail": "}}\\int d^{8}xe^{-\\phi}\\sqrt{-g_{\\mathrm{D7}}}\\left[1+\\frac{(2\\pi\\alpha^{\\prime})^{2}}{4}g_{\\mathrm{D7}}^{ac}g_{\\mathrm{D7}}^{bd}f_{ab}f_{cd}\\right].\n\\end{align}",
+      "new_tail": "_{\\mathrm{D7}}\\int d^{8}xe^{-\\phi}\\sqrt{-g_{\\mathrm{D7}}}\\left[1+\\frac{(2\\pi\\alpha^{\\prime})^{2}}{4}g_{\\mathrm{D7}}^{ac}g_{\\mathrm{D7}}^{bd}f_{ab}f_{cd}\\right]."
+    }
+  ],
+  "frozen_generation_file": "generations/nano_low/nano_low_joined_stripped.jsonl"
+}

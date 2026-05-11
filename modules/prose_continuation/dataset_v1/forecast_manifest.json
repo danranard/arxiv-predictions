@@ -1,0 +1,20 @@
+{
+  "created": "2026-05-03",
+  "purpose": "Forecast-scaffold Qwen3-8B LoRA SFT with clip2+0.05 raw, nano low/medium/high training examples.",
+  "source_experiment": "experiments\\2026-05-02_fresh40_scaffold_judge_sft_nano_lmh_xb2000_xtail2000_z1000_v0",
+  "geometry": {
+    "x_base_chars": 2000,
+    "x_tail_chars": 2000,
+    "z_budget_chars": 1000
+  },
+  "objective": "clip2 NLL + 0.05 raw NLL",
+  "counts": {
+    "train_y200": 978,
+    "eval_nano_y200": 975,
+    "train_y1000": 978,
+    "eval_nano_y1000": 975,
+    "eval_all_realz_full": 2277,
+    "eval_all_realz_y200": 2277,
+    "eval_all_realz_y1000": 2277
+  }
+}

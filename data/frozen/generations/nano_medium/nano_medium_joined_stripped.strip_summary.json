@@ -1,0 +1,63 @@
+{
+  "created_utc": "2026-05-01T01:50:13.977187+00:00",
+  "script": "scripts/strip_equation_outer_close_from_joined.py",
+  "row_count": 731,
+  "changed_count": 6,
+  "changed": [
+    {
+      "dataset_row_index": 5,
+      "env": "equation",
+      "close": "\\end{equation}",
+      "old_len": 91,
+      "new_len": 77,
+      "old_tail": "\\{1,\\ldots,m\\}^{\\mathbb{Z}}: A_{a_n,a_{n+1}}=1\\text{ for all }n\\in\\mathbb{Z}}\\end{equation}",
+      "new_tail": "\\{1,\\ldots,m\\}^{\\mathbb{Z}}: A_{a_n,a_{n+1}}=1\\text{ for all }n\\in\\mathbb{Z}}"
+    },
+    {
+      "dataset_row_index": 87,
+      "env": "eqnarray",
+      "close": "\\end{eqnarray}",
+      "old_len": 200,
+      "new_len": 185,
+      "old_tail": "1}{\\alpha}}}{D}\\right)^{\\frac{\\sum_i\\alpha_i-2Q}{\\gamma\\alpha}-1}\\frac{\\vartheta(A')}{\\Gamma\\left(\\frac{\\sum_i\\alpha_i-2Q}{\\gamma\\alpha}\\right)}. \\end{eqnarray}",
+      "new_tail": "frac{A'^{\\frac{1}{\\alpha}}}{D}\\right)^{\\frac{\\sum_i\\alpha_i-2Q}{\\gamma\\alpha}-1}\\frac{\\vartheta(A')}{\\Gamma\\left(\\frac{\\sum_i\\alpha_i-2Q}{\\gamma\\alpha}\\right)}."
+    },
+    {
+      "dataset_row_index": 108,
+      "env": "equation",
+      "close": "\\end{equation}",
+      "old_len": 86,
+      "new_len": 72,
+      "old_tail": "\\,\\lesssim_d \\frac{1}{\\tilde{T}^{d/2}}\\,\\ee^{-\\frac{L^2}{2\\tilde{T}}}\\,.\\end{equation}",
+      "new_tail": "\\,\\lesssim_d \\frac{1}{\\tilde{T}^{d/2}}\\,\\ee^{-\\frac{L^2}{2\\tilde{T}}}\\,."
+    },
+    {
+      "dataset_row_index": 133,
+      "env": "eqnarray",
+      "close": "\\end{eqnarray}",
+      "old_len": 33,
+      "new_len": 19,
+      "old_tail": "r_{\\rm{m}})^{-1/2}.\\end{eqnarray}",
+      "new_tail": "r_{\\rm{m}})^{-1/2}."
+    },
+    {
+      "dataset_row_index": 566,
+      "env": "equation",
+      "close": "\\end{equation}",
+      "old_len": 16,
+      "new_len": 2,
+      "old_tail": "1.\\end{equation}",
+      "new_tail": "1."
+    },
+    {
+      "dataset_row_index": 655,
+      "env": "bracket-display",
+      "close": "\\]",
+      "old_len": 22,
+      "new_len": 20,
+      "old_tail": "\\varepsilon_{H_k}\\,.\\]",
+      "new_tail": "\\varepsilon_{H_k}\\,."
+    }
+  ],
+  "frozen_generation_file": "generations/nano_medium/nano_medium_joined_stripped.jsonl"
+}

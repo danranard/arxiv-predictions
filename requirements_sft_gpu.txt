@@ -1,0 +1,13 @@
+transformers>=4.57.0
+peft>=0.19.0
+accelerate>=1.13.0
+safetensors>=0.4.0
+tokenizers>=0.22.0
+pandas>=2.0.0
+
+# Use a Lambda/Lambda-like PyTorch image with CUDA torch already installed.
+# Do not blindly pip-install torch over the image's CUDA build unless the image
+# lacks torch.
+#
+# Optional speed path after the basic run works:
+# flash-attn

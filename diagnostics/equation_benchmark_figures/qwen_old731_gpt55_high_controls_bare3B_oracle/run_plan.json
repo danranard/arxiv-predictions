@@ -1,0 +1,101 @@
+{
+  "created_utc": "2026-05-05T04:13:00.395718+00:00",
+  "script": "scripts/score_equation_cut_generations.py",
+  "joined_path": "equation_splits_repro_build\\artifact\\data\\frozen\\equation_splits\\generations\\old731\\gpt55_high\\gpt55_high_joined_stripped.jsonl",
+  "judge_model": "accounts/fireworks/models/qwen3-8b",
+  "base_url": "https://api.fireworks.ai/inference/v1",
+  "batch_size": 36,
+  "target_mode": "body_plus_close",
+  "bare_multipliers": [
+    1.0,
+    3.0
+  ],
+  "include_bare_controls": true,
+  "comparison_baseline": "bare_B",
+  "scaffold_variant": "current",
+  "limit": 0,
+  "include_scaffold_empty": true,
+  "include_oracle": true,
+  "include_scaffold_raw_precontext": false,
+  "only_conditions": [
+    "bare_3B",
+    "scaffold_oracle_Y"
+  ],
+  "resume": true,
+  "force_row_ids": [],
+  "existing_score_rows": 0,
+  "existing_token_rows": 0,
+  "skipped_existing_jobs": 0,
+  "conditions": [
+    "bare_3B",
+    "scaffold_oracle_Y"
+  ],
+  "row_count": 731,
+  "job_count": 1462,
+  "jobs_preview": [
+    {
+      "dataset_row_index": 0,
+      "paper_id": "2604.20418",
+      "equation_index": 25,
+      "condition": "scaffold_oracle_Y",
+      "prompt_chars": 734,
+      "target_chars": 204
+    },
+    {
+      "dataset_row_index": 0,
+      "paper_id": "2604.20418",
+      "equation_index": 25,
+      "condition": "bare_3B",
+      "prompt_chars": 973,
+      "target_chars": 204
+    },
+    {
+      "dataset_row_index": 1,
+      "paper_id": "2604.24057",
+      "equation_index": 87,
+      "condition": "scaffold_oracle_Y",
+      "prompt_chars": 256,
+      "target_chars": 56
+    },
+    {
+      "dataset_row_index": 1,
+      "paper_id": "2604.24057",
+      "equation_index": 87,
+      "condition": "bare_3B",
+      "prompt_chars": 363,
+      "target_chars": 56
+    },
+    {
+      "dataset_row_index": 2,
+      "paper_id": "2604.24491",
+      "equation_index": 116,
+      "condition": "scaffold_oracle_Y",
+      "prompt_chars": 442,
+      "target_chars": 129
+    },
+    {
+      "dataset_row_index": 2,
+      "paper_id": "2604.24491",
+      "equation_index": 116,
+      "condition": "bare_3B",
+      "prompt_chars": 640,
+      "target_chars": 129
+    },
+    {
+      "dataset_row_index": 3,
+      "paper_id": "2604.24046",
+      "equation_index": 59,
+      "condition": "scaffold_oracle_Y",
+      "prompt_chars": 657,
+      "target_chars": 227
+    },
+    {
+      "dataset_row_index": 3,
+      "paper_id": "2604.24046",
+      "equation_index": 59,
+      "condition": "bare_3B",
+      "prompt_chars": 991,
+      "target_chars": 227
+    }
+  ]
+}

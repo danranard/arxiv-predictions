@@ -1,0 +1,36 @@
+{
+  "created_utc": "2026-05-01T01:50:19.239762+00:00",
+  "script": "scripts/strip_equation_outer_close_from_joined.py",
+  "row_count": 721,
+  "changed_count": 3,
+  "changed": [
+    {
+      "dataset_row_index": 15,
+      "env": "equation",
+      "close": "\\end{equation}",
+      "old_len": 43,
+      "new_len": 29,
+      "old_tail": "\\; \\frac{C_K}{(1+|\\xi|)^{K}}.\\end{equation}",
+      "new_tail": "\\; \\frac{C_K}{(1+|\\xi|)^{K}}."
+    },
+    {
+      "dataset_row_index": 18,
+      "env": "align",
+      "close": "\\end{align}",
+      "old_len": 252,
+      "new_len": 240,
+      "old_tail": "\\!\\Big(\\big(\\ket{V_0}+\\ket{V_0'}\\big)\\big(\\bra{U_x\\Delta}-\\bra{U_y\\Delta}\\big)\\Big)\\right\\|_1\n\\geq \\varepsilon\\cdot d_1\\cdot \\frac{\\sr^{3/2}}{4600},\n\\end{align}",
+      "new_tail": "athrm{anc}}}\\!\\Big(\\big(\\ket{V_0}+\\ket{V_0'}\\big)\\big(\\bra{U_x\\Delta}-\\bra{U_y\\Delta}\\big)\\Big)\\right\\|_1\n\\geq \\varepsilon\\cdot d_1\\cdot \\frac{\\sr^{3/2}}{4600},"
+    },
+    {
+      "dataset_row_index": 480,
+      "env": "align*",
+      "close": "\\end{align*}",
+      "old_len": 137,
+      "new_len": 120,
+      "old_tail": "M_{K(g_\\phi w(g_\\omega))}=M_{f\\left((g_\\phi w(g_\\omega))^{2}\\right)}=M_{f\\left(f_{\\phi}w(f_{\\omega})\\right)} \\text{ .}\\\\\n    \\end{align*}",
+      "new_tail": "M_{K(g_\\phi w(g_\\omega))}=M_{f\\left((g_\\phi w(g_\\omega))^{2}\\right)}=M_{f\\left(f_{\\phi}w(f_{\\omega})\\right)} \\text{ .}\\\\"
+    }
+  ],
+  "frozen_generation_file": "generations/nano_high/nano_high_joined_stripped.jsonl"
+}

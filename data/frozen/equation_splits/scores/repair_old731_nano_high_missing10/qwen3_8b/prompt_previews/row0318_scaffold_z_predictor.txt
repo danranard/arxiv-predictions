@@ -1,0 +1,41 @@
+dataset_row_index: 318
+paper_id: 2604.24112
+equation_index: 55
+condition: scaffold_z_predictor
+prompt_chars: 985
+target_chars: 377
+
+=== PROMPT ===
+% First equation:
+\begin{align}
+Z^{-|g|}_{|g|+\frac{1}{2}, m}& =(-1)^{|g|+\frac{1}{2}+m}\sqrt{\frac{2|g|+1}{4\pi}\frac{(2|g|+1)!}{(|g|+\frac{1}{2}+m)! (|g|+\frac{1}{2}-m)!}}~{u^*}^{|g|+\frac{1}{2}-m} {v^*}^{|g|+\frac{1}{2}+m}\eta \nn\\
+&+(-1)^{|g|+\frac{1}{2}+m}\sqrt{\frac{1}{4\pi}\frac{(|g|+\frac{1}{2}+m)! (|g|+\frac{1}{2}-m)! } {(2|g|)!}}~\nn\\
+&\cdot (\begin{pmatrix}
+2|g| \\
+|g|+m+\frac{1}{2}
+\end{pmatrix}
+{u^*}^{|g|-\frac{1}{2}-m}{v^*}^{|g|+\frac{1}{2}+m}v-\begin{pmatrix}
+2|g| \\
+|g|+m-\frac{1}{2}
+\end{pmatrix}
+{u^*}^{|g|+\frac{1}{2}-m}{v^*}^{|g|-\frac{1}{2}+m}u \biggr)\eta,
+\end{align}
+
+% Same equation:
+\begin{align}
+Z^{-|g|}_{|g|+\frac{1}{2}, m}& =(-1)^{|g|+\frac{1}{2}+m}\sqrt{\frac{2|g|+1}{4\pi}\frac{(2|g|+1)!}{(|g|+\frac{1}{2}+m)! (|g|+\frac{1}{2}-m)!}}~{u^*}^{|g|+\frac{1}{2}-m} {v^*}^{|g|+\frac{1}{2}+m}\eta \nn\\
+&+(-1)^{|g|+\frac{1}{2}+m}\sqrt{\frac{1}{4\pi}\frac{(|g|+\frac{1}{2}+m)! (|g|+\frac{1}{2}-m)! } {(2|g|)!}}~\nn\\
+&\cdot (\begin{pmatrix}
+2|g| \\
+|g|+m+
+
+=== TARGET ===
+\frac{1}{2}
+\end{pmatrix}
+{u^*}^{|g|-\frac{1}{2}-m} {v^*}^{|g|+\frac{1}{2}+m}v-\begin{pmatrix}
+2|g| \\
+|g|+m-\frac{1}{2}
+\end{pmatrix}
+{u^*}^{|g|+\frac{1}{2}-m} {v^*}^{|g|-\frac{1}{2}+m}u \biggr)\eta^*, \\
+\mathcal{Z}^{-|g|}_{|g|+\frac{1}{2}, m}&=(-1)^{|g|+\frac{1}{2}+m}\sqrt{\frac{1}{4\pi} \frac{(2|g|)!}{(|g|+m)!(|g|-m)!}}~(1-(2|g|+1)\eta^*\eta) ~{u^*}^{|g|-m}{v^*}^{|g|+m}.
+\end{align}

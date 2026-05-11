@@ -1,0 +1,27 @@
+dataset_row_index: 0
+paper_id: 2604.20418
+equation_index: 25
+condition: bare_B
+prompt_chars: 483
+target_chars: 204
+
+=== PROMPT ===
+eta)}\left(\frac{\x}{Q^2}\right)^{\frac{1}{d}} e^{w\f}+\cdots=0\,,
+	\ee
+	where we have defined
+	\be \label{alg2}
+	y=2s-2b \sp z=k-2b-\g \sp w=2s-4b+\frac{k}{d}\,.
+	\ee
+
+	The coefficients appearing in \eqref{alg1} and \eqref{alg3} are given by
+\begin{gather}
+c_1= 16 b^2 (d-1) V_\infty^2 Y_\infty^2\,,\nn\\
+		c_2= -4 \left(d + 4 b^2 (d-1) d - 2 b (d^2+d-2) s\right) S_\infty^2 V_\infty Y_\infty^2\,,\nn\\
+		c_3= -2 (d-1) \left(2 (d-1) s^2-d\right) S_\infty^4 Y_\infty^2\,,\nn\\
+		c_4=
+
+=== TARGET ===
+-8 b \gamma  (d-1) V_\infty X_\infty Y_\infty\,,\nn\\
+		c_5=(d-1)  \gamma^2 X_\infty^2\,,\nn\\
+		c_6= 2 (d-1)  \left(d k \gamma -d \gamma (\gamma +s)-2 \gamma  s +d \right) S_\infty^2 X_\infty Y_\infty\,,
+\end{gather}

@@ -1,0 +1,19 @@
+{
+  "n_pairs": 0,
+  "comparison": "scaffold_z_predictor - bare_B",
+  "mean_diff_per_token": null,
+  "stderr_diff_per_token": null,
+  "median_diff_per_token": null,
+  "positive_count": 0,
+  "positive_rate": null,
+  "condition_means": {
+    "scaffold_z_predictor": {
+      "n": 632,
+      "mean_score_per_token": -0.696604097136208,
+      "stderr": 0.01779326365130876,
+      "median": -0.6211671249493929
+    }
+  },
+  "by_paper_diff": {},
+  "diffs": []
+}

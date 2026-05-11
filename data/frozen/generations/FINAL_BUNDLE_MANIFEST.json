@@ -1,0 +1,131 @@
+{
+  "created_utc": "2026-05-01T01:49:49.857690+00:00",
+  "artifact_role": "canonical frozen generation bundle manifest",
+  "dataset": "data/cuts_731.jsonl",
+  "join_rule": "Final joins pass original output JSONL files followed by retry output JSONL files. join_equation_openai_outputs.py keeps the last record per custom_id, so later retry successes override earlier errors or incomplete responses.",
+  "historical_note": "Internal batch, retry, and staging paths are intentionally omitted from the public artifact; the frozen generation JSONL files are the source of truth.",
+  "runs": [
+    {
+      "name": "gpt55_none",
+      "generation_file": "generations/gpt55_none/gpt55_none_joined_stripped.jsonl",
+      "strip_summary_file": "generations/gpt55_none/gpt55_none_joined_stripped.strip_summary.json",
+      "request_count": 731,
+      "success_count": 731,
+      "missing_or_bad_count": 0,
+      "joined_row_count": 731,
+      "join_error_count": 0,
+      "outer_close_stripped_count": 27,
+      "truncated_count": 5,
+      "exact_B_count": 37
+    },
+    {
+      "name": "gpt55_low",
+      "generation_file": "generations/gpt55_low/gpt55_low_joined_stripped.jsonl",
+      "strip_summary_file": "generations/gpt55_low/gpt55_low_joined_stripped.strip_summary.json",
+      "request_count": 731,
+      "success_count": 731,
+      "missing_or_bad_count": 0,
+      "joined_row_count": 731,
+      "join_error_count": 0,
+      "outer_close_stripped_count": 48,
+      "truncated_count": 7,
+      "exact_B_count": 39
+    },
+    {
+      "name": "gpt55_medium",
+      "generation_file": "generations/gpt55_medium/gpt55_medium_joined_stripped.jsonl",
+      "strip_summary_file": "generations/gpt55_medium/gpt55_medium_joined_stripped.strip_summary.json",
+      "request_count": 731,
+      "success_count": 731,
+      "missing_or_bad_count": 0,
+      "joined_row_count": 731,
+      "join_error_count": 0,
+      "outer_close_stripped_count": 11,
+      "truncated_count": 2,
+      "exact_B_count": 46,
+      "retry_attempts": [
+        {
+          "attempt": 1,
+          "started_missing_count": 9,
+          "remaining_missing_count": 1
+        },
+        {
+          "attempt": 2,
+          "started_missing_count": 1,
+          "remaining_missing_count": 0
+        }
+      ]
+    },
+    {
+      "name": "gpt55_high",
+      "generation_file": "generations/gpt55_high/gpt55_high_joined_stripped.jsonl",
+      "strip_summary_file": "generations/gpt55_high/gpt55_high_joined_stripped.strip_summary.json",
+      "request_count": 731,
+      "success_count": 731,
+      "missing_or_bad_count": 0,
+      "joined_row_count": 731,
+      "join_error_count": 0,
+      "outer_close_stripped_count": 3,
+      "truncated_count": 1,
+      "exact_B_count": 51
+    },
+    {
+      "name": "nano_low",
+      "generation_file": "generations/nano_low/nano_low_joined_stripped.jsonl",
+      "strip_summary_file": "generations/nano_low/nano_low_joined_stripped.strip_summary.json",
+      "request_count": 731,
+      "success_count": 731,
+      "missing_or_bad_count": 0,
+      "joined_row_count": 731,
+      "join_error_count": 0,
+      "outer_close_stripped_count": 24,
+      "truncated_count": 48,
+      "exact_B_count": 1
+    },
+    {
+      "name": "nano_medium",
+      "generation_file": "generations/nano_medium/nano_medium_joined_stripped.jsonl",
+      "strip_summary_file": "generations/nano_medium/nano_medium_joined_stripped.strip_summary.json",
+      "request_count": 731,
+      "success_count": 731,
+      "missing_or_bad_count": 0,
+      "joined_row_count": 731,
+      "join_error_count": 0,
+      "outer_close_stripped_count": 6,
+      "truncated_count": 8,
+      "exact_B_count": 6,
+      "retry_attempts": [
+        {
+          "attempt": 1,
+          "started_missing_count": 2,
+          "remaining_missing_count": 0
+        }
+      ]
+    },
+    {
+      "name": "nano_high",
+      "generation_file": "generations/nano_high/nano_high_joined_stripped.jsonl",
+      "strip_summary_file": "generations/nano_high/nano_high_joined_stripped.strip_summary.json",
+      "request_count": 731,
+      "success_count": 721,
+      "missing_or_bad_count": 10,
+      "joined_row_count": 721,
+      "join_error_count": 10,
+      "outer_close_stripped_count": 3,
+      "truncated_count": 1,
+      "exact_B_count": 6,
+      "retry_attempts": [
+        {
+          "attempt": 1,
+          "started_missing_count": 42,
+          "remaining_missing_count": 16
+        },
+        {
+          "attempt": 2,
+          "started_missing_count": 16,
+          "remaining_missing_count": 10
+        }
+      ]
+    }
+  ]
+}

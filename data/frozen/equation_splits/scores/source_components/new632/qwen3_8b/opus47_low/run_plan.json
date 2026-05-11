@@ -1,0 +1,98 @@
+{
+  "created_utc": "2026-05-04T21:19:29.640246+00:00",
+  "script": "scripts/score_equation_cut_generations.py",
+  "joined_path": "diagnostics\\anthropic_claude_smoke\\2026-05-04_opus47_second_subbundle_plan_v0\\claude_opus47_low_new632_current_joined.jsonl",
+  "judge_model": "accounts/fireworks/models/qwen3-8b",
+  "base_url": "https://api.fireworks.ai/inference/v1",
+  "batch_size": 4,
+  "target_mode": "body_plus_close",
+  "bare_multipliers": [],
+  "include_bare_controls": false,
+  "comparison_baseline": "bare_B",
+  "scaffold_variant": "current",
+  "limit": 0,
+  "include_scaffold_empty": false,
+  "include_oracle": false,
+  "include_scaffold_raw_precontext": false,
+  "only_conditions": [
+    "scaffold_z_predictor"
+  ],
+  "resume": true,
+  "force_row_ids": [
+    590
+  ],
+  "existing_score_rows": 621,
+  "existing_token_rows": 40686,
+  "skipped_existing_jobs": 621,
+  "conditions": [
+    "scaffold_z_predictor"
+  ],
+  "row_count": 632,
+  "job_count": 11,
+  "jobs_preview": [
+    {
+      "dataset_row_index": 547,
+      "paper_id": "2604.26038",
+      "equation_index": 0,
+      "condition": "scaffold_z_predictor",
+      "prompt_chars": 799,
+      "target_chars": 198
+    },
+    {
+      "dataset_row_index": 565,
+      "paper_id": "2604.27194",
+      "equation_index": 85,
+      "condition": "scaffold_z_predictor",
+      "prompt_chars": 558,
+      "target_chars": 135
+    },
+    {
+      "dataset_row_index": 570,
+      "paper_id": "2604.27164",
+      "equation_index": 42,
+      "condition": "scaffold_z_predictor",
+      "prompt_chars": 172,
+      "target_chars": 51
+    },
+    {
+      "dataset_row_index": 580,
+      "paper_id": "2604.27194",
+      "equation_index": 113,
+      "condition": "scaffold_z_predictor",
+      "prompt_chars": 313,
+      "target_chars": 133
+    },
+    {
+      "dataset_row_index": 588,
+      "paper_id": "2604.24743",
+      "equation_index": 138,
+      "condition": "scaffold_z_predictor",
+      "prompt_chars": 467,
+      "target_chars": 107
+    },
+    {
+      "dataset_row_index": 590,
+      "paper_id": "2604.27815",
+      "equation_index": 39,
+      "condition": "scaffold_z_predictor",
+      "prompt_chars": 474,
+      "target_chars": 140
+    },
+    {
+      "dataset_row_index": 595,
+      "paper_id": "2604.26544",
+      "equation_index": 105,
+      "condition": "scaffold_z_predictor",
+      "prompt_chars": 288,
+      "target_chars": 66
+    },
+    {
+      "dataset_row_index": 602,
+      "paper_id": "2604.27815",
+      "equation_index": 14,
+      "condition": "scaffold_z_predictor",
+      "prompt_chars": 373,
+      "target_chars": 81
+    }
+  ]
+}

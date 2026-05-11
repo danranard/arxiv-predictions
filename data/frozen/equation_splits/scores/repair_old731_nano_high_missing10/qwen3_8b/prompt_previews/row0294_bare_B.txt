@@ -1,0 +1,34 @@
+dataset_row_index: 294
+paper_id: 2604.22463
+equation_index: 110
+condition: bare_B
+prompt_chars: 433
+target_chars: 222
+
+=== PROMPT ===
+and fourth terms in \eqref{expand-h-D} are zero.
+The bound \eqref{bound-tranformed-diag-qsvt} guarantees that the resulting state is $\widetilde{\varepsilon}$-close to the one produced by the exact operator ${h(\mathcal{D})}/\left(4e^{2|c|\Xi}\right)$, which is
+\[
+\frac{h(\mathcal{D})}{4e^{2|c|\Xi}}\ket{0}^{\otimes \widetilde{q}}\ket{f_N}
+=
+\ket{0}^{\otimes \widetilde{q}}
+\otimes
+\frac{1}{\lVert\vec{f}\rVert}
+\sum_{i=1}^N
+f_i
+\le
+
+=== TARGET ===
+ft(
+\frac{e^{c\norm{\vec{x}}_2\cdot \zeta_i}}{4e^{2|c|\Xi}}
+\right)
+\ket{i}
+=\ket{0}^{\otimes \widetilde{q}}
+\otimes
+\frac{1}{\lVert\vec{f}\rVert \cdot {4e^{2|c|\Xi}}}
+\left(
+\vec{f}
+\odot
+e^{c\vec{x}}
+\right). \tagaligneq
+\]

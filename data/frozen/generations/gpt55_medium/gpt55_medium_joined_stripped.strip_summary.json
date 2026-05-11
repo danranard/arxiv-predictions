@@ -1,0 +1,108 @@
+{
+  "created_utc": "2026-05-01T01:49:59.559877+00:00",
+  "script": "scripts/strip_equation_outer_close_from_joined.py",
+  "row_count": 731,
+  "changed_count": 11,
+  "changed": [
+    {
+      "dataset_row_index": 6,
+      "env": "align",
+      "close": "\\end{align}",
+      "old_len": 368,
+      "new_len": 356,
+      "old_tail": "\\mu+\\sigma(\\mu)}^{[\\mu]}}\\delta_{b_{\\xi,\\,\\sim\\mu-\\sigma(\\mu)}^{[\\mu]}\\beta_{P^{\\prime[\\mu,\\,\\mu-\\sigma(\\mu)]}(\\xi),\\,\\sim\\mu-\\sigma(\\mu)}^{[\\mu]}}.\n\\end{align}",
+      "new_tail": "(\\xi),\\,\\sim\\mu+\\sigma(\\mu)}^{[\\mu]}}\\delta_{b_{\\xi,\\,\\sim\\mu-\\sigma(\\mu)}^{[\\mu]}\\beta_{P^{\\prime[\\mu,\\,\\mu-\\sigma(\\mu)]}(\\xi),\\,\\sim\\mu-\\sigma(\\mu)}^{[\\mu]}}."
+    },
+    {
+      "dataset_row_index": 106,
+      "env": "gather",
+      "close": "\\end{gather}",
+      "old_len": 111,
+      "new_len": 98,
+      "old_tail": "\\gamma ^2 (d-1)-d\\right)}{\\gamma  (2 b+\\gamma )}e^{(-2 b-\\gamma +{k_1})\\f}+\\cdots=0\\,.\\label{yza4}\n\\end{gather}",
+      "new_tail": "\\gamma ^2 (d-1)-d\\right)}{\\gamma  (2 b+\\gamma )}e^{(-2 b-\\gamma +{k_1})\\f}+\\cdots=0\\,.\\label{yza4}"
+    },
+    {
+      "dataset_row_index": 111,
+      "env": "multline",
+      "close": "\\end{multline}",
+      "old_len": 134,
+      "new_len": 107,
+      "old_tail": "mq,l} \\, dz\n                \\\\\n                = \\sum_{m\\in \\Z} (\\Phi(H_{\\alpha,\\lambda,\\theta}))_{j+mq,l}.\n            \\end{multline}",
+      "new_tail": "mq,l} \\, dz\n                \\\\\n                = \\sum_{m\\in \\Z} (\\Phi(H_{\\alpha,\\lambda,\\theta}))_{j+mq,l}."
+    },
+    {
+      "dataset_row_index": 132,
+      "env": "align*",
+      "close": "\\end{align*}",
+      "old_len": 85,
+      "new_len": 72,
+      "old_tail": "j'}\\frac{d_2}{l}\\leq \\frac{2d_1}{r}\\mathbbm{1}_{i=i'}\\mathbbm{1}_{j=j'}.\n\\end{align*}",
+      "new_tail": "j'}\\frac{d_2}{l}\\leq \\frac{2d_1}{r}\\mathbbm{1}_{i=i'}\\mathbbm{1}_{j=j'}."
+    },
+    {
+      "dataset_row_index": 145,
+      "env": "eqnarray",
+      "close": "\\end{eqnarray}",
+      "old_len": 175,
+      "new_len": 160,
+      "old_tail": "\\alpha]} + B_{\\gamma[\\alpha\\beta]} = 0;\\qquad B^\\gamma_{\\alpha\\beta} = - B^\\gamma_{\\beta\\alpha};\\qquad B^\\alpha_{\\alpha\\beta}=0.\n\\vphantom{\\Big(}\n\\end{eqnarray}",
+      "new_tail": "B_{\\beta[\\gamma\\alpha]} + B_{\\gamma[\\alpha\\beta]} = 0;\\qquad B^\\gamma_{\\alpha\\beta} = - B^\\gamma_{\\beta\\alpha};\\qquad B^\\alpha_{\\alpha\\beta}=0.\n\\vphantom{\\Big(}"
+    },
+    {
+      "dataset_row_index": 175,
+      "env": "equation",
+      "close": "\\end{equation}",
+      "old_len": 320,
+      "new_len": 305,
+      "old_tail": "\n    \\equiv\\, &\\, \\mathcal{M}_{x_1x_2\\cdots x_{n+1}}+U_{x_1x_2\\cdots x_{n+1}}(\\mathcal{M}_1)+V_{x_1x_2\\cdots x_{n+1}}(\\mathcal{M}_2).\n\\end{split}\n\\end{equation}",
+      "new_tail": "M}_2)\\right] \\\\\n    \\equiv\\, &\\, \\mathcal{M}_{x_1x_2\\cdots x_{n+1}}+U_{x_1x_2\\cdots x_{n+1}}(\\mathcal{M}_1)+V_{x_1x_2\\cdots x_{n+1}}(\\mathcal{M}_2).\n\\end{split}"
+    },
+    {
+      "dataset_row_index": 227,
+      "env": "align",
+      "close": "\\end{align}",
+      "old_len": 117,
+      "new_len": 105,
+      "old_tail": "\\widetilde{\\mathcal M}_{x_2z, x_1}) = (\\widetilde{\\mathcal M}^{-1})^{yz}\\widetilde{\\mathcal M}_{zx_1x_2}.\n\\end{align}",
+      "new_tail": "\\widetilde{\\mathcal M}_{x_2z, x_1}) = (\\widetilde{\\mathcal M}^{-1})^{yz}\\widetilde{\\mathcal M}_{zx_1x_2}."
+    },
+    {
+      "dataset_row_index": 343,
+      "env": "eqnarray",
+      "close": "\\end{eqnarray}",
+      "old_len": 89,
+      "new_len": 73,
+      "old_tail": "\\exp\\left[-D u^{1/\\alpha}\\mu_{\\gamma}(\\mathcal A)\\right].\\label{Laplace4}\n \\end{eqnarray}",
+      "new_tail": "\\exp\\left[-D u^{1/\\alpha}\\mu_{\\gamma}(\\mathcal A)\\right].\\label{Laplace4}"
+    },
+    {
+      "dataset_row_index": 480,
+      "env": "align*",
+      "close": "\\end{align*}",
+      "old_len": 72,
+      "new_len": 59,
+      "old_tail": "M_{f((g_\\phi w(g_\\omega))^2)}=M_{f(f_{\\phi}w(f_{\\omega}))}.\n\\end{align*}",
+      "new_tail": "M_{f((g_\\phi w(g_\\omega))^2)}=M_{f(f_{\\phi}w(f_{\\omega}))}."
+    },
+    {
+      "dataset_row_index": 502,
+      "env": "equation",
+      "close": "\\end{equation}",
+      "old_len": 62,
+      "new_len": 47,
+      "old_tail": "L^{\\nu}_{(2),i}L^{\\eta}_{(1),j} \\,.\n\\end{split}\n\\end{equation}",
+      "new_tail": "L^{\\nu}_{(2),i}L^{\\eta}_{(1),j} \\,.\n\\end{split}"
+    },
+    {
+      "dataset_row_index": 516,
+      "env": "eqnarray",
+      "close": "\\end{eqnarray}",
+      "old_len": 125,
+      "new_len": 110,
+      "old_tail": "Q_{SU(N)}+N Q_{U(1)}= {r \\over N}-N\\left(\\frac{r}{N}-q_1\\right)\\left(\\frac{1}{N}+q_3\\right)=q_1+Nq_1q_3-rq_3~. \\end{eqnarray}",
+      "new_tail": "Q_{SU(N)}+N Q_{U(1)}= {r \\over N}-N\\left(\\frac{r}{N}-q_1\\right)\\left(\\frac{1}{N}+q_3\\right)=q_1+Nq_1q_3-rq_3~."
+    }
+  ],
+  "frozen_generation_file": "generations/gpt55_medium/gpt55_medium_joined_stripped.jsonl"
+}

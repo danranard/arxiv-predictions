@@ -1,0 +1,187 @@
+{
+  "created_utc": "2026-05-01T13:21:28.514642+00:00",
+  "canonical_join_key": "paper_id + cut_id",
+  "important_key_note": "dataset_row_index is local to a source dataset and is not stable across the fresh80_740 and fresh80_cap100/SFT datasets. equation_index is useful metadata but paper_id+cut_id is the stable cross-dataset key used here.",
+  "source_rows": 740,
+  "source_unique_paper_cut_keys": 740,
+  "scored_731_unique_paper_cut_keys": 731,
+  "exact_y_prompt_match_rows_in_source": 9,
+  "exact_y_prompt_match_rows_in_731": 0,
+  "generation_counts": {
+    "gpt55_none": {
+      "rows": 731,
+      "unique_paper_cut_keys": 731,
+      "missing_from_731_score_keys": 0,
+      "missing_731_keys": 0
+    },
+    "gpt55_low": {
+      "rows": 731,
+      "unique_paper_cut_keys": 731,
+      "missing_from_731_score_keys": 0,
+      "missing_731_keys": 0
+    },
+    "gpt55_medium": {
+      "rows": 731,
+      "unique_paper_cut_keys": 731,
+      "missing_from_731_score_keys": 0,
+      "missing_731_keys": 0
+    },
+    "gpt55_high": {
+      "rows": 731,
+      "unique_paper_cut_keys": 731,
+      "missing_from_731_score_keys": 0,
+      "missing_731_keys": 0
+    },
+    "nano_low": {
+      "rows": 731,
+      "unique_paper_cut_keys": 731,
+      "missing_from_731_score_keys": 0,
+      "missing_731_keys": 0
+    },
+    "nano_medium": {
+      "rows": 731,
+      "unique_paper_cut_keys": 731,
+      "missing_from_731_score_keys": 0,
+      "missing_731_keys": 0
+    },
+    "nano_high": {
+      "rows": 721,
+      "unique_paper_cut_keys": 721,
+      "missing_from_731_score_keys": 0,
+      "missing_731_keys": 10
+    }
+  },
+  "generation_manifest_counts": {
+    "gpt55_none": {
+      "request_count": 731,
+      "success_count": 731,
+      "joined_row_count": 731,
+      "missing_or_bad_count": 0,
+      "outer_close_stripped_count": 27,
+      "truncated_count": 5,
+      "exact_B_count": 37
+    },
+    "gpt55_low": {
+      "request_count": 731,
+      "success_count": 731,
+      "joined_row_count": 731,
+      "missing_or_bad_count": 0,
+      "outer_close_stripped_count": 48,
+      "truncated_count": 7,
+      "exact_B_count": 39
+    },
+    "gpt55_medium": {
+      "request_count": 731,
+      "success_count": 731,
+      "joined_row_count": 731,
+      "missing_or_bad_count": 0,
+      "outer_close_stripped_count": 11,
+      "truncated_count": 2,
+      "exact_B_count": 46
+    },
+    "gpt55_high": {
+      "request_count": 731,
+      "success_count": 731,
+      "joined_row_count": 731,
+      "missing_or_bad_count": 0,
+      "outer_close_stripped_count": 3,
+      "truncated_count": 1,
+      "exact_B_count": 51
+    },
+    "nano_low": {
+      "request_count": 731,
+      "success_count": 731,
+      "joined_row_count": 731,
+      "missing_or_bad_count": 0,
+      "outer_close_stripped_count": 24,
+      "truncated_count": 48,
+      "exact_B_count": 1
+    },
+    "nano_medium": {
+      "request_count": 731,
+      "success_count": 731,
+      "joined_row_count": 731,
+      "missing_or_bad_count": 0,
+      "outer_close_stripped_count": 6,
+      "truncated_count": 8,
+      "exact_B_count": 6
+    },
+    "nano_high": {
+      "request_count": 731,
+      "success_count": 721,
+      "joined_row_count": 721,
+      "missing_or_bad_count": 10,
+      "outer_close_stripped_count": 3,
+      "truncated_count": 1,
+      "exact_B_count": 6
+    }
+  },
+  "small_qwen_score_condition_counts": {
+    "controls:bare_B": 731,
+    "controls:scaffold_empty": 731,
+    "gpt55_high:scaffold_z_predictor": 731,
+    "gpt55_low:scaffold_z_predictor": 731,
+    "gpt55_medium:scaffold_z_predictor": 731,
+    "gpt55_none:scaffold_z_predictor": 731,
+    "nano_high:scaffold_z_predictor": 721,
+    "nano_low:scaffold_z_predictor": 731,
+    "nano_medium:scaffold_z_predictor": 731
+  },
+  "kimi_score_condition_counts": {
+    "controls:bare_B": 731,
+    "controls:scaffold_empty": 731,
+    "controls:scaffold_oracle_Y": 731,
+    "gpt55_high:scaffold_z_predictor": 731,
+    "gpt55_low:scaffold_z_predictor": 731,
+    "gpt55_medium:scaffold_z_predictor": 731,
+    "gpt55_none:scaffold_z_predictor": 731,
+    "nano_high:scaffold_z_predictor": 721,
+    "nano_low:scaffold_z_predictor": 731,
+    "nano_medium:scaffold_z_predictor": 731
+  },
+  "hard_clip2_sft": {
+    "selected_examples": 5168,
+    "unique_paper_cut_keys": 5168,
+    "realz_scored_keys": 731,
+    "overlap_with_realz_keys": 650,
+    "hard_score_keys": 650,
+    "split_counts": {
+      "eval": 452,
+      "test": 342,
+      "train": 4374
+    }
+  },
+  "heldout33_softresid_no_z_sft": {
+    "selected_examples": 5168,
+    "split_method": "paper_level_random_fixed_seed",
+    "seed": 20260501,
+    "split_counts": {
+      "train": 3188,
+      "eval": 496,
+      "test": 1484
+    },
+    "realz_overlap_counts": {
+      "train": 363,
+      "eval": 67,
+      "test": 220
+    },
+    "headline_clip2_realz_minus_noz_sft_test": {
+      "gpt55_high": 0.0817,
+      "gpt55_low": 0.0786,
+      "gpt55_medium": 0.0769,
+      "gpt55_none": 0.0492,
+      "nano_high": -0.0107,
+      "nano_medium": -0.0215,
+      "nano_low": -0.0344
+    }
+  },
+  "hard_failures": [],
+  "known_caveats": [
+    "nano_high has 721 completed generations/scores rather than 731 after retries.",
+    "The 650-row hard-clip2 SFT comparison is not exactly the 731-row bundle; it is the overlap between the real-Z scored-key set and the larger cap100 SFT dataset.",
+    "Most rows in the 650-row hard-clip2 comparison are from the hard-clip2 SFT train split, intentionally making the no-Z control favorable.",
+    "The heldout33 follow-up removes exact-target contamination and finds that GPT-5.5 real-Z beats the aggressive no-Z SFT control on heldout papers; nano does not.",
+    "The source 740-row dataset had 9 exact-Y-in-predictor-prompt rows; these are excluded from the 731 final generation/scoring universe.",
+    "Equation indices can differ across dataset builds; use paper_id+cut_id for cross-build joins."
+  ]
+}

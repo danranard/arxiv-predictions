@@ -1,0 +1,2939 @@
+{
+  "n_pairs": 632,
+  "comparison": "scaffold_z_predictor - bare_B",
+  "mean_diff_per_token": 0.10337591011496476,
+  "stderr_diff_per_token": 0.017358265105081278,
+  "median_diff_per_token": 0.020217232011105347,
+  "positive_count": 335,
+  "positive_rate": 0.5300632911392406,
+  "condition_means": {
+    "bare_B": {
+      "n": 632,
+      "mean_score_per_token": -0.8985057309709402,
+      "stderr": 0.01942797773883358,
+      "median": -0.8483135211888113
+    },
+    "scaffold_z_predictor": {
+      "n": 632,
+      "mean_score_per_token": -0.7951298208559755,
+      "stderr": 0.021590735531873097,
+      "median": -0.7015607358312694
+    }
+  },
+  "by_paper_diff": {
+    "2604.24743": {
+      "n": 10,
+      "mean_diff_per_token": 0.22363938481736534,
+      "stderr": 0.10682523360072377,
+      "positive_rate": 0.8
+    },
+    "2604.24755": {
+      "n": 10,
+      "mean_diff_per_token": -0.1965376422324109,
+      "stderr": 0.10432353479153926,
+      "positive_rate": 0.2
+    },
+    "2604.24784": {
+      "n": 10,
+      "mean_diff_per_token": 0.1435054476866872,
+      "stderr": 0.1593595561656672,
+      "positive_rate": 0.5
+    },
+    "2604.24798": {
+      "n": 10,
+      "mean_diff_per_token": -0.04506400047979634,
+      "stderr": 0.1502614199667627,
+      "positive_rate": 0.4
+    },
+    "2604.24839": {
+      "n": 10,
+      "mean_diff_per_token": -0.034317184079531236,
+      "stderr": 0.08388379929175042,
+      "positive_rate": 0.6
+    },
+    "2604.24843": {
+      "n": 10,
+      "mean_diff_per_token": 0.04463407646552527,
+      "stderr": 0.12268820669418648,
+      "positive_rate": 0.6
+    },
+    "2604.24847": {
+      "n": 10,
+      "mean_diff_per_token": -0.11333609234472981,
+      "stderr": 0.18176903868183295,
+      "positive_rate": 0.3
+    },
+    "2604.24860": {
+      "n": 10,
+      "mean_diff_per_token": 0.1278992965294525,
+      "stderr": 0.0959005690022639,
+      "positive_rate": 0.6
+    },
+    "2604.24861": {
+      "n": 10,
+      "mean_diff_per_token": -0.1956583482177208,
+      "stderr": 0.06582589856591556,
+      "positive_rate": 0.1
+    },
+    "2604.24873": {
+      "n": 9,
+      "mean_diff_per_token": -0.20621194097841003,
+      "stderr": 0.11553429769882212,
+      "positive_rate": 0.1111111111111111
+    },
+    "2604.25134": {
+      "n": 9,
+      "mean_diff_per_token": 0.1628964090265028,
+      "stderr": 0.14629720990632317,
+      "positive_rate": 0.5555555555555556
+    },
+    "2604.25168": {
+      "n": 10,
+      "mean_diff_per_token": -0.0941245475383357,
+      "stderr": 0.15658015483859605,
+      "positive_rate": 0.2
+    },
+    "2604.25333": {
+      "n": 10,
+      "mean_diff_per_token": 0.3395430411031246,
+      "stderr": 0.23620039839712845,
+      "positive_rate": 0.7
+    },
+    "2604.25463": {
+      "n": 10,
+      "mean_diff_per_token": -0.012049952648228297,
+      "stderr": 0.10253854154912692,
+      "positive_rate": 0.5
+    },
+    "2604.25518": {
+      "n": 10,
+      "mean_diff_per_token": 0.09087319264367019,
+      "stderr": 0.14791159743644178,
+      "positive_rate": 0.4
+    },
+    "2604.25569": {
+      "n": 10,
+      "mean_diff_per_token": 0.12829553999830856,
+      "stderr": 0.15732599009321063,
+      "positive_rate": 0.6
+    },
+    "2604.25622": {
+      "n": 10,
+      "mean_diff_per_token": 0.27473399774491714,
+      "stderr": 0.18596836268972866,
+      "positive_rate": 0.6
+    },
+    "2604.25631": {
+      "n": 10,
+      "mean_diff_per_token": 0.21756104011693725,
+      "stderr": 0.17407091000596878,
+      "positive_rate": 0.7
+    },
+    "2604.25729": {
+      "n": 10,
+      "mean_diff_per_token": 0.02267702293028874,
+      "stderr": 0.059177891231319175,
+      "positive_rate": 0.7
+    },
+    "2604.25747": {
+      "n": 10,
+      "mean_diff_per_token": -0.005882387559950758,
+      "stderr": 0.07282864902550563,
+      "positive_rate": 0.5
+    },
+    "2604.25790": {
+      "n": 10,
+      "mean_diff_per_token": 0.14933038967465212,
+      "stderr": 0.08600103848220098,
+      "positive_rate": 0.8
+    },
+    "2604.25989": {
+      "n": 10,
+      "mean_diff_per_token": 0.22814204742588867,
+      "stderr": 0.1806152274896443,
+      "positive_rate": 0.5
+    },
+    "2604.26007": {
+      "n": 10,
+      "mean_diff_per_token": -0.18847000345951428,
+      "stderr": 0.09460667361146259,
+      "positive_rate": 0.3
+    },
+    "2604.26016": {
+      "n": 10,
+      "mean_diff_per_token": 0.21492631995863754,
+      "stderr": 0.10215150494153608,
+      "positive_rate": 0.8
+    },
+    "2604.26038": {
+      "n": 10,
+      "mean_diff_per_token": 0.2812155365685256,
+      "stderr": 0.08483349824529496,
+      "positive_rate": 0.7
+    },
+    "2604.26122": {
+      "n": 10,
+      "mean_diff_per_token": 0.040194728121387316,
+      "stderr": 0.07659282099903435,
+      "positive_rate": 0.5
+    },
+    "2604.26141": {
+      "n": 10,
+      "mean_diff_per_token": 0.006043146550850906,
+      "stderr": 0.12289632097453841,
+      "positive_rate": 0.5
+    },
+    "2604.26159": {
+      "n": 10,
+      "mean_diff_per_token": 0.33287052409868345,
+      "stderr": 0.2052678627097015,
+      "positive_rate": 0.7
+    },
+    "2604.26292": {
+      "n": 10,
+      "mean_diff_per_token": 0.07947718749523995,
+      "stderr": 0.1092082969966596,
+      "positive_rate": 0.5
+    },
+    "2604.26373": {
+      "n": 10,
+      "mean_diff_per_token": -0.0001444908290059027,
+      "stderr": 0.06889285969085945,
+      "positive_rate": 0.4
+    },
+    "2604.26418": {
+      "n": 10,
+      "mean_diff_per_token": 0.33218323450000714,
+      "stderr": 0.1324769173716965,
+      "positive_rate": 0.9
+    },
+    "2604.26421": {
+      "n": 10,
+      "mean_diff_per_token": 0.14849896699320125,
+      "stderr": 0.12152033983307872,
+      "positive_rate": 0.6
+    },
+    "2604.26459": {
+      "n": 10,
+      "mean_diff_per_token": 0.3750900381659944,
+      "stderr": 0.13824411117635957,
+      "positive_rate": 0.7
+    },
+    "2604.26466": {
+      "n": 9,
+      "mean_diff_per_token": -0.03709777736196313,
+      "stderr": 0.06897294559325265,
+      "positive_rate": 0.2222222222222222
+    },
+    "2604.26513": {
+      "n": 10,
+      "mean_diff_per_token": -0.20733830934382816,
+      "stderr": 0.09119969758202415,
+      "positive_rate": 0.1
+    },
+    "2604.26538": {
+      "n": 10,
+      "mean_diff_per_token": 0.42315815929784517,
+      "stderr": 0.11977700787553007,
+      "positive_rate": 0.8
+    },
+    "2604.26544": {
+      "n": 10,
+      "mean_diff_per_token": 0.349882984737495,
+      "stderr": 0.19487139926544467,
+      "positive_rate": 0.7
+    },
+    "2604.26600": {
+      "n": 10,
+      "mean_diff_per_token": 0.01918083691260116,
+      "stderr": 0.10692720712589503,
+      "positive_rate": 0.4
+    },
+    "2604.26690": {
+      "n": 10,
+      "mean_diff_per_token": -0.004662353005808173,
+      "stderr": 0.055278750220276875,
+      "positive_rate": 0.4
+    },
+    "2604.26755": {
+      "n": 9,
+      "mean_diff_per_token": -0.04524128033292777,
+      "stderr": 0.15881770161351474,
+      "positive_rate": 0.3333333333333333
+    },
+    "2604.26846": {
+      "n": 10,
+      "mean_diff_per_token": 0.16353452554347525,
+      "stderr": 0.1721823276223312,
+      "positive_rate": 0.6
+    },
+    "2604.26914": {
+      "n": 10,
+      "mean_diff_per_token": 0.0006626255613788573,
+      "stderr": 0.1024817284529715,
+      "positive_rate": 0.4
+    },
+    "2604.26921": {
+      "n": 10,
+      "mean_diff_per_token": 0.25599948436278436,
+      "stderr": 0.13750497645844986,
+      "positive_rate": 0.7
+    },
+    "2604.26927": {
+      "n": 10,
+      "mean_diff_per_token": 0.10741762098560706,
+      "stderr": 0.12942589089240908,
+      "positive_rate": 0.3
+    },
+    "2604.26941": {
+      "n": 9,
+      "mean_diff_per_token": 0.15817685220591626,
+      "stderr": 0.09437519276501029,
+      "positive_rate": 0.6666666666666666
+    },
+    "2604.26945": {
+      "n": 9,
+      "mean_diff_per_token": 0.19418854602728217,
+      "stderr": 0.1773119376283104,
+      "positive_rate": 0.6666666666666666
+    },
+    "2604.27015": {
+      "n": 10,
+      "mean_diff_per_token": 0.34225809878330726,
+      "stderr": 0.17426584359855551,
+      "positive_rate": 0.7
+    },
+    "2604.27026": {
+      "n": 10,
+      "mean_diff_per_token": 0.26255866119948373,
+      "stderr": 0.11382860297301468,
+      "positive_rate": 0.7
+    },
+    "2604.27034": {
+      "n": 10,
+      "mean_diff_per_token": 0.2901971470219859,
+      "stderr": 0.1812466775658172,
+      "positive_rate": 0.7
+    },
+    "2604.27053": {
+      "n": 10,
+      "mean_diff_per_token": -0.15616115133750122,
+      "stderr": 0.09263561916199702,
+      "positive_rate": 0.3
+    },
+    "2604.27068": {
+      "n": 10,
+      "mean_diff_per_token": -0.1446302944869347,
+      "stderr": 0.08943888973085892,
+      "positive_rate": 0.3
+    },
+    "2604.27074": {
+      "n": 10,
+      "mean_diff_per_token": -0.02780891019329864,
+      "stderr": 0.11019779023906622,
+      "positive_rate": 0.4
+    },
+    "2604.27164": {
+      "n": 10,
+      "mean_diff_per_token": -0.0899454676480915,
+      "stderr": 0.13165719600268508,
+      "positive_rate": 0.3
+    },
+    "2604.27184": {
+      "n": 10,
+      "mean_diff_per_token": 0.14025839674723173,
+      "stderr": 0.09111998145515801,
+      "positive_rate": 0.8
+    },
+    "2604.27189": {
+      "n": 10,
+      "mean_diff_per_token": 0.09891945360218822,
+      "stderr": 0.09527527114565211,
+      "positive_rate": 0.5
+    },
+    "2604.27194": {
+      "n": 9,
+      "mean_diff_per_token": -0.028526348766497713,
+      "stderr": 0.16674808873388733,
+      "positive_rate": 0.2222222222222222
+    },
+    "2604.27425": {
+      "n": 10,
+      "mean_diff_per_token": 0.15062835271291233,
+      "stderr": 0.09402649832787426,
+      "positive_rate": 0.8
+    },
+    "2604.27482": {
+      "n": 10,
+      "mean_diff_per_token": 0.16766504338921898,
+      "stderr": 0.10951426011434895,
+      "positive_rate": 0.6
+    },
+    "2604.27670": {
+      "n": 10,
+      "mean_diff_per_token": 0.4307540164105462,
+      "stderr": 0.16873531430236785,
+      "positive_rate": 0.7
+    },
+    "2604.27815": {
+      "n": 10,
+      "mean_diff_per_token": 0.06957091133863312,
+      "stderr": 0.12311238526440785,
+      "positive_rate": 0.6
+    },
+    "2604.27885": {
+      "n": 10,
+      "mean_diff_per_token": 0.1427613552424136,
+      "stderr": 0.16708634968430494,
+      "positive_rate": 0.5
+    },
+    "2604.27886": {
+      "n": 10,
+      "mean_diff_per_token": 0.33040021348185833,
+      "stderr": 0.21348736749571565,
+      "positive_rate": 0.8
+    },
+    "2604.27904": {
+      "n": 9,
+      "mean_diff_per_token": 0.36272105379122954,
+      "stderr": 0.18344588103213413,
+      "positive_rate": 0.5555555555555556
+    },
+    "2604.28151": {
+      "n": 10,
+      "mean_diff_per_token": -0.0024683544998709227,
+      "stderr": 0.15253214398031748,
+      "positive_rate": 0.5
+    }
+  },
+  "diffs": [
+    {
+      "dataset_row_index": 0,
+      "diff_per_token": -0.2482776965079363
+    },
+    {
+      "dataset_row_index": 1,
+      "diff_per_token": 0.804525483272727
+    },
+    {
+      "dataset_row_index": 2,
+      "diff_per_token": 0.3146810945945946
+    },
+    {
+      "dataset_row_index": 3,
+      "diff_per_token": -0.10230040037313481
+    },
+    {
+      "dataset_row_index": 4,
+      "diff_per_token": -0.21368200235294132
+    },
+    {
+      "dataset_row_index": 5,
+      "diff_per_token": 0.019544653604651352
+    },
+    {
+      "dataset_row_index": 6,
+      "diff_per_token": -0.5051764980645159
+    },
+    {
+      "dataset_row_index": 7,
+      "diff_per_token": -0.5667870656756758
+    },
+    {
+      "dataset_row_index": 8,
+      "diff_per_token": 0.3412261361702128
+    },
+    {
+      "dataset_row_index": 9,
+      "diff_per_token": 0.34246245725
+    },
+    {
+      "dataset_row_index": 10,
+      "diff_per_token": 0.6271319308000007
+    },
+    {
+      "dataset_row_index": 11,
+      "diff_per_token": 0.4523043872
+    },
+    {
+      "dataset_row_index": 12,
+      "diff_per_token": 0.15315378544117642
+    },
+    {
+      "dataset_row_index": 13,
+      "diff_per_token": 0.30911122
+    },
+    {
+      "dataset_row_index": 14,
+      "diff_per_token": 0.040060446585365894
+    },
+    {
+      "dataset_row_index": 15,
+      "diff_per_token": 0.3290696747916667
+    },
+    {
+      "dataset_row_index": 16,
+      "diff_per_token": -0.42086098794117666
+    },
+    {
+      "dataset_row_index": 17,
+      "diff_per_token": -0.13232138088709683
+    },
+    {
+      "dataset_row_index": 18,
+      "diff_per_token": 0.0261649742000003
+    },
+    {
+      "dataset_row_index": 19,
+      "diff_per_token": 0.3911989661818184
+    },
+    {
+      "dataset_row_index": 20,
+      "diff_per_token": 0.22159449485294114
+    },
+    {
+      "dataset_row_index": 21,
+      "diff_per_token": 0.9817805393478263
+    },
+    {
+      "dataset_row_index": 22,
+      "diff_per_token": -0.23842767829787248
+    },
+    {
+      "dataset_row_index": 23,
+      "diff_per_token": 0.1785857695945945
+    },
+    {
+      "dataset_row_index": 24,
+      "diff_per_token": 1.37732375
+    },
+    {
+      "dataset_row_index": 25,
+      "diff_per_token": -0.27572139661290324
+    },
+    {
+      "dataset_row_index": 26,
+      "diff_per_token": 0.08178039714285723
+    },
+    {
+      "dataset_row_index": 27,
+      "diff_per_token": -0.006247208736842258
+    },
+    {
+      "dataset_row_index": 28,
+      "diff_per_token": -0.14236234142857107
+    },
+    {
+      "dataset_row_index": 29,
+      "diff_per_token": 0.28510070518518515
+    },
+    {
+      "dataset_row_index": 30,
+      "diff_per_token": 0.09387952119047616
+    },
+    {
+      "dataset_row_index": 31,
+      "diff_per_token": -0.11793676377622409
+    },
+    {
+      "dataset_row_index": 32,
+      "diff_per_token": -0.22013480249999995
+    },
+    {
+      "dataset_row_index": 33,
+      "diff_per_token": 0.07374170194805196
+    },
+    {
+      "dataset_row_index": 34,
+      "diff_per_token": 0.43527729577777785
+    },
+    {
+      "dataset_row_index": 35,
+      "diff_per_token": -0.11194578217391327
+    },
+    {
+      "dataset_row_index": 36,
+      "diff_per_token": 0.9194842616304346
+    },
+    {
+      "dataset_row_index": 37,
+      "diff_per_token": 0.08674488068181807
+    },
+    {
+      "dataset_row_index": 38,
+      "diff_per_token": -0.27798775506849316
+    },
+    {
+      "dataset_row_index": 39,
+      "diff_per_token": -0.16811839937500017
+    },
+    {
+      "dataset_row_index": 40,
+      "diff_per_token": 0.7882980983333332
+    },
+    {
+      "dataset_row_index": 41,
+      "diff_per_token": -0.5897310325641025
+    },
+    {
+      "dataset_row_index": 42,
+      "diff_per_token": -0.13510009590909045
+    },
+    {
+      "dataset_row_index": 43,
+      "diff_per_token": 0.48285163963636335
+    },
+    {
+      "dataset_row_index": 44,
+      "diff_per_token": 0.9208883287179488
+    },
+    {
+      "dataset_row_index": 45,
+      "diff_per_token": -0.8220085890384614
+    },
+    {
+      "dataset_row_index": 46,
+      "diff_per_token": 0.2877600009375
+    },
+    {
+      "dataset_row_index": 47,
+      "diff_per_token": 0.13979193142857138
+    },
+    {
+      "dataset_row_index": 48,
+      "diff_per_token": 0.0772391842512078
+    },
+    {
+      "dataset_row_index": 49,
+      "diff_per_token": -0.0017314698214285218
+    },
+    {
+      "dataset_row_index": 50,
+      "diff_per_token": 0.28377447533333333
+    },
+    {
+      "dataset_row_index": 51,
+      "diff_per_token": 0.16669945500000005
+    },
+    {
+      "dataset_row_index": 52,
+      "diff_per_token": -0.18839784595744657
+    },
+    {
+      "dataset_row_index": 53,
+      "diff_per_token": 0.6562535268292683
+    },
+    {
+      "dataset_row_index": 54,
+      "diff_per_token": 0.26847302736842105
+    },
+    {
+      "dataset_row_index": 55,
+      "diff_per_token": -0.14320701225806443
+    },
+    {
+      "dataset_row_index": 56,
+      "diff_per_token": -0.21565419244186024
+    },
+    {
+      "dataset_row_index": 57,
+      "diff_per_token": 0.14934911086956518
+    },
+    {
+      "dataset_row_index": 58,
+      "diff_per_token": -0.5081293660606059
+    },
+    {
+      "dataset_row_index": 59,
+      "diff_per_token": 0.0008328340425532987
+    },
+    {
+      "dataset_row_index": 60,
+      "diff_per_token": -0.010218472285714375
+    },
+    {
+      "dataset_row_index": 61,
+      "diff_per_token": 0.1042129926470588
+    },
+    {
+      "dataset_row_index": 62,
+      "diff_per_token": 1.1925508995454543
+    },
+    {
+      "dataset_row_index": 63,
+      "diff_per_token": 0.31109296663636377
+    },
+    {
+      "dataset_row_index": 64,
+      "diff_per_token": -0.1893287089552238
+    },
+    {
+      "dataset_row_index": 65,
+      "diff_per_token": -0.1614398169387758
+    },
+    {
+      "dataset_row_index": 66,
+      "diff_per_token": 0.2293154907142857
+    },
+    {
+      "dataset_row_index": 67,
+      "diff_per_token": 0.15994607577319603
+    },
+    {
+      "dataset_row_index": 68,
+      "diff_per_token": 0.03962201256410247
+    },
+    {
+      "dataset_row_index": 69,
+      "diff_per_token": 0.4530209495833337
+    },
+    {
+      "dataset_row_index": 70,
+      "diff_per_token": -0.3290068881395348
+    },
+    {
+      "dataset_row_index": 71,
+      "diff_per_token": -0.37608450135135096
+    },
+    {
+      "dataset_row_index": 72,
+      "diff_per_token": 1.053931927666667
+    },
+    {
+      "dataset_row_index": 73,
+      "diff_per_token": 0.16346365842105248
+    },
+    {
+      "dataset_row_index": 74,
+      "diff_per_token": -0.04882075607142855
+    },
+    {
+      "dataset_row_index": 75,
+      "diff_per_token": 0.1534525295454543
+    },
+    {
+      "dataset_row_index": 76,
+      "diff_per_token": -0.12421648146341452
+    },
+    {
+      "dataset_row_index": 77,
+      "diff_per_token": 0.3043509394594595
+    },
+    {
+      "dataset_row_index": 78,
+      "diff_per_token": 0.1033218425510204
+    },
+    {
+      "dataset_row_index": 79,
+      "diff_per_token": 0.028647638524590457
+    },
+    {
+      "dataset_row_index": 80,
+      "diff_per_token": -0.039163478999999946
+    },
+    {
+      "dataset_row_index": 81,
+      "diff_per_token": 0.3736788330188679
+    },
+    {
+      "dataset_row_index": 82,
+      "diff_per_token": -0.320717918448276
+    },
+    {
+      "dataset_row_index": 83,
+      "diff_per_token": -0.24446048190476205
+    },
+    {
+      "dataset_row_index": 84,
+      "diff_per_token": -0.163590731551724
+    },
+    {
+      "dataset_row_index": 85,
+      "diff_per_token": -0.3439779894285717
+    },
+    {
+      "dataset_row_index": 86,
+      "diff_per_token": 0.12355445547619093
+    },
+    {
+      "dataset_row_index": 87,
+      "diff_per_token": 0.15835567116883126
+    },
+    {
+      "dataset_row_index": 88,
+      "diff_per_token": 0.8701614826923076
+    },
+    {
+      "dataset_row_index": 89,
+      "diff_per_token": 0.9961960744230771
+    },
+    {
+      "dataset_row_index": 90,
+      "diff_per_token": 0.14961909800000006
+    },
+    {
+      "dataset_row_index": 91,
+      "diff_per_token": -0.0502973957142856
+    },
+    {
+      "dataset_row_index": 92,
+      "diff_per_token": -0.2985220383333333
+    },
+    {
+      "dataset_row_index": 93,
+      "diff_per_token": 0.4491999160937499
+    },
+    {
+      "dataset_row_index": 94,
+      "diff_per_token": 0.044427794333333326
+    },
+    {
+      "dataset_row_index": 95,
+      "diff_per_token": -0.22201102081081076
+    },
+    {
+      "dataset_row_index": 96,
+      "diff_per_token": 1.0609142079411766
+    },
+    {
+      "dataset_row_index": 97,
+      "diff_per_token": -0.20450034599999944
+    },
+    {
+      "dataset_row_index": 98,
+      "diff_per_token": -0.3478313613725491
+    },
+    {
+      "dataset_row_index": 99,
+      "diff_per_token": 0.16978635060000014
+    },
+    {
+      "dataset_row_index": 100,
+      "diff_per_token": -0.12677416093023253
+    },
+    {
+      "dataset_row_index": 101,
+      "diff_per_token": -0.08977386926470587
+    },
+    {
+      "dataset_row_index": 102,
+      "diff_per_token": 0.2204307209090911
+    },
+    {
+      "dataset_row_index": 103,
+      "diff_per_token": 0.06657463454545443
+    },
+    {
+      "dataset_row_index": 104,
+      "diff_per_token": -0.11018823081081086
+    },
+    {
+      "dataset_row_index": 105,
+      "diff_per_token": 0.3351382558823529
+    },
+    {
+      "dataset_row_index": 106,
+      "diff_per_token": -0.1914606004761904
+    },
+    {
+      "dataset_row_index": 107,
+      "diff_per_token": 0.01661104738636368
+    },
+    {
+      "dataset_row_index": 108,
+      "diff_per_token": 0.06870569895833378
+    },
+    {
+      "dataset_row_index": 109,
+      "diff_per_token": 0.021532279568965418
+    },
+    {
+      "dataset_row_index": 110,
+      "diff_per_token": 0.26110442690789454
+    },
+    {
+      "dataset_row_index": 111,
+      "diff_per_token": -0.08281830842105264
+    },
+    {
+      "dataset_row_index": 112,
+      "diff_per_token": 0.07113587275862099
+    },
+    {
+      "dataset_row_index": 113,
+      "diff_per_token": 0.02832931828125007
+    },
+    {
+      "dataset_row_index": 114,
+      "diff_per_token": -0.17423298588235275
+    },
+    {
+      "dataset_row_index": 115,
+      "diff_per_token": 0.45798769457627114
+    },
+    {
+      "dataset_row_index": 116,
+      "diff_per_token": 0.08020950287234044
+    },
+    {
+      "dataset_row_index": 117,
+      "diff_per_token": -0.29446049891891857
+    },
+    {
+      "dataset_row_index": 118,
+      "diff_per_token": -0.14975289656250002
+    },
+    {
+      "dataset_row_index": 119,
+      "diff_per_token": 0.4040922899090911
+    },
+    {
+      "dataset_row_index": 120,
+      "diff_per_token": -0.255809640465116
+    },
+    {
+      "dataset_row_index": 121,
+      "diff_per_token": 0.10807295679999984
+    },
+    {
+      "dataset_row_index": 122,
+      "diff_per_token": 0.05522035200000003
+    },
+    {
+      "dataset_row_index": 123,
+      "diff_per_token": -0.07650371786666699
+    },
+    {
+      "dataset_row_index": 124,
+      "diff_per_token": 0.24202854325
+    },
+    {
+      "dataset_row_index": 125,
+      "diff_per_token": -0.09455914022727319
+    },
+    {
+      "dataset_row_index": 126,
+      "diff_per_token": 0.007432412833333291
+    },
+    {
+      "dataset_row_index": 127,
+      "diff_per_token": -0.38725262333333355
+    },
+    {
+      "dataset_row_index": 128,
+      "diff_per_token": 0.008476527058823624
+    },
+    {
+      "dataset_row_index": 129,
+      "diff_per_token": -0.17753434452380962
+    },
+    {
+      "dataset_row_index": 130,
+      "diff_per_token": 0.6450323464705884
+    },
+    {
+      "dataset_row_index": 131,
+      "diff_per_token": -0.1703663596551721
+    },
+    {
+      "dataset_row_index": 132,
+      "diff_per_token": -0.12590013666666688
+    },
+    {
+      "dataset_row_index": 133,
+      "diff_per_token": -0.6581896101694922
+    },
+    {
+      "dataset_row_index": 134,
+      "diff_per_token": -0.022530550181818154
+    },
+    {
+      "dataset_row_index": 135,
+      "diff_per_token": 0.828476451923077
+    },
+    {
+      "dataset_row_index": 136,
+      "diff_per_token": 0.2825227767647057
+    },
+    {
+      "dataset_row_index": 137,
+      "diff_per_token": 0.0567996034210525
+    },
+    {
+      "dataset_row_index": 138,
+      "diff_per_token": 0.7066726304444444
+    },
+    {
+      "dataset_row_index": 139,
+      "diff_per_token": 0.5728923603846159
+    },
+    {
+      "dataset_row_index": 140,
+      "diff_per_token": 0.5304981300000001
+    },
+    {
+      "dataset_row_index": 141,
+      "diff_per_token": -0.015030801315789155
+    },
+    {
+      "dataset_row_index": 142,
+      "diff_per_token": 0.10443554839080452
+    },
+    {
+      "dataset_row_index": 143,
+      "diff_per_token": -0.10997875229050286
+    },
+    {
+      "dataset_row_index": 144,
+      "diff_per_token": -0.08967110921739074
+    },
+    {
+      "dataset_row_index": 145,
+      "diff_per_token": -0.15192423175438607
+    },
+    {
+      "dataset_row_index": 146,
+      "diff_per_token": -0.6054336287301584
+    },
+    {
+      "dataset_row_index": 147,
+      "diff_per_token": -0.03828922153846154
+    },
+    {
+      "dataset_row_index": 148,
+      "diff_per_token": -0.06995496351648356
+    },
+    {
+      "dataset_row_index": 149,
+      "diff_per_token": -0.10694269196850409
+    },
+    {
+      "dataset_row_index": 150,
+      "diff_per_token": -0.13864931337142872
+    },
+    {
+      "dataset_row_index": 151,
+      "diff_per_token": -0.020533152708333224
+    },
+    {
+      "dataset_row_index": 153,
+      "diff_per_token": 0.21061419229508216
+    },
+    {
+      "dataset_row_index": 154,
+      "diff_per_token": -0.05151476266055055
+    },
+    {
+      "dataset_row_index": 155,
+      "diff_per_token": -0.7075113337500002
+    },
+    {
+      "dataset_row_index": 156,
+      "diff_per_token": -0.010848778461538089
+    },
+    {
+      "dataset_row_index": 157,
+      "diff_per_token": 0.41226645614583346
+    },
+    {
+      "dataset_row_index": 158,
+      "diff_per_token": -0.3581626949999994
+    },
+    {
+      "dataset_row_index": 159,
+      "diff_per_token": -0.1193384457692308
+    },
+    {
+      "dataset_row_index": 160,
+      "diff_per_token": -0.20318883189189163
+    },
+    {
+      "dataset_row_index": 161,
+      "diff_per_token": 0.09127879131578948
+    },
+    {
+      "dataset_row_index": 162,
+      "diff_per_token": -0.2617513837226282
+    },
+    {
+      "dataset_row_index": 163,
+      "diff_per_token": -0.23677414807692299
+    },
+    {
+      "dataset_row_index": 164,
+      "diff_per_token": -0.26719465600000003
+    },
+    {
+      "dataset_row_index": 165,
+      "diff_per_token": 0.1885627866666667
+    },
+    {
+      "dataset_row_index": 166,
+      "diff_per_token": 0.41262965999999957
+    },
+    {
+      "dataset_row_index": 167,
+      "diff_per_token": -0.31527866406250005
+    },
+    {
+      "dataset_row_index": 168,
+      "diff_per_token": 0.17285782600000044
+    },
+    {
+      "dataset_row_index": 169,
+      "diff_per_token": -0.2863773060555557
+    },
+    {
+      "dataset_row_index": 170,
+      "diff_per_token": 0.03334528651162805
+    },
+    {
+      "dataset_row_index": 171,
+      "diff_per_token": 0.7482317212500001
+    },
+    {
+      "dataset_row_index": 172,
+      "diff_per_token": 0.23157854983999993
+    },
+    {
+      "dataset_row_index": 173,
+      "diff_per_token": 0.0916506705000002
+    },
+    {
+      "dataset_row_index": 174,
+      "diff_per_token": 0.18982823361702125
+    },
+    {
+      "dataset_row_index": 175,
+      "diff_per_token": 0.43203781441860467
+    },
+    {
+      "dataset_row_index": 176,
+      "diff_per_token": 0.16932727707865158
+    },
+    {
+      "dataset_row_index": 177,
+      "diff_per_token": 0.009167491525423399
+    },
+    {
+      "dataset_row_index": 178,
+      "diff_per_token": 0.867124594444445
+    },
+    {
+      "dataset_row_index": 179,
+      "diff_per_token": -0.013334790857142842
+    },
+    {
+      "dataset_row_index": 180,
+      "diff_per_token": -0.2736059534848484
+    },
+    {
+      "dataset_row_index": 181,
+      "diff_per_token": -0.3912023549090913
+    },
+    {
+      "dataset_row_index": 182,
+      "diff_per_token": -0.04247206555555594
+    },
+    {
+      "dataset_row_index": 183,
+      "diff_per_token": -0.1236443911200002
+    },
+    {
+      "dataset_row_index": 184,
+      "diff_per_token": -0.0482218742452829
+    },
+    {
+      "dataset_row_index": 185,
+      "diff_per_token": 1.2681567866666668
+    },
+    {
+      "dataset_row_index": 186,
+      "diff_per_token": -0.5514289749019599
+    },
+    {
+      "dataset_row_index": 187,
+      "diff_per_token": 1.18701523
+    },
+    {
+      "dataset_row_index": 189,
+      "diff_per_token": 0.15586584848484852
+    },
+    {
+      "dataset_row_index": 190,
+      "diff_per_token": -0.0993382514285715
+    },
+    {
+      "dataset_row_index": 191,
+      "diff_per_token": 0.5547981649206348
+    },
+    {
+      "dataset_row_index": 192,
+      "diff_per_token": -0.4118146374358972
+    },
+    {
+      "dataset_row_index": 193,
+      "diff_per_token": -0.18263369901639348
+    },
+    {
+      "dataset_row_index": 194,
+      "diff_per_token": 0.12449810229629621
+    },
+    {
+      "dataset_row_index": 195,
+      "diff_per_token": 0.0673730695121948
+    },
+    {
+      "dataset_row_index": 197,
+      "diff_per_token": -0.15861142533333322
+    },
+    {
+      "dataset_row_index": 198,
+      "diff_per_token": 0.3912111580555555
+    },
+    {
+      "dataset_row_index": 199,
+      "diff_per_token": 0.05856047125000008
+    },
+    {
+      "dataset_row_index": 200,
+      "diff_per_token": -0.04685687045454562
+    },
+    {
+      "dataset_row_index": 201,
+      "diff_per_token": 0.17281733703389832
+    },
+    {
+      "dataset_row_index": 202,
+      "diff_per_token": 0.0660061392957747
+    },
+    {
+      "dataset_row_index": 203,
+      "diff_per_token": -0.13665099120000002
+    },
+    {
+      "dataset_row_index": 204,
+      "diff_per_token": 0.34126288225806434
+    },
+    {
+      "dataset_row_index": 205,
+      "diff_per_token": 0.4563421151515151
+    },
+    {
+      "dataset_row_index": 206,
+      "diff_per_token": 0.40490588325581434
+    },
+    {
+      "dataset_row_index": 207,
+      "diff_per_token": 0.378388846052632
+    },
+    {
+      "dataset_row_index": 208,
+      "diff_per_token": -0.030217248299999944
+    },
+    {
+      "dataset_row_index": 209,
+      "diff_per_token": -0.04428890147239284
+    },
+    {
+      "dataset_row_index": 210,
+      "diff_per_token": -0.702010614444444
+    },
+    {
+      "dataset_row_index": 211,
+      "diff_per_token": 0.14620209583892563
+    },
+    {
+      "dataset_row_index": 212,
+      "diff_per_token": -0.09096110411347519
+    },
+    {
+      "dataset_row_index": 213,
+      "diff_per_token": 0.1309996298165137
+    },
+    {
+      "dataset_row_index": 214,
+      "diff_per_token": 1.0033487754166672
+    },
+    {
+      "dataset_row_index": 215,
+      "diff_per_token": 0.07587050844444465
+    },
+    {
+      "dataset_row_index": 216,
+      "diff_per_token": 1.1317912700000003
+    },
+    {
+      "dataset_row_index": 217,
+      "diff_per_token": 0.11686952888888863
+    },
+    {
+      "dataset_row_index": 218,
+      "diff_per_token": 0.1281555665891474
+    },
+    {
+      "dataset_row_index": 219,
+      "diff_per_token": -0.06682092849999977
+    },
+    {
+      "dataset_row_index": 220,
+      "diff_per_token": 0.7283856669662921
+    },
+    {
+      "dataset_row_index": 221,
+      "diff_per_token": 1.1077010593548384
+    },
+    {
+      "dataset_row_index": 222,
+      "diff_per_token": -0.2284200619480521
+    },
+    {
+      "dataset_row_index": 223,
+      "diff_per_token": -0.44655963928571474
+    },
+    {
+      "dataset_row_index": 224,
+      "diff_per_token": 0.3733019818840586
+    },
+    {
+      "dataset_row_index": 225,
+      "diff_per_token": -0.49252534945945947
+    },
+    {
+      "dataset_row_index": 226,
+      "diff_per_token": 0.06596465912087898
+    },
+    {
+      "dataset_row_index": 227,
+      "diff_per_token": 0.890892983448276
+    },
+    {
+      "dataset_row_index": 228,
+      "diff_per_token": 1.0044757509090911
+    },
+    {
+      "dataset_row_index": 229,
+      "diff_per_token": 0.38715261452380967
+    },
+    {
+      "dataset_row_index": 230,
+      "diff_per_token": -0.006440294601770036
+    },
+    {
+      "dataset_row_index": 231,
+      "diff_per_token": -0.657180601956522
+    },
+    {
+      "dataset_row_index": 232,
+      "diff_per_token": -0.1609170937142858
+    },
+    {
+      "dataset_row_index": 233,
+      "diff_per_token": 0.6098195248484846
+    },
+    {
+      "dataset_row_index": 234,
+      "diff_per_token": -0.44915402594594644
+    },
+    {
+      "dataset_row_index": 235,
+      "diff_per_token": 0.148196734626866
+    },
+    {
+      "dataset_row_index": 236,
+      "diff_per_token": -0.38640280408163363
+    },
+    {
+      "dataset_row_index": 237,
+      "diff_per_token": -0.19117624483870999
+    },
+    {
+      "dataset_row_index": 238,
+      "diff_per_token": 0.31921638104838634
+    },
+    {
+      "dataset_row_index": 239,
+      "diff_per_token": 0.26772887071428486
+    },
+    {
+      "dataset_row_index": 240,
+      "diff_per_token": 0.042083460092593006
+    },
+    {
+      "dataset_row_index": 241,
+      "diff_per_token": 0.3745239894505492
+    },
+    {
+      "dataset_row_index": 242,
+      "diff_per_token": 0.002349829999999997
+    },
+    {
+      "dataset_row_index": 243,
+      "diff_per_token": -0.17932632754098365
+    },
+    {
+      "dataset_row_index": 244,
+      "diff_per_token": 0.10116410071428572
+    },
+    {
+      "dataset_row_index": 245,
+      "diff_per_token": 1.490352300714285
+    },
+    {
+      "dataset_row_index": 246,
+      "diff_per_token": -0.42992092954545447
+    },
+    {
+      "dataset_row_index": 247,
+      "diff_per_token": 0.5748350643877552
+    },
+    {
+      "dataset_row_index": 248,
+      "diff_per_token": 0.04110809911111102
+    },
+    {
+      "dataset_row_index": 249,
+      "diff_per_token": 0.426298438
+    },
+    {
+      "dataset_row_index": 250,
+      "diff_per_token": 0.44152744200000005
+    },
+    {
+      "dataset_row_index": 251,
+      "diff_per_token": -0.03338342301587316
+    },
+    {
+      "dataset_row_index": 252,
+      "diff_per_token": 0.0018574722033897206
+    },
+    {
+      "dataset_row_index": 253,
+      "diff_per_token": -0.14886290218390807
+    },
+    {
+      "dataset_row_index": 254,
+      "diff_per_token": 0.147327275897436
+    },
+    {
+      "dataset_row_index": 255,
+      "diff_per_token": 0.38135299389162636
+    },
+    {
+      "dataset_row_index": 256,
+      "diff_per_token": 0.2212454947058825
+    },
+    {
+      "dataset_row_index": 257,
+      "diff_per_token": 0.6422054884615384
+    },
+    {
+      "dataset_row_index": 258,
+      "diff_per_token": -0.16615566142857152
+    },
+    {
+      "dataset_row_index": 259,
+      "diff_per_token": 0.5885802682352941
+    },
+    {
+      "dataset_row_index": 260,
+      "diff_per_token": 1.0828686039999997
+    },
+    {
+      "dataset_row_index": 261,
+      "diff_per_token": 0.24627344033898296
+    },
+    {
+      "dataset_row_index": 262,
+      "diff_per_token": 0.2247872444594593
+    },
+    {
+      "dataset_row_index": 263,
+      "diff_per_token": 0.6597025640816327
+    },
+    {
+      "dataset_row_index": 264,
+      "diff_per_token": -0.11762909104477604
+    },
+    {
+      "dataset_row_index": 265,
+      "diff_per_token": 0.11383742315789458
+    },
+    {
+      "dataset_row_index": 266,
+      "diff_per_token": -0.09505014156250002
+    },
+    {
+      "dataset_row_index": 267,
+      "diff_per_token": -0.0919645615254241
+    },
+    {
+      "dataset_row_index": 268,
+      "diff_per_token": 0.12223103818791947
+    },
+    {
+      "dataset_row_index": 269,
+      "diff_per_token": 0.2864376685294123
+    },
+    {
+      "dataset_row_index": 270,
+      "diff_per_token": -0.27319068928571466
+    },
+    {
+      "dataset_row_index": 271,
+      "diff_per_token": 0.3225899494545455
+    },
+    {
+      "dataset_row_index": 272,
+      "diff_per_token": -0.32544546955555553
+    },
+    {
+      "dataset_row_index": 273,
+      "diff_per_token": -0.0135301545161286
+    },
+    {
+      "dataset_row_index": 274,
+      "diff_per_token": -0.5549947338095238
+    },
+    {
+      "dataset_row_index": 275,
+      "diff_per_token": -0.2207781773076919
+    },
+    {
+      "dataset_row_index": 276,
+      "diff_per_token": 0.32559794325925906
+    },
+    {
+      "dataset_row_index": 277,
+      "diff_per_token": 0.28107261112359544
+    },
+    {
+      "dataset_row_index": 278,
+      "diff_per_token": 0.5130464491176467
+    },
+    {
+      "dataset_row_index": 279,
+      "diff_per_token": -0.1213975897777777
+    },
+    {
+      "dataset_row_index": 280,
+      "diff_per_token": 0.21592815037037028
+    },
+    {
+      "dataset_row_index": 281,
+      "diff_per_token": 0.41799558984374985
+    },
+    {
+      "dataset_row_index": 282,
+      "diff_per_token": 0.8001347253448271
+    },
+    {
+      "dataset_row_index": 283,
+      "diff_per_token": 0.5348366279999999
+    },
+    {
+      "dataset_row_index": 284,
+      "diff_per_token": -0.323865442391304
+    },
+    {
+      "dataset_row_index": 285,
+      "diff_per_token": -0.16570542330434768
+    },
+    {
+      "dataset_row_index": 286,
+      "diff_per_token": -0.6297988175
+    },
+    {
+      "dataset_row_index": 287,
+      "diff_per_token": 0.019735040884955826
+    },
+    {
+      "dataset_row_index": 288,
+      "diff_per_token": 0.9013331983333334
+    },
+    {
+      "dataset_row_index": 289,
+      "diff_per_token": 1.0180151251724137
+    },
+    {
+      "dataset_row_index": 290,
+      "diff_per_token": 0.021283042820512965
+    },
+    {
+      "dataset_row_index": 291,
+      "diff_per_token": -0.14786707799999999
+    },
+    {
+      "dataset_row_index": 292,
+      "diff_per_token": -0.20471963757575806
+    },
+    {
+      "dataset_row_index": 293,
+      "diff_per_token": 0.44833504678571434
+    },
+    {
+      "dataset_row_index": 294,
+      "diff_per_token": -0.1486424985294117
+    },
+    {
+      "dataset_row_index": 295,
+      "diff_per_token": 0.20111689972972968
+    },
+    {
+      "dataset_row_index": 296,
+      "diff_per_token": -0.4619318353333336
+    },
+    {
+      "dataset_row_index": 297,
+      "diff_per_token": 0.6772666915151516
+    },
+    {
+      "dataset_row_index": 298,
+      "diff_per_token": 0.5149966025714285
+    },
+    {
+      "dataset_row_index": 299,
+      "diff_per_token": -0.10033404622222197
+    },
+    {
+      "dataset_row_index": 300,
+      "diff_per_token": 0.04904602223684196
+    },
+    {
+      "dataset_row_index": 301,
+      "diff_per_token": -0.8100923387272725
+    },
+    {
+      "dataset_row_index": 302,
+      "diff_per_token": 0.3521182290476188
+    },
+    {
+      "dataset_row_index": 303,
+      "diff_per_token": -0.2806348375
+    },
+    {
+      "dataset_row_index": 304,
+      "diff_per_token": -0.09110845333333328
+    },
+    {
+      "dataset_row_index": 305,
+      "diff_per_token": -0.37674987722222153
+    },
+    {
+      "dataset_row_index": 306,
+      "diff_per_token": -0.21028753677966128
+    },
+    {
+      "dataset_row_index": 307,
+      "diff_per_token": 0.1117725870967742
+    },
+    {
+      "dataset_row_index": 308,
+      "diff_per_token": -0.07096139606060559
+    },
+    {
+      "dataset_row_index": 309,
+      "diff_per_token": 0.001865599868421275
+    },
+    {
+      "dataset_row_index": 310,
+      "diff_per_token": 0.7107668782857145
+    },
+    {
+      "dataset_row_index": 311,
+      "diff_per_token": -0.27869741037037044
+    },
+    {
+      "dataset_row_index": 312,
+      "diff_per_token": 1.178865835272727
+    },
+    {
+      "dataset_row_index": 313,
+      "diff_per_token": 0.21835722342105268
+    },
+    {
+      "dataset_row_index": 314,
+      "diff_per_token": 1.3558021376470593
+    },
+    {
+      "dataset_row_index": 315,
+      "diff_per_token": -0.382868308974359
+    },
+    {
+      "dataset_row_index": 316,
+      "diff_per_token": -0.23200999095238106
+    },
+    {
+      "dataset_row_index": 317,
+      "diff_per_token": -0.2654893792307691
+    },
+    {
+      "dataset_row_index": 318,
+      "diff_per_token": -0.17524008943396252
+    },
+    {
+      "dataset_row_index": 319,
+      "diff_per_token": -0.31792472783018866
+    },
+    {
+      "dataset_row_index": 320,
+      "diff_per_token": 0.6607823442857141
+    },
+    {
+      "dataset_row_index": 321,
+      "diff_per_token": 0.1081449351851852
+    },
+    {
+      "dataset_row_index": 322,
+      "diff_per_token": -0.3191775945945945
+    },
+    {
+      "dataset_row_index": 323,
+      "diff_per_token": -0.47519404666666676
+    },
+    {
+      "dataset_row_index": 324,
+      "diff_per_token": -0.2405123534177215
+    },
+    {
+      "dataset_row_index": 325,
+      "diff_per_token": 0.04606637341176467
+    },
+    {
+      "dataset_row_index": 326,
+      "diff_per_token": 0.4683121646938775
+    },
+    {
+      "dataset_row_index": 327,
+      "diff_per_token": -0.5488759534883725
+    },
+    {
+      "dataset_row_index": 328,
+      "diff_per_token": 0.7385873709523809
+    },
+    {
+      "dataset_row_index": 329,
+      "diff_per_token": 0.06012661
+    },
+    {
+      "dataset_row_index": 330,
+      "diff_per_token": -0.114141610566038
+    },
+    {
+      "dataset_row_index": 331,
+      "diff_per_token": 0.06035608733333342
+    },
+    {
+      "dataset_row_index": 332,
+      "diff_per_token": 0.2530677732283465
+    },
+    {
+      "dataset_row_index": 333,
+      "diff_per_token": 0.4779515785294113
+    },
+    {
+      "dataset_row_index": 334,
+      "diff_per_token": 0.11151279013888882
+    },
+    {
+      "dataset_row_index": 335,
+      "diff_per_token": -0.21331178426229525
+    },
+    {
+      "dataset_row_index": 336,
+      "diff_per_token": -0.7145864190624995
+    },
+    {
+      "dataset_row_index": 337,
+      "diff_per_token": 0.14040534983050823
+    },
+    {
+      "dataset_row_index": 338,
+      "diff_per_token": 0.610855469189189
+    },
+    {
+      "dataset_row_index": 339,
+      "diff_per_token": -0.021491128695652117
+    },
+    {
+      "dataset_row_index": 340,
+      "diff_per_token": -0.2636224167605631
+    },
+    {
+      "dataset_row_index": 341,
+      "diff_per_token": 0.549322126097561
+    },
+    {
+      "dataset_row_index": 342,
+      "diff_per_token": 0.40558208886075947
+    },
+    {
+      "dataset_row_index": 343,
+      "diff_per_token": 1.4695944574999997
+    },
+    {
+      "dataset_row_index": 344,
+      "diff_per_token": 0.2561181266666668
+    },
+    {
+      "dataset_row_index": 345,
+      "diff_per_token": 0.15172894368421053
+    },
+    {
+      "dataset_row_index": 346,
+      "diff_per_token": 0.2083509169421489
+    },
+    {
+      "dataset_row_index": 347,
+      "diff_per_token": -0.07875693881355939
+    },
+    {
+      "dataset_row_index": 348,
+      "diff_per_token": 0.6363299715624997
+    },
+    {
+      "dataset_row_index": 349,
+      "diff_per_token": -0.15986163799999975
+    },
+    {
+      "dataset_row_index": 350,
+      "diff_per_token": 0.43012864986301336
+    },
+    {
+      "dataset_row_index": 351,
+      "diff_per_token": 0.014302851259842542
+    },
+    {
+      "dataset_row_index": 352,
+      "diff_per_token": -0.13639114981132106
+    },
+    {
+      "dataset_row_index": 353,
+      "diff_per_token": -0.10643920118644074
+    },
+    {
+      "dataset_row_index": 354,
+      "diff_per_token": 0.12615963325757573
+    },
+    {
+      "dataset_row_index": 355,
+      "diff_per_token": -0.18267039754716974
+    },
+    {
+      "dataset_row_index": 356,
+      "diff_per_token": -0.1636623442666667
+    },
+    {
+      "dataset_row_index": 357,
+      "diff_per_token": -0.4322200330769237
+    },
+    {
+      "dataset_row_index": 358,
+      "diff_per_token": 0.06860528628571433
+    },
+    {
+      "dataset_row_index": 359,
+      "diff_per_token": 0.5936857179661019
+    },
+    {
+      "dataset_row_index": 360,
+      "diff_per_token": 0.02664580243243242
+    },
+    {
+      "dataset_row_index": 361,
+      "diff_per_token": -0.24493997489795905
+    },
+    {
+      "dataset_row_index": 363,
+      "diff_per_token": 0.00650776874999992
+    },
+    {
+      "dataset_row_index": 364,
+      "diff_per_token": 0.11548956078947374
+    },
+    {
+      "dataset_row_index": 365,
+      "diff_per_token": 0.2161128781481484
+    },
+    {
+      "dataset_row_index": 366,
+      "diff_per_token": 0.29968610807692303
+    },
+    {
+      "dataset_row_index": 367,
+      "diff_per_token": 0.6921546677464793
+    },
+    {
+      "dataset_row_index": 368,
+      "diff_per_token": 0.4261145223684209
+    },
+    {
+      "dataset_row_index": 369,
+      "diff_per_token": 0.5470327552631578
+    },
+    {
+      "dataset_row_index": 370,
+      "diff_per_token": -0.1993048051219517
+    },
+    {
+      "dataset_row_index": 371,
+      "diff_per_token": 0.15141412402061816
+    },
+    {
+      "dataset_row_index": 372,
+      "diff_per_token": -0.018948804972677813
+    },
+    {
+      "dataset_row_index": 373,
+      "diff_per_token": 0.9363228708045971
+    },
+    {
+      "dataset_row_index": 374,
+      "diff_per_token": 0.033329004074074076
+    },
+    {
+      "dataset_row_index": 375,
+      "diff_per_token": -0.6542613020689656
+    },
+    {
+      "dataset_row_index": 376,
+      "diff_per_token": 0.411396245648855
+    },
+    {
+      "dataset_row_index": 378,
+      "diff_per_token": 0.17040985719298263
+    },
+    {
+      "dataset_row_index": 379,
+      "diff_per_token": -0.01382773842857149
+    },
+    {
+      "dataset_row_index": 380,
+      "diff_per_token": 0.1741690566197183
+    },
+    {
+      "dataset_row_index": 381,
+      "diff_per_token": -0.1522664223170732
+    },
+    {
+      "dataset_row_index": 382,
+      "diff_per_token": 0.8231915197142856
+    },
+    {
+      "dataset_row_index": 383,
+      "diff_per_token": -0.26434862192307684
+    },
+    {
+      "dataset_row_index": 384,
+      "diff_per_token": 0.5490828309160305
+    },
+    {
+      "dataset_row_index": 385,
+      "diff_per_token": -0.2523503694117648
+    },
+    {
+      "dataset_row_index": 386,
+      "diff_per_token": -0.265023475352113
+    },
+    {
+      "dataset_row_index": 387,
+      "diff_per_token": -0.4168241679310344
+    },
+    {
+      "dataset_row_index": 388,
+      "diff_per_token": 0.9848199407692302
+    },
+    {
+      "dataset_row_index": 389,
+      "diff_per_token": -0.1208743354545454
+    },
+    {
+      "dataset_row_index": 390,
+      "diff_per_token": 0.2597554753658535
+    },
+    {
+      "dataset_row_index": 391,
+      "diff_per_token": -0.32314220887096773
+    },
+    {
+      "dataset_row_index": 392,
+      "diff_per_token": -0.15575702555555604
+    },
+    {
+      "dataset_row_index": 393,
+      "diff_per_token": -0.488252234848485
+    },
+    {
+      "dataset_row_index": 394,
+      "diff_per_token": 0.48757160451612913
+    },
+    {
+      "dataset_row_index": 395,
+      "diff_per_token": -0.12178273000000028
+    },
+    {
+      "dataset_row_index": 397,
+      "diff_per_token": 0.028896971382113917
+    },
+    {
+      "dataset_row_index": 398,
+      "diff_per_token": -0.06125253950819673
+    },
+    {
+      "dataset_row_index": 399,
+      "diff_per_token": 0.08291836378378387
+    },
+    {
+      "dataset_row_index": 400,
+      "diff_per_token": -0.19832670422222232
+    },
+    {
+      "dataset_row_index": 401,
+      "diff_per_token": -0.602259588333333
+    },
+    {
+      "dataset_row_index": 402,
+      "diff_per_token": -0.32938216058252423
+    },
+    {
+      "dataset_row_index": 403,
+      "diff_per_token": -0.6355944981481481
+    },
+    {
+      "dataset_row_index": 404,
+      "diff_per_token": 0.46757649873015883
+    },
+    {
+      "dataset_row_index": 405,
+      "diff_per_token": -0.12235146139534903
+    },
+    {
+      "dataset_row_index": 406,
+      "diff_per_token": -0.0527305622727271
+    },
+    {
+      "dataset_row_index": 407,
+      "diff_per_token": -0.4526601683636362
+    },
+    {
+      "dataset_row_index": 408,
+      "diff_per_token": -0.1413213291071429
+    },
+    {
+      "dataset_row_index": 410,
+      "diff_per_token": -0.09203161047058817
+    },
+    {
+      "dataset_row_index": 411,
+      "diff_per_token": 0.2054204902631579
+    },
+    {
+      "dataset_row_index": 412,
+      "diff_per_token": -0.2943364573684211
+    },
+    {
+      "dataset_row_index": 413,
+      "diff_per_token": -0.17138558153846184
+    },
+    {
+      "dataset_row_index": 414,
+      "diff_per_token": 0.14307710619047664
+    },
+    {
+      "dataset_row_index": 415,
+      "diff_per_token": 1.1247104430952386
+    },
+    {
+      "dataset_row_index": 416,
+      "diff_per_token": -0.08139408818181892
+    },
+    {
+      "dataset_row_index": 417,
+      "diff_per_token": -0.3055089433333329
+    },
+    {
+      "dataset_row_index": 418,
+      "diff_per_token": 0.22924763500000006
+    },
+    {
+      "dataset_row_index": 419,
+      "diff_per_token": 0.1944598822857143
+    },
+    {
+      "dataset_row_index": 420,
+      "diff_per_token": 1.4871384314285718
+    },
+    {
+      "dataset_row_index": 421,
+      "diff_per_token": 0.20024282210526312
+    },
+    {
+      "dataset_row_index": 422,
+      "diff_per_token": -0.17147409430555527
+    },
+    {
+      "dataset_row_index": 423,
+      "diff_per_token": -0.04962569447368437
+    },
+    {
+      "dataset_row_index": 424,
+      "diff_per_token": 0.24664537872727266
+    },
+    {
+      "dataset_row_index": 425,
+      "diff_per_token": -0.21965809259259272
+    },
+    {
+      "dataset_row_index": 426,
+      "diff_per_token": 1.201361896829268
+    },
+    {
+      "dataset_row_index": 427,
+      "diff_per_token": 0.4511651010256408
+    },
+    {
+      "dataset_row_index": 428,
+      "diff_per_token": -0.26740998071428623
+    },
+    {
+      "dataset_row_index": 429,
+      "diff_per_token": -0.14510977547619064
+    },
+    {
+      "dataset_row_index": 430,
+      "diff_per_token": 1.5835810106060602
+    },
+    {
+      "dataset_row_index": 431,
+      "diff_per_token": -0.3424121631404959
+    },
+    {
+      "dataset_row_index": 432,
+      "diff_per_token": -0.13964368425531914
+    },
+    {
+      "dataset_row_index": 433,
+      "diff_per_token": 1.1135244017142854
+    },
+    {
+      "dataset_row_index": 434,
+      "diff_per_token": -0.03703384371428581
+    },
+    {
+      "dataset_row_index": 435,
+      "diff_per_token": 0.1447772963636363
+    },
+    {
+      "dataset_row_index": 436,
+      "diff_per_token": -0.4212804997142854
+    },
+    {
+      "dataset_row_index": 437,
+      "diff_per_token": 0.02851284000000076
+    },
+    {
+      "dataset_row_index": 438,
+      "diff_per_token": -0.09776977309734514
+    },
+    {
+      "dataset_row_index": 439,
+      "diff_per_token": 0.13224702133333335
+    },
+    {
+      "dataset_row_index": 440,
+      "diff_per_token": -0.0071467142718446425
+    },
+    {
+      "dataset_row_index": 441,
+      "diff_per_token": -0.3856961823076923
+    },
+    {
+      "dataset_row_index": 442,
+      "diff_per_token": 0.1287558006944448
+    },
+    {
+      "dataset_row_index": 443,
+      "diff_per_token": -0.1798735159523812
+    },
+    {
+      "dataset_row_index": 444,
+      "diff_per_token": -0.11597750148148134
+    },
+    {
+      "dataset_row_index": 445,
+      "diff_per_token": 0.009873544918033161
+    },
+    {
+      "dataset_row_index": 446,
+      "diff_per_token": 0.26878282941176457
+    },
+    {
+      "dataset_row_index": 447,
+      "diff_per_token": -0.15029848468354445
+    },
+    {
+      "dataset_row_index": 448,
+      "diff_per_token": -0.021587360681818213
+    },
+    {
+      "dataset_row_index": 449,
+      "diff_per_token": 1.0389205104444441
+    },
+    {
+      "dataset_row_index": 450,
+      "diff_per_token": -0.8336907474999999
+    },
+    {
+      "dataset_row_index": 451,
+      "diff_per_token": -0.26005227577777745
+    },
+    {
+      "dataset_row_index": 452,
+      "diff_per_token": -0.47139101260869565
+    },
+    {
+      "dataset_row_index": 453,
+      "diff_per_token": -0.05023470559632992
+    },
+    {
+      "dataset_row_index": 454,
+      "diff_per_token": 0.18485994253731375
+    },
+    {
+      "dataset_row_index": 455,
+      "diff_per_token": 0.8046762797619047
+    },
+    {
+      "dataset_row_index": 456,
+      "diff_per_token": 0.1570355567307694
+    },
+    {
+      "dataset_row_index": 457,
+      "diff_per_token": 1.1697989087179488
+    },
+    {
+      "dataset_row_index": 458,
+      "diff_per_token": 0.2156756600000002
+    },
+    {
+      "dataset_row_index": 459,
+      "diff_per_token": 0.005511103023255859
+    },
+    {
+      "dataset_row_index": 460,
+      "diff_per_token": -0.32525900499999993
+    },
+    {
+      "dataset_row_index": 461,
+      "diff_per_token": 1.1740392550000003
+    },
+    {
+      "dataset_row_index": 462,
+      "diff_per_token": 1.1575076419148937
+    },
+    {
+      "dataset_row_index": 463,
+      "diff_per_token": 0.11000836281250015
+    },
+    {
+      "dataset_row_index": 464,
+      "diff_per_token": 0.7559521077500001
+    },
+    {
+      "dataset_row_index": 465,
+      "diff_per_token": -0.17920242283582077
+    },
+    {
+      "dataset_row_index": 466,
+      "diff_per_token": -0.03498044384615362
+    },
+    {
+      "dataset_row_index": 467,
+      "diff_per_token": -0.03905962228070181
+    },
+    {
+      "dataset_row_index": 468,
+      "diff_per_token": -0.12638884166666664
+    },
+    {
+      "dataset_row_index": 469,
+      "diff_per_token": -0.010217821509433733
+    },
+    {
+      "dataset_row_index": 470,
+      "diff_per_token": -0.02172638357142842
+    },
+    {
+      "dataset_row_index": 471,
+      "diff_per_token": -0.32311197777777806
+    },
+    {
+      "dataset_row_index": 472,
+      "diff_per_token": -1.017820996410257
+    },
+    {
+      "dataset_row_index": 473,
+      "diff_per_token": 0.45868358664705927
+    },
+    {
+      "dataset_row_index": 474,
+      "diff_per_token": -0.29328414438596456
+    },
+    {
+      "dataset_row_index": 475,
+      "diff_per_token": 0.03860898614379071
+    },
+    {
+      "dataset_row_index": 476,
+      "diff_per_token": -0.10750586942857154
+    },
+    {
+      "dataset_row_index": 477,
+      "diff_per_token": -0.41814400521739126
+    },
+    {
+      "dataset_row_index": 478,
+      "diff_per_token": -0.37400594440000035
+    },
+    {
+      "dataset_row_index": 479,
+      "diff_per_token": 0.0859029382926827
+    },
+    {
+      "dataset_row_index": 480,
+      "diff_per_token": -0.05178868810810813
+    },
+    {
+      "dataset_row_index": 481,
+      "diff_per_token": 0.8052931051666667
+    },
+    {
+      "dataset_row_index": 482,
+      "diff_per_token": -0.2163797857894738
+    },
+    {
+      "dataset_row_index": 483,
+      "diff_per_token": -0.35933870780821875
+    },
+    {
+      "dataset_row_index": 484,
+      "diff_per_token": 0.34455469943925243
+    },
+    {
+      "dataset_row_index": 485,
+      "diff_per_token": -0.11015240406976756
+    },
+    {
+      "dataset_row_index": 486,
+      "diff_per_token": -0.0808884885975607
+    },
+    {
+      "dataset_row_index": 487,
+      "diff_per_token": -0.11957744789473657
+    },
+    {
+      "dataset_row_index": 488,
+      "diff_per_token": 0.44837961020833283
+    },
+    {
+      "dataset_row_index": 489,
+      "diff_per_token": 0.9197111924242423
+    },
+    {
+      "dataset_row_index": 490,
+      "diff_per_token": 0.4412804944999998
+    },
+    {
+      "dataset_row_index": 491,
+      "diff_per_token": -0.13059104207547167
+    },
+    {
+      "dataset_row_index": 493,
+      "diff_per_token": 0.7942315160975612
+    },
+    {
+      "dataset_row_index": 494,
+      "diff_per_token": 0.040289696999999985
+    },
+    {
+      "dataset_row_index": 495,
+      "diff_per_token": 0.6181680194871795
+    },
+    {
+      "dataset_row_index": 496,
+      "diff_per_token": -0.15756605585365857
+    },
+    {
+      "dataset_row_index": 497,
+      "diff_per_token": -0.2717680331818182
+    },
+    {
+      "dataset_row_index": 498,
+      "diff_per_token": -0.20517831999999991
+    },
+    {
+      "dataset_row_index": 499,
+      "diff_per_token": -0.04026241647058826
+    },
+    {
+      "dataset_row_index": 500,
+      "diff_per_token": -0.24582017924528266
+    },
+    {
+      "dataset_row_index": 501,
+      "diff_per_token": -0.18390733380952384
+    },
+    {
+      "dataset_row_index": 502,
+      "diff_per_token": 0.015634451525423698
+    },
+    {
+      "dataset_row_index": 503,
+      "diff_per_token": 0.3635908909523809
+    },
+    {
+      "dataset_row_index": 504,
+      "diff_per_token": 0.8225948393333333
+    },
+    {
+      "dataset_row_index": 505,
+      "diff_per_token": -0.08343409974999993
+    },
+    {
+      "dataset_row_index": 506,
+      "diff_per_token": 0.19793371950617256
+    },
+    {
+      "dataset_row_index": 507,
+      "diff_per_token": -0.3333618316326534
+    },
+    {
+      "dataset_row_index": 508,
+      "diff_per_token": 0.23276815669724765
+    },
+    {
+      "dataset_row_index": 509,
+      "diff_per_token": -0.47704427608695643
+    },
+    {
+      "dataset_row_index": 510,
+      "diff_per_token": -0.16274735688311687
+    },
+    {
+      "dataset_row_index": 511,
+      "diff_per_token": 1.1969071179069768
+    },
+    {
+      "dataset_row_index": 512,
+      "diff_per_token": -9.390540983603146e-05
+    },
+    {
+      "dataset_row_index": 513,
+      "diff_per_token": 0.14071794062500043
+    },
+    {
+      "dataset_row_index": 514,
+      "diff_per_token": 0.23611052772727248
+    },
+    {
+      "dataset_row_index": 515,
+      "diff_per_token": 0.15206683353846157
+    },
+    {
+      "dataset_row_index": 516,
+      "diff_per_token": 0.38219798196428634
+    },
+    {
+      "dataset_row_index": 517,
+      "diff_per_token": -0.28246753516128975
+    },
+    {
+      "dataset_row_index": 518,
+      "diff_per_token": 0.46275297864406784
+    },
+    {
+      "dataset_row_index": 519,
+      "diff_per_token": 0.16501743133333324
+    },
+    {
+      "dataset_row_index": 520,
+      "diff_per_token": -0.008470185035461153
+    },
+    {
+      "dataset_row_index": 521,
+      "diff_per_token": 0.6035876116560507
+    },
+    {
+      "dataset_row_index": 522,
+      "diff_per_token": -0.10958561522727275
+    },
+    {
+      "dataset_row_index": 523,
+      "diff_per_token": -0.4024071469811322
+    },
+    {
+      "dataset_row_index": 524,
+      "diff_per_token": 0.02069942313725487
+    },
+    {
+      "dataset_row_index": 525,
+      "diff_per_token": 0.03705314292134837
+    },
+    {
+      "dataset_row_index": 526,
+      "diff_per_token": 1.4151516824390242
+    },
+    {
+      "dataset_row_index": 527,
+      "diff_per_token": -0.24798732969999981
+    },
+    {
+      "dataset_row_index": 528,
+      "diff_per_token": -0.08023371255033596
+    },
+    {
+      "dataset_row_index": 529,
+      "diff_per_token": -0.25070371808510633
+    },
+    {
+      "dataset_row_index": 530,
+      "diff_per_token": -0.1607413942424242
+    },
+    {
+      "dataset_row_index": 531,
+      "diff_per_token": 0.35980293666666696
+    },
+    {
+      "dataset_row_index": 532,
+      "diff_per_token": -0.2970559694736843
+    },
+    {
+      "dataset_row_index": 533,
+      "diff_per_token": 0.2949178636111112
+    },
+    {
+      "dataset_row_index": 534,
+      "diff_per_token": -0.08031748312499998
+    },
+    {
+      "dataset_row_index": 535,
+      "diff_per_token": -0.4686799868656716
+    },
+    {
+      "dataset_row_index": 536,
+      "diff_per_token": -0.020442360864197484
+    },
+    {
+      "dataset_row_index": 537,
+      "diff_per_token": -0.052770256999999765
+    },
+    {
+      "dataset_row_index": 538,
+      "diff_per_token": -0.27211022829787235
+    },
+    {
+      "dataset_row_index": 539,
+      "diff_per_token": -0.29748938605263153
+    },
+    {
+      "dataset_row_index": 540,
+      "diff_per_token": 0.07369725225806445
+    },
+    {
+      "dataset_row_index": 541,
+      "diff_per_token": -0.12972207684210518
+    },
+    {
+      "dataset_row_index": 542,
+      "diff_per_token": -0.13275817096774123
+    },
+    {
+      "dataset_row_index": 543,
+      "diff_per_token": -0.0884974275
+    },
+    {
+      "dataset_row_index": 544,
+      "diff_per_token": 0.3560935181818184
+    },
+    {
+      "dataset_row_index": 545,
+      "diff_per_token": 1.5731311155102046
+    },
+    {
+      "dataset_row_index": 546,
+      "diff_per_token": 0.5504325803278685
+    },
+    {
+      "dataset_row_index": 547,
+      "diff_per_token": -0.03783728450450441
+    },
+    {
+      "dataset_row_index": 548,
+      "diff_per_token": -0.36224675977272747
+    },
+    {
+      "dataset_row_index": 549,
+      "diff_per_token": 0.08900577166666679
+    },
+    {
+      "dataset_row_index": 550,
+      "diff_per_token": -0.02659375626865712
+    },
+    {
+      "dataset_row_index": 551,
+      "diff_per_token": -0.5495030482051283
+    },
+    {
+      "dataset_row_index": 552,
+      "diff_per_token": 0.06026100030303033
+    },
+    {
+      "dataset_row_index": 553,
+      "diff_per_token": 0.8143010886046512
+    },
+    {
+      "dataset_row_index": 554,
+      "diff_per_token": -0.03439301924999971
+    },
+    {
+      "dataset_row_index": 555,
+      "diff_per_token": 0.4659656387962964
+    },
+    {
+      "dataset_row_index": 556,
+      "diff_per_token": 0.0056355073333336225
+    },
+    {
+      "dataset_row_index": 557,
+      "diff_per_token": -0.35465327025641014
+    },
+    {
+      "dataset_row_index": 558,
+      "diff_per_token": 0.6661313621875006
+    },
+    {
+      "dataset_row_index": 559,
+      "diff_per_token": 0.29631514933333314
+    },
+    {
+      "dataset_row_index": 560,
+      "diff_per_token": -0.008442766769230725
+    },
+    {
+      "dataset_row_index": 561,
+      "diff_per_token": 0.1633692638461539
+    },
+    {
+      "dataset_row_index": 562,
+      "diff_per_token": 0.5051296261904763
+    },
+    {
+      "dataset_row_index": 563,
+      "diff_per_token": 0.4500030043243244
+    },
+    {
+      "dataset_row_index": 564,
+      "diff_per_token": 1.4347107552941176
+    },
+    {
+      "dataset_row_index": 565,
+      "diff_per_token": -0.12706808418918902
+    },
+    {
+      "dataset_row_index": 566,
+      "diff_per_token": 0.32569668106060623
+    },
+    {
+      "dataset_row_index": 567,
+      "diff_per_token": -0.43767570958333324
+    },
+    {
+      "dataset_row_index": 568,
+      "diff_per_token": 1.418394923589744
+    },
+    {
+      "dataset_row_index": 569,
+      "diff_per_token": -0.03817771631578948
+    },
+    {
+      "dataset_row_index": 570,
+      "diff_per_token": -0.18935852153846144
+    },
+    {
+      "dataset_row_index": 571,
+      "diff_per_token": -0.22048708625000013
+    },
+    {
+      "dataset_row_index": 572,
+      "diff_per_token": 2.107342902916667
+    },
+    {
+      "dataset_row_index": 573,
+      "diff_per_token": 0.4304007391428571
+    },
+    {
+      "dataset_row_index": 574,
+      "diff_per_token": -0.08167431024999999
+    },
+    {
+      "dataset_row_index": 575,
+      "diff_per_token": 0.7838315222222226
+    },
+    {
+      "dataset_row_index": 576,
+      "diff_per_token": -0.07286309297709898
+    },
+    {
+      "dataset_row_index": 577,
+      "diff_per_token": -0.9864638711111104
+    },
+    {
+      "dataset_row_index": 578,
+      "diff_per_token": 0.16463015348837162
+    },
+    {
+      "dataset_row_index": 579,
+      "diff_per_token": -0.22974390744680795
+    },
+    {
+      "dataset_row_index": 580,
+      "diff_per_token": -0.11114757377049189
+    },
+    {
+      "dataset_row_index": 581,
+      "diff_per_token": -0.7635065265384616
+    },
+    {
+      "dataset_row_index": 582,
+      "diff_per_token": 0.24464028800000026
+    },
+    {
+      "dataset_row_index": 583,
+      "diff_per_token": 0.2988738545783126
+    },
+    {
+      "dataset_row_index": 584,
+      "diff_per_token": -0.24086893352941185
+    },
+    {
+      "dataset_row_index": 585,
+      "diff_per_token": 0.4631349177083332
+    },
+    {
+      "dataset_row_index": 586,
+      "diff_per_token": -0.42948042999999986
+    },
+    {
+      "dataset_row_index": 587,
+      "diff_per_token": -0.2589807318421049
+    },
+    {
+      "dataset_row_index": 588,
+      "diff_per_token": -0.0497234790322576
+    },
+    {
+      "dataset_row_index": 589,
+      "diff_per_token": 0.22704278540229905
+    },
+    {
+      "dataset_row_index": 590,
+      "diff_per_token": -0.16918580962500052
+    },
+    {
+      "dataset_row_index": 591,
+      "diff_per_token": 0.481956357735849
+    },
+    {
+      "dataset_row_index": 592,
+      "diff_per_token": -0.05204377606557381
+    },
+    {
+      "dataset_row_index": 593,
+      "diff_per_token": -0.007032299703703754
+    },
+    {
+      "dataset_row_index": 594,
+      "diff_per_token": -0.35409758
+    },
+    {
+      "dataset_row_index": 595,
+      "diff_per_token": 0.5054378358536584
+    },
+    {
+      "dataset_row_index": 596,
+      "diff_per_token": 0.583682135744681
+    },
+    {
+      "dataset_row_index": 597,
+      "diff_per_token": 0.08233704785714285
+    },
+    {
+      "dataset_row_index": 598,
+      "diff_per_token": -0.4222053895652175
+    },
+    {
+      "dataset_row_index": 599,
+      "diff_per_token": -0.07056119156249985
+    },
+    {
+      "dataset_row_index": 600,
+      "diff_per_token": -0.22801412923076914
+    },
+    {
+      "dataset_row_index": 601,
+      "diff_per_token": 0.04359963592592592
+    },
+    {
+      "dataset_row_index": 602,
+      "diff_per_token": 0.5905537247826086
+    },
+    {
+      "dataset_row_index": 603,
+      "diff_per_token": 0.25063500046511633
+    },
+    {
+      "dataset_row_index": 604,
+      "diff_per_token": 0.354775288
+    },
+    {
+      "dataset_row_index": 605,
+      "diff_per_token": 0.6353113618518516
+    },
+    {
+      "dataset_row_index": 606,
+      "diff_per_token": 0.5108897317948717
+    },
+    {
+      "dataset_row_index": 607,
+      "diff_per_token": -0.1403478332142857
+    },
+    {
+      "dataset_row_index": 608,
+      "diff_per_token": -0.01354401140350836
+    },
+    {
+      "dataset_row_index": 609,
+      "diff_per_token": 0.3695323925925927
+    },
+    {
+      "dataset_row_index": 610,
+      "diff_per_token": 0.11119722615384608
+    },
+    {
+      "dataset_row_index": 611,
+      "diff_per_token": 0.07929258160714281
+    },
+    {
+      "dataset_row_index": 612,
+      "diff_per_token": -0.37461377890909
+    },
+    {
+      "dataset_row_index": 613,
+      "diff_per_token": 0.014836441445782889
+    },
+    {
+      "dataset_row_index": 614,
+      "diff_per_token": -0.027200304545454468
+    },
+    {
+      "dataset_row_index": 615,
+      "diff_per_token": -0.3775687713513517
+    },
+    {
+      "dataset_row_index": 616,
+      "diff_per_token": -0.016354913975903607
+    },
+    {
+      "dataset_row_index": 617,
+      "diff_per_token": 1.2394185284375
+    },
+    {
+      "dataset_row_index": 618,
+      "diff_per_token": 0.05435391249999988
+    },
+    {
+      "dataset_row_index": 619,
+      "diff_per_token": 0.0645067856060606
+    },
+    {
+      "dataset_row_index": 620,
+      "diff_per_token": 0.07350539384615362
+    },
+    {
+      "dataset_row_index": 621,
+      "diff_per_token": -0.21160515647727257
+    },
+    {
+      "dataset_row_index": 622,
+      "diff_per_token": -0.01218170617647063
+    },
+    {
+      "dataset_row_index": 623,
+      "diff_per_token": -0.47474009205882384
+    },
+    {
+      "dataset_row_index": 624,
+      "diff_per_token": -0.10078642870000032
+    },
+    {
+      "dataset_row_index": 625,
+      "diff_per_token": 0.7417176831578951
+    },
+    {
+      "dataset_row_index": 626,
+      "diff_per_token": 0.010115432031250038
+    },
+    {
+      "dataset_row_index": 627,
+      "diff_per_token": -0.6913364658333332
+    },
+    {
+      "dataset_row_index": 628,
+      "diff_per_token": -0.9144926391071435
+    },
+    {
+      "dataset_row_index": 629,
+      "diff_per_token": 0.006083073636363512
+    },
+    {
+      "dataset_row_index": 630,
+      "diff_per_token": 0.3580916262790699
+    },
+    {
+      "dataset_row_index": 631,
+      "diff_per_token": 0.0923608231168832
+    },
+    {
+      "dataset_row_index": 632,
+      "diff_per_token": 0.3546768629787235
+    },
+    {
+      "dataset_row_index": 633,
+      "diff_per_token": 0.49813085652173916
+    },
+    {
+      "dataset_row_index": 634,
+      "diff_per_token": 0.08105446129870136
+    },
+    {
+      "dataset_row_index": 635,
+      "diff_per_token": 0.6784687822018353
+    },
+    {
+      "dataset_row_index": 636,
+      "diff_per_token": 0.6152702373684211
+    },
+    {
+      "dataset_row_index": 637,
+      "diff_per_token": 0.06724108705882337
+    },
+    {
+      "dataset_row_index": 638,
+      "diff_per_token": -0.05772277749999993
+    },
+    {
+      "dataset_row_index": 639,
+      "diff_per_token": -0.3537677638461538
+    }
+  ]
+}

@@ -1,0 +1,8 @@
+=== z_B ===
+-8 b \g (d-1) V_\infty Y_\infty \x\,,\nn\\
+		c_5= (d-1)\g^2 \x^2\,,\nn\\
+
+=== true Y ===
+-8 b \gamma  (d-1) V_\infty X_\infty Y_\infty\,,\nn\\
+		c_5=(d-1)  \gamma^2 X_\infty^2\,,\nn\\
+		c_6= 2 (d-1)  \left(d k \gamma -d \gamma (\gamma +s)-2 \gamma  s +d \right) S_\infty^2 X_\infty Y_\infty\,,

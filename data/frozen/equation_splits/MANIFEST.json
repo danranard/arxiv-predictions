@@ -1,0 +1,1587 @@
+{
+    "created_utc":  "2026-05-11T07:36:32.4609849Z",
+    "script":  "scripts/create_equation_splits_super_bundle.py",
+    "bundle":  "bundles\\2026-05-03_equation_splits_super_v0",
+    "source_components":  {
+                              "old731":  "bundles\\2026-05-01_equation_splits_premier_v1",
+                              "new632":  "experiments\\2026-05-03_equation_cut_prevweek_strict25_all80_fulltexcmd_640_v0"
+                          },
+    "judges":  {
+                   "Qwen":  "accounts/fireworks/models/qwen3-8b",
+                   "Kimi":  "accounts/fireworks/models/kimi-k2p6"
+               },
+    "files":  [
+                  {
+                      "path":  "bundles\\2026-05-03_equation_splits_super_v0\\data\\cuts_all1363.jsonl",
+                      "bytes":  36809309,
+                      "sha256":  "fe0a0196fb21b509be2c3a7085b1d40ffa07d741ccda1be36699d374e364104d"
+                  },
+                  {
+                      "path":  "bundles\\2026-05-03_equation_splits_super_v0\\data\\cuts_new632.jsonl",
+                      "bytes":  17060323,
+                      "sha256":  "24c5627f05f1a5ad7f3c6d9e7abbdd6427cafae0c84b3e6672a9a439a93c4729"
+                  },
+                  {
+                      "path":  "bundles\\2026-05-03_equation_splits_super_v0\\data\\cuts_old731.jsonl",
+                      "bytes":  19748986,
+                      "sha256":  "6f85666ccb90f019988ad8fd1f7be8199cf25679ca78c1e2271b16c5d3376156"
+                  },
+                  {
+                      "path":  "bundles\\2026-05-03_equation_splits_super_v0\\data\\exclusions_exact_y.csv",
+                      "bytes":  317,
+                      "sha256":  "52a3376d30b36d2fb8d42b91ff27d6bb5a7633905bde965505df6508fd16a55f"
+                  },
+                  {
+                      "path":  "bundles\\2026-05-03_equation_splits_super_v0\\data\\new632_exact_y_prompt_match_rows.json",
+                      "bytes":  2199,
+                      "sha256":  "1753dfb6bb7fea4edb5cb222b522236eb84d9d8e086b99119c69c82acf89d371"
+                  },
+                  {
+                      "path":  "bundles\\2026-05-03_equation_splits_super_v0\\data\\old731_audit_report.json",
+                      "bytes":  6053,
+                      "sha256":  "06dff14e394358262fd3b9ad511b7ba63b7d0d8f4cd47611b4d1d6885c8f208f"
+                  },
+                  {
+                      "path":  "bundles\\2026-05-03_equation_splits_super_v0\\data\\old731_exclusion_audit_pointer.json",
+                      "bytes":  112,
+                      "sha256":  "c9e63357199be36407614a13674917b57627869a24cda638108d832186a8c4aa"
+                  },
+                  {
+                      "path":  "bundles\\2026-05-03_equation_splits_super_v0\\data\\paper_list.csv",
+                      "bytes":  13449,
+                      "sha256":  "3c0e171153e341cf8e823aba183ad344cf6777e494be79d2b0b9edc8c661c465"
+                  },
+                  {
+                      "path":  "bundles\\2026-05-03_equation_splits_super_v0\\derived\\model_summaries.csv",
+                      "bytes":  17314,
+                      "sha256":  "32041b05539761daaa7ec4ffcf5a4988983bd0d37716980abcf0079e5cce2419"
+                  },
+                  {
+                      "path":  "bundles\\2026-05-03_equation_splits_super_v0\\derived\\row_lifts_clip2_raw.csv",
+                      "bytes":  4595947,
+                      "sha256":  "dc48ec4fe57d1bcb09e7b0dcf97c0f2905f34fdeee43c1a17912e0d57e6c9663"
+                  },
+                  {
+                      "path":  "bundles\\2026-05-03_equation_splits_super_v0\\derived\\thinking_comparisons.csv",
+                      "bytes":  21011,
+                      "sha256":  "d63b213dbc074acb72dd0cf2125ef1f599c5bfcd67b84521c1f7945d44eea0d4"
+                  },
+                  {
+                      "path":  "bundles\\2026-05-03_equation_splits_super_v0\\derived\\thinking_comparisons_clip2_paper_clustered.csv",
+                      "bytes":  3729,
+                      "sha256":  "c7ed5eb727275f9aa10c5f5aff2b8fd57da60111b033cb9a6377089d02a8a294"
+                  },
+                  {
+                      "path":  "bundles\\2026-05-03_equation_splits_super_v0\\generations\\new632\\gpt55_high\\gpt55_high_joined_stripped.jsonl",
+                      "bytes":  17558125,
+                      "sha256":  "8fb6bef0900d289c7e0a133b2cc0dbfe952d2d378cc84be7750b4ac8e0d59ebd"
+                  },
+                  {
+                      "path":  "bundles\\2026-05-03_equation_splits_super_v0\\generations\\new632\\gpt55_low\\gpt55_low_joined_stripped.jsonl",
+                      "bytes":  17552619,
+                      "sha256":  "a602bdde732884f3747e37e702fdb9b38ac1431c87c1a43e78e5797844b4d98e"
+                  },
+                  {
+                      "path":  "bundles\\2026-05-03_equation_splits_super_v0\\generations\\new632\\gpt55_medium\\gpt55_medium_joined_stripped.jsonl",
+                      "bytes":  17559304,
+                      "sha256":  "f12be8c9dbea012731eee1f984346ae48e7c429ea65fadc1b4215b8eb3f47b73"
+                  },
+                  {
+                      "path":  "bundles\\2026-05-03_equation_splits_super_v0\\generations\\new632\\gpt55_none\\gpt55_none_joined_stripped.jsonl",
+                      "bytes":  17539302,
+                      "sha256":  "249b3b8bf559931d49dfdb6e5939368c5bc52a19ec39c3c1452e9c95c5be43d0"
+                  },
+                  {
+                      "path":  "bundles\\2026-05-03_equation_splits_super_v0\\generations\\new632\\nano_high\\nano_high_joined_with_retry35_stripped.jsonl",
+                      "bytes":  17492107,
+                      "sha256":  "0a18ff6657420c9265a2019713d1ab993776ceeb7daed826954ac1623c4602e6"
+                  },
+                  {
+                      "path":  "bundles\\2026-05-03_equation_splits_super_v0\\generations\\new632\\nano_low\\nano_low_joined_stripped.jsonl",
+                      "bytes":  17554143,
+                      "sha256":  "186979b164f33c6d56eb2a644412f1e4514bf0e0194464151b58b9587d062ba1"
+                  },
+                  {
+                      "path":  "bundles\\2026-05-03_equation_splits_super_v0\\generations\\new632\\nano_medium\\nano_medium_joined_with_retry5_stripped.jsonl",
+                      "bytes":  17502005,
+                      "sha256":  "295e4a319ee17fbfa2c0df3e72467731bfc1a90fc388e2366535d76c760aabb9"
+                  },
+                  {
+                      "path":  "bundles\\2026-05-03_equation_splits_super_v0\\generations\\new632\\opus47_low\\claude_opus47_low_new632_current_joined.jsonl",
+                      "bytes":  17571318,
+                      "sha256":  "c52c10a283f61a1e5305efd0c0683e05dbb5c9d17bb0f2ab675750720d9e729d"
+                  },
+                  {
+                      "path":  "bundles\\2026-05-03_equation_splits_super_v0\\generations\\new632\\opus47_medium\\claude_opus47_medium_new632_current_joined.jsonl",
+                      "bytes":  17578746,
+                      "sha256":  "83c345ee13e8f679d627108341ea92839fe3e127e3ff0a1469c8a1f1df36abce"
+                  },
+                  {
+                      "path":  "bundles\\2026-05-03_equation_splits_super_v0\\generations\\old731\\gpt55_high\\gpt55_high_joined_stripped.jsonl",
+                      "bytes":  20287253,
+                      "sha256":  "1d9353d9f3ff66c91ba48a81a2c86f6b2df3832157e05980cffaa4e2bf242eaf"
+                  },
+                  {
+                      "path":  "bundles\\2026-05-03_equation_splits_super_v0\\generations\\old731\\gpt55_low\\gpt55_low_joined_stripped.jsonl",
+                      "bytes":  20287984,
+                      "sha256":  "953178d54acb4dd6126b876f602051c4940b486f3ccb3bc636b4c25fc207df4b"
+                  },
+                  {
+                      "path":  "bundles\\2026-05-03_equation_splits_super_v0\\generations\\old731\\gpt55_medium\\gpt55_medium_joined_stripped.jsonl",
+                      "bytes":  20288950,
+                      "sha256":  "d8433cccec45fbdfba93ee62998bea1f2412e3abe9f7a72e40818f4fe688986c"
+                  },
+                  {
+                      "path":  "bundles\\2026-05-03_equation_splits_super_v0\\generations\\old731\\gpt55_none\\gpt55_none_joined_stripped.jsonl",
+                      "bytes":  20268298,
+                      "sha256":  "b8ec41a6dd31063f397754c3bdf0b27983ba35b1fdf2f095cce8334a3f19242f"
+                  },
+                  {
+                      "path":  "bundles\\2026-05-03_equation_splits_super_v0\\generations\\old731\\nano_high\\nano_high_joined_repaired731_stripped.jsonl",
+                      "bytes":  20242635,
+                      "sha256":  "16b5446e4df389b5450dcc38ccd7aa778db70ac5d6453bd09beec8081020e656"
+                  },
+                  {
+                      "path":  "bundles\\2026-05-03_equation_splits_super_v0\\generations\\old731\\nano_low\\nano_low_joined_stripped.jsonl",
+                      "bytes":  20295643,
+                      "sha256":  "1c5be25337d2bd3e8e930086d950d731fb49d85f99722d6c2938ef6de9791811"
+                  },
+                  {
+                      "path":  "bundles\\2026-05-03_equation_splits_super_v0\\generations\\old731\\nano_medium\\nano_medium_joined_stripped.jsonl",
+                      "bytes":  20244850,
+                      "sha256":  "36c17a6171ae7a4ca905f2180ad5387cd75aae95cedfb2b14df7083c446347d3"
+                  },
+                  {
+                      "path":  "bundles\\2026-05-03_equation_splits_super_v0\\generations\\old731\\opus47_low\\claude_opus47_low_partial_joined.jsonl",
+                      "bytes":  20276060,
+                      "sha256":  "c66cd526052cc07b289a6f568cfab34e9e851fcbb30bbeaa2bd56d48303a5d10"
+                  },
+                  {
+                      "path":  "bundles\\2026-05-03_equation_splits_super_v0\\generations\\old731\\opus47_medium\\claude_opus47_medium_partial_joined.jsonl",
+                      "bytes":  20284815,
+                      "sha256":  "b27a645aa3fcb74bb389012959a9560f0fc4d1c06b689912cc711f876183c7c7"
+                  },
+                  {
+                      "path":  "bundles\\2026-05-03_equation_splits_super_v0\\OPUS47_CANONICAL_INPUTS.md",
+                      "bytes":  5921,
+                      "sha256":  "6ddab11ba9285a87155a2295e9507d0228a589a3b1920748479084e364a19b7d"
+                  },
+                  {
+                      "path":  "bundles\\2026-05-03_equation_splits_super_v0\\README.md",
+                      "bytes":  5149,
+                      "sha256":  "0abace6b3c7b5ed430cb0d1babd34775a8df6d3f016b4246d525507d10631ea0"
+                  },
+                  {
+                      "path":  "bundles\\2026-05-03_equation_splits_super_v0\\scores\\repair_old731_nano_high_missing10\\kimi_k2p6\\equation_scores.csv",
+                      "bytes":  4052,
+                      "sha256":  "9d3a9e509c4ad4df8091983f9557aa8cd1dd7915034d351f79f5f2853062d718"
+                  },
+                  {
+                      "path":  "bundles\\2026-05-03_equation_splits_super_v0\\scores\\repair_old731_nano_high_missing10\\kimi_k2p6\\equation_target_token_logprobs.csv",
+                      "bytes":  376776,
+                      "sha256":  "6572496adfcb77004913a38938d6767ebeca1fa3c9d556fb701afe2e1fd838c0"
+                  },
+                  {
+                      "path":  "bundles\\2026-05-03_equation_splits_super_v0\\scores\\repair_old731_nano_high_missing10\\kimi_k2p6\\prompt_previews\\row0000_bare_B.txt",
+                      "bytes":  876,
+                      "sha256":  "c5192bda3d6c04f8002705dec6bdd9820c3eda9c2239e0a8c73c6efe8cb83c43"
+                  },
+                  {
+                      "path":  "bundles\\2026-05-03_equation_splits_super_v0\\scores\\repair_old731_nano_high_missing10\\kimi_k2p6\\prompt_previews\\row0000_scaffold_z_predictor.txt",
+                      "bytes":  1003,
+                      "sha256":  "f1d96f976bf2827561b7ee439f5b1cb061d70b56712b5f2242cfd0c0d93ef903"
+                  },
+                  {
+                      "path":  "bundles\\2026-05-03_equation_splits_super_v0\\scores\\repair_old731_nano_high_missing10\\kimi_k2p6\\prompt_previews\\row0109_bare_B.txt",
+                      "bytes":  1191,
+                      "sha256":  "d1b4e0c10a269449f2ac68a94098752d2a6ff89af81087ae3bac3ea085180575"
+                  },
+                  {
+                      "path":  "bundles\\2026-05-03_equation_splits_super_v0\\scores\\repair_old731_nano_high_missing10\\kimi_k2p6\\prompt_previews\\row0109_scaffold_z_predictor.txt",
+                      "bytes":  1432,
+                      "sha256":  "17cdae355fe708f15cac7f63843b2aeb32cbd56602fc80de1825e73caf467ea7"
+                  },
+                  {
+                      "path":  "bundles\\2026-05-03_equation_splits_super_v0\\scores\\repair_old731_nano_high_missing10\\kimi_k2p6\\prompt_previews\\row0294_bare_B.txt",
+                      "bytes":  844,
+                      "sha256":  "888dc168107eab9fa1a44ad3cf64d9d7059896de5d52565fd8a229cfbdfe1b98"
+                  },
+                  {
+                      "path":  "bundles\\2026-05-03_equation_splits_super_v0\\scores\\repair_old731_nano_high_missing10\\kimi_k2p6\\prompt_previews\\row0294_scaffold_z_predictor.txt",
+                      "bytes":  891,
+                      "sha256":  "93d27d24fe4c539b1be4d82713c7632cf2898292b53a6eb122348a8bf128df67"
+                  },
+                  {
+                      "path":  "bundles\\2026-05-03_equation_splits_super_v0\\scores\\repair_old731_nano_high_missing10\\kimi_k2p6\\prompt_previews\\row0318_bare_B.txt",
+                      "bytes":  1365,
+                      "sha256":  "c1a3fd86c6cff7918423f059617df34e6f71d704e9ff0d2b35dbe4fde3073b83"
+                  },
+                  {
+                      "path":  "bundles\\2026-05-03_equation_splits_super_v0\\scores\\repair_old731_nano_high_missing10\\kimi_k2p6\\prompt_previews\\row0318_scaffold_z_predictor.txt",
+                      "bytes":  1580,
+                      "sha256":  "d8c4f2e4e7019cea847b5ee6d7dac6fcdd10f7387f1b6ac553e88f8e46195a0d"
+                  },
+                  {
+                      "path":  "bundles\\2026-05-03_equation_splits_super_v0\\scores\\repair_old731_nano_high_missing10\\kimi_k2p6\\README.md",
+                      "bytes":  1405,
+                      "sha256":  "17f3b7533b308219c5c9391105f8b0d22b37e0f4ecb509a431e396f16e8e74c4"
+                  },
+                  {
+                      "path":  "bundles\\2026-05-03_equation_splits_super_v0\\scores\\repair_old731_nano_high_missing10\\kimi_k2p6\\run_plan.json",
+                      "bytes":  2453,
+                      "sha256":  "72e943b73cef58d55d554660996ce824b656431de35a867e610462b87b1977eb"
+                  },
+                  {
+                      "path":  "bundles\\2026-05-03_equation_splits_super_v0\\scores\\repair_old731_nano_high_missing10\\kimi_k2p6\\summary.json",
+                      "bytes":  2832,
+                      "sha256":  "058791458c84e8d25c1f26ee02dc6fc62b82bc26bce1707625dd395c67740e08"
+                  },
+                  {
+                      "path":  "bundles\\2026-05-03_equation_splits_super_v0\\scores\\repair_old731_nano_high_missing10\\qwen3_8b\\equation_scores.csv",
+                      "bytes":  4058,
+                      "sha256":  "41e13502f2a3005faf47db4e25437b613223dfdeaea7583c7ed7cc076426a1e1"
+                  },
+                  {
+                      "path":  "bundles\\2026-05-03_equation_splits_super_v0\\scores\\repair_old731_nano_high_missing10\\qwen3_8b\\equation_target_token_logprobs.csv",
+                      "bytes":  409279,
+                      "sha256":  "e78843ea5fd01947552b08c16d84af35adbe9375bc3d0ae97cf85135606ca7bd"
+                  },
+                  {
+                      "path":  "bundles\\2026-05-03_equation_splits_super_v0\\scores\\repair_old731_nano_high_missing10\\qwen3_8b\\prompt_previews\\row0000_bare_B.txt",
+                      "bytes":  876,
+                      "sha256":  "c5192bda3d6c04f8002705dec6bdd9820c3eda9c2239e0a8c73c6efe8cb83c43"
+                  },
+                  {
+                      "path":  "bundles\\2026-05-03_equation_splits_super_v0\\scores\\repair_old731_nano_high_missing10\\qwen3_8b\\prompt_previews\\row0000_scaffold_z_predictor.txt",
+                      "bytes":  1003,
+                      "sha256":  "f1d96f976bf2827561b7ee439f5b1cb061d70b56712b5f2242cfd0c0d93ef903"
+                  },
+                  {
+                      "path":  "bundles\\2026-05-03_equation_splits_super_v0\\scores\\repair_old731_nano_high_missing10\\qwen3_8b\\prompt_previews\\row0109_bare_B.txt",
+                      "bytes":  1191,
+                      "sha256":  "d1b4e0c10a269449f2ac68a94098752d2a6ff89af81087ae3bac3ea085180575"
+                  },
+                  {
+                      "path":  "bundles\\2026-05-03_equation_splits_super_v0\\scores\\repair_old731_nano_high_missing10\\qwen3_8b\\prompt_previews\\row0109_scaffold_z_predictor.txt",
+                      "bytes":  1432,
+                      "sha256":  "17cdae355fe708f15cac7f63843b2aeb32cbd56602fc80de1825e73caf467ea7"
+                  },
+                  {
+                      "path":  "bundles\\2026-05-03_equation_splits_super_v0\\scores\\repair_old731_nano_high_missing10\\qwen3_8b\\prompt_previews\\row0294_bare_B.txt",
+                      "bytes":  844,
+                      "sha256":  "888dc168107eab9fa1a44ad3cf64d9d7059896de5d52565fd8a229cfbdfe1b98"
+                  },
+                  {
+                      "path":  "bundles\\2026-05-03_equation_splits_super_v0\\scores\\repair_old731_nano_high_missing10\\qwen3_8b\\prompt_previews\\row0294_scaffold_z_predictor.txt",
+                      "bytes":  891,
+                      "sha256":  "93d27d24fe4c539b1be4d82713c7632cf2898292b53a6eb122348a8bf128df67"
+                  },
+                  {
+                      "path":  "bundles\\2026-05-03_equation_splits_super_v0\\scores\\repair_old731_nano_high_missing10\\qwen3_8b\\prompt_previews\\row0318_bare_B.txt",
+                      "bytes":  1365,
+                      "sha256":  "c1a3fd86c6cff7918423f059617df34e6f71d704e9ff0d2b35dbe4fde3073b83"
+                  },
+                  {
+                      "path":  "bundles\\2026-05-03_equation_splits_super_v0\\scores\\repair_old731_nano_high_missing10\\qwen3_8b\\prompt_previews\\row0318_scaffold_z_predictor.txt",
+                      "bytes":  1580,
+                      "sha256":  "d8c4f2e4e7019cea847b5ee6d7dac6fcdd10f7387f1b6ac553e88f8e46195a0d"
+                  },
+                  {
+                      "path":  "bundles\\2026-05-03_equation_splits_super_v0\\scores\\repair_old731_nano_high_missing10\\qwen3_8b\\README.md",
+                      "bytes":  1403,
+                      "sha256":  "5d2482341955ef8f71af9216323a06fc787e2b4aba20b27e967fa652d676b6a5"
+                  },
+                  {
+                      "path":  "bundles\\2026-05-03_equation_splits_super_v0\\scores\\repair_old731_nano_high_missing10\\qwen3_8b\\run_plan.json",
+                      "bytes":  2452,
+                      "sha256":  "1f5107fc4f06c6f8cf7d0227ce04b023cbe901e42e5307d97efb34ec93a3d21a"
+                  },
+                  {
+                      "path":  "bundles\\2026-05-03_equation_splits_super_v0\\scores\\repair_old731_nano_high_missing10\\qwen3_8b\\summary.json",
+                      "bytes":  2829,
+                      "sha256":  "9e0d438e8ca095da6361849f1b2362d1353bdabfd9fed6634a8ab86368ce4c8f"
+                  },
+                  {
+                      "path":  "bundles\\2026-05-03_equation_splits_super_v0\\scores\\source_components\\new632\\kimi_k2p6\\gpt55_high\\equation_scores.csv",
+                      "bytes":  238513,
+                      "sha256":  "03eeff3c4c096eb93869662aea12734d5389133269bb108eee5a8eeea69edcc6"
+                  },
+                  {
+                      "path":  "bundles\\2026-05-03_equation_splits_super_v0\\scores\\source_components\\new632\\kimi_k2p6\\gpt55_high\\equation_target_token_logprobs.csv",
+                      "bytes":  12536789,
+                      "sha256":  "64c92d95b4f247fdb018c814dc53d5d6a634bebb2f6b723c010940f3eeccff46"
+                  },
+                  {
+                      "path":  "bundles\\2026-05-03_equation_splits_super_v0\\scores\\source_components\\new632\\kimi_k2p6\\gpt55_high\\softened_summary.json",
+                      "bytes":  1470,
+                      "sha256":  "3730c245b85f0119bf0c8af38d2d5fcb8359b21a999c9249ae6ed374eb209326"
+                  },
+                  {
+                      "path":  "bundles\\2026-05-03_equation_splits_super_v0\\scores\\source_components\\new632\\kimi_k2p6\\gpt55_high\\summary.json",
+                      "bytes":  69920,
+                      "sha256":  "14f3e5190da915adb2e429ce8bd6ec9a065adb5a442decb8e4385a8a40aded4d"
+                  },
+                  {
+                      "path":  "bundles\\2026-05-03_equation_splits_super_v0\\scores\\source_components\\new632\\kimi_k2p6\\gpt55_low\\equation_scores.csv",
+                      "bytes":  238332,
+                      "sha256":  "0ad54bacbb679337db3b551199d8d61e3ddbd4fe83d7e1606412466724eaeb45"
+                  },
+                  {
+                      "path":  "bundles\\2026-05-03_equation_splits_super_v0\\scores\\source_components\\new632\\kimi_k2p6\\gpt55_low\\equation_target_token_logprobs.csv",
+                      "bytes":  12530040,
+                      "sha256":  "67f1ebe2078472f234048ba4c7b8816e981cebe4a370462d3d28d92c3d5eef3d"
+                  },
+                  {
+                      "path":  "bundles\\2026-05-03_equation_splits_super_v0\\scores\\source_components\\new632\\kimi_k2p6\\gpt55_low\\softened_summary.json",
+                      "bytes":  1470,
+                      "sha256":  "961175f05aeffa530726e81607788dbeef3aa8bcf8f463f1cdf2f592da7157b1"
+                  },
+                  {
+                      "path":  "bundles\\2026-05-03_equation_splits_super_v0\\scores\\source_components\\new632\\kimi_k2p6\\gpt55_low\\summary.json",
+                      "bytes":  69961,
+                      "sha256":  "6e0f370305d0ab60bcefd57432369f89f1780af528b75e65dae709f679751b2e"
+                  },
+                  {
+                      "path":  "bundles\\2026-05-03_equation_splits_super_v0\\scores\\source_components\\new632\\kimi_k2p6\\gpt55_medium\\equation_scores.csv",
+                      "bytes":  238240,
+                      "sha256":  "d83e3b68cc820eb6fa41cdb77b6b4752cbd92baac45517a84b183eaaa91a60d6"
+                  },
+                  {
+                      "path":  "bundles\\2026-05-03_equation_splits_super_v0\\scores\\source_components\\new632\\kimi_k2p6\\gpt55_medium\\equation_target_token_logprobs.csv",
+                      "bytes":  12529201,
+                      "sha256":  "7bffdcfb510826b7320d5e98e62996127a8fb8ca62e51fefcfc9edf0085d787a"
+                  },
+                  {
+                      "path":  "bundles\\2026-05-03_equation_splits_super_v0\\scores\\source_components\\new632\\kimi_k2p6\\gpt55_medium\\softened_summary.json",
+                      "bytes":  1468,
+                      "sha256":  "31fc07d3aef0a174f659ad7d7857c61eb044bbdcd0cd6a079cd61d34f6ab475a"
+                  },
+                  {
+                      "path":  "bundles\\2026-05-03_equation_splits_super_v0\\scores\\source_components\\new632\\kimi_k2p6\\gpt55_medium\\summary.json",
+                      "bytes":  69920,
+                      "sha256":  "4fd1a38a182b483833c3f61732b942e0fd504fa6bdde96519cb4d7d2410d5185"
+                  },
+                  {
+                      "path":  "bundles\\2026-05-03_equation_splits_super_v0\\scores\\source_components\\new632\\kimi_k2p6\\gpt55_none\\equation_scores.csv",
+                      "bytes":  238246,
+                      "sha256":  "71285e812cc5ce911f2d2873872dce79d13abd5f9ba22a7d4759e072a6e12a15"
+                  },
+                  {
+                      "path":  "bundles\\2026-05-03_equation_splits_super_v0\\scores\\source_components\\new632\\kimi_k2p6\\gpt55_none\\equation_target_token_logprobs.csv",
+                      "bytes":  12520325,
+                      "sha256":  "46a8e47d046ed30736408b831c229fc6b3a1d3706c13162df6f719958316deff"
+                  },
+                  {
+                      "path":  "bundles\\2026-05-03_equation_splits_super_v0\\scores\\source_components\\new632\\kimi_k2p6\\gpt55_none\\softened_summary.json",
+                      "bytes":  1470,
+                      "sha256":  "b7e870a81128d69d122522c949b3d6445b0985ce0864bb0dc08c7cdb82b1a487"
+                  },
+                  {
+                      "path":  "bundles\\2026-05-03_equation_splits_super_v0\\scores\\source_components\\new632\\kimi_k2p6\\gpt55_none\\summary.json",
+                      "bytes":  69948,
+                      "sha256":  "d8c6ee234d5a453edf7b9578694da3386bc3ec1a21b0548075c2fb9974a58bfd"
+                  },
+                  {
+                      "path":  "bundles\\2026-05-03_equation_splits_super_v0\\scores\\source_components\\new632\\kimi_k2p6\\nano_high\\equation_scores.csv",
+                      "bytes":  238389,
+                      "sha256":  "44b3721b485fd95597cb857ad419748adf5dfaff29cf61e6e64454749b8aa720"
+                  },
+                  {
+                      "path":  "bundles\\2026-05-03_equation_splits_super_v0\\scores\\source_components\\new632\\kimi_k2p6\\nano_high\\equation_target_token_logprobs.csv",
+                      "bytes":  12500049,
+                      "sha256":  "237dace3de2379917ffc68b416d4263009d1731f83ae4b4812aee36f7a6df54a"
+                  },
+                  {
+                      "path":  "bundles\\2026-05-03_equation_splits_super_v0\\scores\\source_components\\new632\\kimi_k2p6\\nano_high\\softened_summary.json",
+                      "bytes":  1482,
+                      "sha256":  "8dbc7604c27999dd9a61fb13010177bfdddd04afad1ca5de1b7fd13678dcae3b"
+                  },
+                  {
+                      "path":  "bundles\\2026-05-03_equation_splits_super_v0\\scores\\source_components\\new632\\kimi_k2p6\\nano_high\\summary.json",
+                      "bytes":  70038,
+                      "sha256":  "eb9f8ffc56a9d1f0670c70bacd11afcd3d7129896360becdffdab50a3c9ceed9"
+                  },
+                  {
+                      "path":  "bundles\\2026-05-03_equation_splits_super_v0\\scores\\source_components\\new632\\kimi_k2p6\\nano_low\\equation_scores.csv",
+                      "bytes":  238222,
+                      "sha256":  "56b0d56e60e0a1546959937951722b68661763229e6679bd594b0e7ef63916cb"
+                  },
+                  {
+                      "path":  "bundles\\2026-05-03_equation_splits_super_v0\\scores\\source_components\\new632\\kimi_k2p6\\nano_low\\equation_target_token_logprobs.csv",
+                      "bytes":  12498757,
+                      "sha256":  "96d73787866674e96ed7a0d9f39d2d18ba75b102c415bfbded90c53447e11d3b"
+                  },
+                  {
+                      "path":  "bundles\\2026-05-03_equation_splits_super_v0\\scores\\source_components\\new632\\kimi_k2p6\\nano_low\\softened_summary.json",
+                      "bytes":  1488,
+                      "sha256":  "fa217e7308bed7fd3321c8f59be2515f9bd55cb6785a9ba7f20df7148ac36fd4"
+                  },
+                  {
+                      "path":  "bundles\\2026-05-03_equation_splits_super_v0\\scores\\source_components\\new632\\kimi_k2p6\\nano_low\\summary.json",
+                      "bytes":  70088,
+                      "sha256":  "2c087c1a2e064a9c96a7908e8ae2191c6ea36a7b6edb90f954019c651b17df37"
+                  },
+                  {
+                      "path":  "bundles\\2026-05-03_equation_splits_super_v0\\scores\\source_components\\new632\\kimi_k2p6\\nano_medium\\equation_scores.csv",
+                      "bytes":  238385,
+                      "sha256":  "ec021fe2c170a32f9c5c3f3bc963e0eae336ea26120418a9a642c87b87b25ed6"
+                  },
+                  {
+                      "path":  "bundles\\2026-05-03_equation_splits_super_v0\\scores\\source_components\\new632\\kimi_k2p6\\nano_medium\\equation_target_token_logprobs.csv",
+                      "bytes":  12500828,
+                      "sha256":  "65118f2c45bde98260a6de59b9f2a9e618d4c0608023584f4fc9606ec12283d3"
+                  },
+                  {
+                      "path":  "bundles\\2026-05-03_equation_splits_super_v0\\scores\\source_components\\new632\\kimi_k2p6\\nano_medium\\softened_summary.json",
+                      "bytes":  1482,
+                      "sha256":  "1ce25e3bff8cf628e80ecc57a188c7c47da224ac59a85525533c901b58667551"
+                  },
+                  {
+                      "path":  "bundles\\2026-05-03_equation_splits_super_v0\\scores\\source_components\\new632\\kimi_k2p6\\nano_medium\\summary.json",
+                      "bytes":  70050,
+                      "sha256":  "dca5c2ffc17932445e4264a8ef2ab4eb4330c8bfa876e81750031c6357447aa0"
+                  },
+                  {
+                      "path":  "bundles\\2026-05-03_equation_splits_super_v0\\scores\\source_components\\new632\\kimi_k2p6\\opus47_low\\equation_scores.csv",
+                      "bytes":  123568,
+                      "sha256":  "46cfce1b58b8929766688372a5aef5e3d14254d741fc54f19dc7575022ed61a5"
+                  },
+                  {
+                      "path":  "bundles\\2026-05-03_equation_splits_super_v0\\scores\\source_components\\new632\\kimi_k2p6\\opus47_low\\equation_target_token_logprobs.csv",
+                      "bytes":  6527141,
+                      "sha256":  "78703decdec67dc3a1749c010a6fbe1404716e7b669c6a536cd00fd48995e26c"
+                  },
+                  {
+                      "path":  "bundles\\2026-05-03_equation_splits_super_v0\\scores\\source_components\\new632\\kimi_k2p6\\opus47_low\\README.md",
+                      "bytes":  1374,
+                      "sha256":  "071b48470367438bb0108565ba87c38880ff3fb3455ce5ebb579e5b4a170d9fe"
+                  },
+                  {
+                      "path":  "bundles\\2026-05-03_equation_splits_super_v0\\scores\\source_components\\new632\\kimi_k2p6\\opus47_low\\run_plan.json",
+                      "bytes":  2691,
+                      "sha256":  "c13585a343f1c9b4d835456360b516a2723214cd1e75122777cec77e29d1b8a3"
+                  },
+                  {
+                      "path":  "bundles\\2026-05-03_equation_splits_super_v0\\scores\\source_components\\new632\\kimi_k2p6\\opus47_low\\summary.json",
+                      "bytes":  471,
+                      "sha256":  "69699c327bcec76984112f509d560cc1ee691d63adde7a17631dcd4c3948e908"
+                  },
+                  {
+                      "path":  "bundles\\2026-05-03_equation_splits_super_v0\\scores\\source_components\\new632\\kimi_k2p6\\opus47_medium\\equation_scores.csv",
+                      "bytes":  123680,
+                      "sha256":  "a2f8bf01fd1fa398c211e9200d0e133d04c89246a6bdd4d6155071da850809fb"
+                  },
+                  {
+                      "path":  "bundles\\2026-05-03_equation_splits_super_v0\\scores\\source_components\\new632\\kimi_k2p6\\opus47_medium\\equation_target_token_logprobs.csv",
+                      "bytes":  6527654,
+                      "sha256":  "39518490a505db9650b45ef7fb19b4932a8ff45c15c79515a5e9e928bc1da60d"
+                  },
+                  {
+                      "path":  "bundles\\2026-05-03_equation_splits_super_v0\\scores\\source_components\\new632\\kimi_k2p6\\opus47_medium\\README.md",
+                      "bytes":  1374,
+                      "sha256":  "973bd21acf5bc12ed2f233b384b358359eff881cf4e7f0a81264ec73a03f63e5"
+                  },
+                  {
+                      "path":  "bundles\\2026-05-03_equation_splits_super_v0\\scores\\source_components\\new632\\kimi_k2p6\\opus47_medium\\run_plan.json",
+                      "bytes":  1231,
+                      "sha256":  "ec86c913a75cf0f41b163450b538f9075957a6f68d70de1a527f8781bafa685c"
+                  },
+                  {
+                      "path":  "bundles\\2026-05-03_equation_splits_super_v0\\scores\\source_components\\new632\\kimi_k2p6\\opus47_medium\\summary.json",
+                      "bytes":  471,
+                      "sha256":  "245af5953c296ffe74b32be6acf0b4afa41c3d9b85508f2122c85b355d4331b9"
+                  },
+                  {
+                      "path":  "bundles\\2026-05-03_equation_splits_super_v0\\scores\\source_components\\new632\\qwen3_8b\\gpt55_high\\equation_scores.csv",
+                      "bytes":  237649,
+                      "sha256":  "68f4bb073b22c45bbc1a36e418e016622f2516d1ff1b10bb753d293205036121"
+                  },
+                  {
+                      "path":  "bundles\\2026-05-03_equation_splits_super_v0\\scores\\source_components\\new632\\qwen3_8b\\gpt55_high\\equation_target_token_logprobs.csv",
+                      "bytes":  14043799,
+                      "sha256":  "b98f4832a91b1700f97c50e5d5e820ef108bac99d547d903a3a5a823c7e72efb"
+                  },
+                  {
+                      "path":  "bundles\\2026-05-03_equation_splits_super_v0\\scores\\source_components\\new632\\qwen3_8b\\gpt55_high\\softened_summary.json",
+                      "bytes":  1467,
+                      "sha256":  "8510240db85cf3384366bd92d813205108cdead0f7ce0de2bcd2c728ee547f21"
+                  },
+                  {
+                      "path":  "bundles\\2026-05-03_equation_splits_super_v0\\scores\\source_components\\new632\\qwen3_8b\\gpt55_high\\summary.json",
+                      "bytes":  69817,
+                      "sha256":  "96286e170fb0efc45c8316be961b1fa83efa95ba7d842147d562eadb0b9a6ff4"
+                  },
+                  {
+                      "path":  "bundles\\2026-05-03_equation_splits_super_v0\\scores\\source_components\\new632\\qwen3_8b\\gpt55_low\\equation_scores.csv",
+                      "bytes":  237608,
+                      "sha256":  "332a281a5cbad6e9f82993ddb6516c3f2aa7c03ccee456798a20212b3e19adff"
+                  },
+                  {
+                      "path":  "bundles\\2026-05-03_equation_splits_super_v0\\scores\\source_components\\new632\\qwen3_8b\\gpt55_low\\equation_target_token_logprobs.csv",
+                      "bytes":  14039528,
+                      "sha256":  "10d2512d8f8bce0dfbb68e9f2fa4a51e01bfb0dbaddef1e016a480f2ff38243d"
+                  },
+                  {
+                      "path":  "bundles\\2026-05-03_equation_splits_super_v0\\scores\\source_components\\new632\\qwen3_8b\\gpt55_low\\softened_summary.json",
+                      "bytes":  1470,
+                      "sha256":  "534d577aea57999bd9ad7c2dc97822ba1842cce63050b703f085678409dd1770"
+                  },
+                  {
+                      "path":  "bundles\\2026-05-03_equation_splits_super_v0\\scores\\source_components\\new632\\qwen3_8b\\gpt55_low\\summary.json",
+                      "bytes":  69817,
+                      "sha256":  "8cbac68139e1ac452fb54d00ef7e79849b269da6d83e87f5615d3cca0d1c1780"
+                  },
+                  {
+                      "path":  "bundles\\2026-05-03_equation_splits_super_v0\\scores\\source_components\\new632\\qwen3_8b\\gpt55_medium\\equation_scores.csv",
+                      "bytes":  237571,
+                      "sha256":  "10dff31f3da02c74a27aa0a587085d3247ca2b348b68f536d4f00bb50081c8df"
+                  },
+                  {
+                      "path":  "bundles\\2026-05-03_equation_splits_super_v0\\scores\\source_components\\new632\\qwen3_8b\\gpt55_medium\\equation_target_token_logprobs.csv",
+                      "bytes":  14038323,
+                      "sha256":  "267b0fa6cfd9a1390920c8687598f3283f78c0bd5e526314c6705fa2e10762b7"
+                  },
+                  {
+                      "path":  "bundles\\2026-05-03_equation_splits_super_v0\\scores\\source_components\\new632\\qwen3_8b\\gpt55_medium\\softened_summary.json",
+                      "bytes":  1464,
+                      "sha256":  "50c188b445db1638890bbc30614b502e0b6d2987bf1eab35d604ef243d50ac57"
+                  },
+                  {
+                      "path":  "bundles\\2026-05-03_equation_splits_super_v0\\scores\\source_components\\new632\\qwen3_8b\\gpt55_medium\\summary.json",
+                      "bytes":  69806,
+                      "sha256":  "d50e52f50c023df7faa3801e211789d8410c5e7614124c4e7216707938530444"
+                  },
+                  {
+                      "path":  "bundles\\2026-05-03_equation_splits_super_v0\\scores\\source_components\\new632\\qwen3_8b\\gpt55_none\\equation_scores.csv",
+                      "bytes":  237562,
+                      "sha256":  "598ecb963c14ec2167376d9492aeb1e2f46a6bbaefbe6c098e016a6cd39b2a68"
+                  },
+                  {
+                      "path":  "bundles\\2026-05-03_equation_splits_super_v0\\scores\\source_components\\new632\\qwen3_8b\\gpt55_none\\equation_target_token_logprobs.csv",
+                      "bytes":  14031588,
+                      "sha256":  "34dd20344e4eb38f60bff6064088ffbebbf24a4aa57cc73c8b84eb7ca15b8874"
+                  },
+                  {
+                      "path":  "bundles\\2026-05-03_equation_splits_super_v0\\scores\\source_components\\new632\\qwen3_8b\\gpt55_none\\softened_summary.json",
+                      "bytes":  1471,
+                      "sha256":  "28644b42d2ad997233db19b4f35f20d241b957079ecb0bf4bcb66c8d4c80fc8a"
+                  },
+                  {
+                      "path":  "bundles\\2026-05-03_equation_splits_super_v0\\scores\\source_components\\new632\\qwen3_8b\\gpt55_none\\summary.json",
+                      "bytes":  69923,
+                      "sha256":  "832133784c324e12d95330fec28c5cd40203bf7b4ea5e3a450604c484e72ba6d"
+                  },
+                  {
+                      "path":  "bundles\\2026-05-03_equation_splits_super_v0\\scores\\source_components\\new632\\qwen3_8b\\nano_high\\equation_scores.csv",
+                      "bytes":  237487,
+                      "sha256":  "d99142b528aa8758d382f20107e5817a36bfc374dcfd309e771cb1497acadeef"
+                  },
+                  {
+                      "path":  "bundles\\2026-05-03_equation_splits_super_v0\\scores\\source_components\\new632\\qwen3_8b\\nano_high\\equation_target_token_logprobs.csv",
+                      "bytes":  14017013,
+                      "sha256":  "e522639819385a5dd52c57ba45f397939cb51c87c890f26d0232cad5b9d62528"
+                  },
+                  {
+                      "path":  "bundles\\2026-05-03_equation_splits_super_v0\\scores\\source_components\\new632\\qwen3_8b\\nano_high\\softened_summary.json",
+                      "bytes":  1469,
+                      "sha256":  "a25d199a4553c7e1c7a3c8c9984edeeb134faf44affbbe5347ba80a4fcc226a8"
+                  },
+                  {
+                      "path":  "bundles\\2026-05-03_equation_splits_super_v0\\scores\\source_components\\new632\\qwen3_8b\\nano_high\\summary.json",
+                      "bytes":  69973,
+                      "sha256":  "3dfc4c7ce30eddcf5b83f928767e87a4ac5a15584f6bfb42b55915d2a536fa7b"
+                  },
+                  {
+                      "path":  "bundles\\2026-05-03_equation_splits_super_v0\\scores\\source_components\\new632\\qwen3_8b\\nano_low\\equation_scores.csv",
+                      "bytes":  237455,
+                      "sha256":  "6407957e29b399bbf1e0beb401d0b166780df736866cf91758b44bf38b81c1a1"
+                  },
+                  {
+                      "path":  "bundles\\2026-05-03_equation_splits_super_v0\\scores\\source_components\\new632\\qwen3_8b\\nano_low\\equation_target_token_logprobs.csv",
+                      "bytes":  14019649,
+                      "sha256":  "52aeb3dd20c0d48cfc6c2e94d4c9249bed6fb8cbca29f8bc3217967b8063f239"
+                  },
+                  {
+                      "path":  "bundles\\2026-05-03_equation_splits_super_v0\\scores\\source_components\\new632\\qwen3_8b\\nano_low\\softened_summary.json",
+                      "bytes":  1480,
+                      "sha256":  "21794368d7831e28624ce3d0d459ca3eb43316556bb43594663f04efd97adf84"
+                  },
+                  {
+                      "path":  "bundles\\2026-05-03_equation_splits_super_v0\\scores\\source_components\\new632\\qwen3_8b\\nano_low\\summary.json",
+                      "bytes":  70006,
+                      "sha256":  "1d2cb30076061252b7f87a13f0e33d208cb57a536798a9d55d63c2596e00b0c5"
+                  },
+                  {
+                      "path":  "bundles\\2026-05-03_equation_splits_super_v0\\scores\\source_components\\new632\\qwen3_8b\\nano_medium\\equation_scores.csv",
+                      "bytes":  237506,
+                      "sha256":  "991f4bb4527f05f3cc49d63d71ca8fb4fb5dbb27634f4efb22ffd61ea01a2bc6"
+                  },
+                  {
+                      "path":  "bundles\\2026-05-03_equation_splits_super_v0\\scores\\source_components\\new632\\qwen3_8b\\nano_medium\\equation_target_token_logprobs.csv",
+                      "bytes":  14019506,
+                      "sha256":  "5a5f0da2361eeec42de9d97dd9e40a13cc4559751917406bbc41e539b940fe6d"
+                  },
+                  {
+                      "path":  "bundles\\2026-05-03_equation_splits_super_v0\\scores\\source_components\\new632\\qwen3_8b\\nano_medium\\softened_summary.json",
+                      "bytes":  1470,
+                      "sha256":  "d2fa3ac37790ed7cd29ac6df5989fea8d611a0d2fc3616472475e1d4fc7b69c7"
+                  },
+                  {
+                      "path":  "bundles\\2026-05-03_equation_splits_super_v0\\scores\\source_components\\new632\\qwen3_8b\\nano_medium\\summary.json",
+                      "bytes":  69984,
+                      "sha256":  "9e00e2a4d873c331632df000956a5443b393de9191ba9a5cda3f58c8aad686dd"
+                  },
+                  {
+                      "path":  "bundles\\2026-05-03_equation_splits_super_v0\\scores\\source_components\\new632\\qwen3_8b\\opus47_low\\equation_scores.csv",
+                      "bytes":  123494,
+                      "sha256":  "cdfaf1d1b661f69eac118ad5d75ff68d5a551b9ed1154ccd981a66d7063a2f44"
+                  },
+                  {
+                      "path":  "bundles\\2026-05-03_equation_splits_super_v0\\scores\\source_components\\new632\\qwen3_8b\\opus47_low\\equation_target_token_logprobs.csv",
+                      "bytes":  7299748,
+                      "sha256":  "12e8e6f78319b3ed93794a04fb52a3dfa23e7e42fb3073cfacef83ae9467a662"
+                  },
+                  {
+                      "path":  "bundles\\2026-05-03_equation_splits_super_v0\\scores\\source_components\\new632\\qwen3_8b\\opus47_low\\README.md",
+                      "bytes":  1374,
+                      "sha256":  "785e237a5d4153255e6f1c1c9bc095dbe861a8d571623cf6306916d655aace69"
+                  },
+                  {
+                      "path":  "bundles\\2026-05-03_equation_splits_super_v0\\scores\\source_components\\new632\\qwen3_8b\\opus47_low\\run_plan.json",
+                      "bytes":  2690,
+                      "sha256":  "48afc4d9e0076020e5703d6d4645e7fbb65a6ebead7b569744e895ea27b16241"
+                  },
+                  {
+                      "path":  "bundles\\2026-05-03_equation_splits_super_v0\\scores\\source_components\\new632\\qwen3_8b\\opus47_low\\summary.json",
+                      "bytes":  472,
+                      "sha256":  "3833fd8f81621c88ac1c04b98b75ee850550628be313dcfe7ca6e2770ef44a03"
+                  },
+                  {
+                      "path":  "bundles\\2026-05-03_equation_splits_super_v0\\scores\\source_components\\new632\\qwen3_8b\\opus47_medium\\equation_scores.csv",
+                      "bytes":  123472,
+                      "sha256":  "fde03a56ec5ac749b9d379752beefbd6f2ef30fcd43cd0a148b998a2b86d7718"
+                  },
+                  {
+                      "path":  "bundles\\2026-05-03_equation_splits_super_v0\\scores\\source_components\\new632\\qwen3_8b\\opus47_medium\\equation_target_token_logprobs.csv",
+                      "bytes":  7300415,
+                      "sha256":  "51bc6dac7442c6dce4fa3dd72892c15269115787b28b9665147f5361fa7fe828"
+                  },
+                  {
+                      "path":  "bundles\\2026-05-03_equation_splits_super_v0\\scores\\source_components\\new632\\qwen3_8b\\opus47_medium\\README.md",
+                      "bytes":  1373,
+                      "sha256":  "da251e8057bb9d68af3e09554bf2ef9e074a500c31329d1ab9e47a774590eeb9"
+                  },
+                  {
+                      "path":  "bundles\\2026-05-03_equation_splits_super_v0\\scores\\source_components\\new632\\qwen3_8b\\opus47_medium\\run_plan.json",
+                      "bytes":  1230,
+                      "sha256":  "b414395b92d71e5d65b17ba97292f947c4e0479f6a8ad1889e5e72b103fd5a82"
+                  },
+                  {
+                      "path":  "bundles\\2026-05-03_equation_splits_super_v0\\scores\\source_components\\new632\\qwen3_8b\\opus47_medium\\summary.json",
+                      "bytes":  473,
+                      "sha256":  "aa24348ea2d6ef9c5433d49a97b0062d941e1bf1c9ca5fe0f7024234347ec298"
+                  },
+                  {
+                      "path":  "bundles\\2026-05-03_equation_splits_super_v0\\scores\\source_components\\old731\\kimi_k2p6\\combined_equation_scores.csv",
+                      "bytes":  2352519,
+                      "sha256":  "851093829e87fc5e6ad900e10ec4a30ebee1969413f5b9ed0e03b2a555a6ba65"
+                  },
+                  {
+                      "path":  "bundles\\2026-05-03_equation_splits_super_v0\\scores\\source_components\\old731\\kimi_k2p6\\combined_target_token_logprobs.csv",
+                      "bytes":  125411640,
+                      "sha256":  "cbe683bef845413c9dfb12f1018c203e2c55c6a8cd8da287bded77765fd6c55e"
+                  },
+                  {
+                      "path":  "bundles\\2026-05-03_equation_splits_super_v0\\scores\\source_components\\old731\\kimi_k2p6\\opus47_low\\equation_scores.csv",
+                      "bytes":  143319,
+                      "sha256":  "9091612ff7f764aabf340734c88e2b29f2f048d7a7682b46572dabfd8ae1a905"
+                  },
+                  {
+                      "path":  "bundles\\2026-05-03_equation_splits_super_v0\\scores\\source_components\\old731\\kimi_k2p6\\opus47_low\\equation_target_token_logprobs.csv",
+                      "bytes":  7369972,
+                      "sha256":  "a4617b277c80c5014ff2e8260efbed084a38d6609244b493e7adf3167fbb9a57"
+                  },
+                  {
+                      "path":  "bundles\\2026-05-03_equation_splits_super_v0\\scores\\source_components\\old731\\kimi_k2p6\\opus47_low\\README.md",
+                      "bytes":  1374,
+                      "sha256":  "2798dc6f9144415291e40c25e092d9da326fa79a79c9825d85188e168ecc9ff4"
+                  },
+                  {
+                      "path":  "bundles\\2026-05-03_equation_splits_super_v0\\scores\\source_components\\old731\\kimi_k2p6\\opus47_low\\run_plan.json",
+                      "bytes":  2692,
+                      "sha256":  "a6e446cd6370ed70190e0c5fe458c60733808217a872843d8d7831172fbf7263"
+                  },
+                  {
+                      "path":  "bundles\\2026-05-03_equation_splits_super_v0\\scores\\source_components\\old731\\kimi_k2p6\\opus47_low\\summary.json",
+                      "bytes":  473,
+                      "sha256":  "6ec8b1cf5439e07c773a544a69dee0d510632d4114b4e63fc317ceab6250bf6a"
+                  },
+                  {
+                      "path":  "bundles\\2026-05-03_equation_splits_super_v0\\scores\\source_components\\old731\\kimi_k2p6\\opus47_medium\\equation_scores.csv",
+                      "bytes":  143306,
+                      "sha256":  "68bb0e76782681d3c65938923ea135bb9662b51267061da56024fa5692f55152"
+                  },
+                  {
+                      "path":  "bundles\\2026-05-03_equation_splits_super_v0\\scores\\source_components\\old731\\kimi_k2p6\\opus47_medium\\equation_target_token_logprobs.csv",
+                      "bytes":  7371907,
+                      "sha256":  "b1e0eb3b03bbc9d9090fe612d257154bf22933bd35d553a67da8d30be692e2a3"
+                  },
+                  {
+                      "path":  "bundles\\2026-05-03_equation_splits_super_v0\\scores\\source_components\\old731\\kimi_k2p6\\opus47_medium\\README.md",
+                      "bytes":  1374,
+                      "sha256":  "9a4df6f20cbf978fe78e9443fec8a17365c84307992b966f118d6c1818888821"
+                  },
+                  {
+                      "path":  "bundles\\2026-05-03_equation_splits_super_v0\\scores\\source_components\\old731\\kimi_k2p6\\opus47_medium\\run_plan.json",
+                      "bytes":  1236,
+                      "sha256":  "9faadb79b9bccc79e018b2aee23c711e947db158782df9ca589cd01abea6c15e"
+                  },
+                  {
+                      "path":  "bundles\\2026-05-03_equation_splits_super_v0\\scores\\source_components\\old731\\kimi_k2p6\\opus47_medium\\summary.json",
+                      "bytes":  473,
+                      "sha256":  "2b346662747c0e22e363e71dd8501e5114648fd5b9f57d83a38772cf27dfeb36"
+                  },
+                  {
+                      "path":  "bundles\\2026-05-03_equation_splits_super_v0\\scores\\source_components\\old731\\kimi_k2p6\\softened_model_summary.json",
+                      "bytes":  50069,
+                      "sha256":  "64bb01b3d87dab72dccb8cf6f79096bdd1e295c51068e88313444aad374ea864"
+                  },
+                  {
+                      "path":  "bundles\\2026-05-03_equation_splits_super_v0\\scores\\source_components\\old731\\qwen3_8b\\combined_equation_scores.csv",
+                      "bytes":  2000212,
+                      "sha256":  "4acaea96969b5c0f0fa4d5b3b7ced4d8e07f09367c330b1afbf769eb0a6edd92"
+                  },
+                  {
+                      "path":  "bundles\\2026-05-03_equation_splits_super_v0\\scores\\source_components\\old731\\qwen3_8b\\combined_target_token_logprobs.csv",
+                      "bytes":  119704622,
+                      "sha256":  "0b33b697e16b56e9b3b2b0b38981ea2e49f2e3445194889ec60a480d12d645d7"
+                  },
+                  {
+                      "path":  "bundles\\2026-05-03_equation_splits_super_v0\\scores\\source_components\\old731\\qwen3_8b\\opus47_low\\equation_scores.csv",
+                      "bytes":  142709,
+                      "sha256":  "8f7af583f31960944b96c9e7f373535408599103529addc1e0a31a901f444c39"
+                  },
+                  {
+                      "path":  "bundles\\2026-05-03_equation_splits_super_v0\\scores\\source_components\\old731\\qwen3_8b\\opus47_low\\equation_target_token_logprobs.csv",
+                      "bytes":  8232533,
+                      "sha256":  "618e3dad67ce75f571832159b2e53f72494be16672009c172d57674db4961f87"
+                  },
+                  {
+                      "path":  "bundles\\2026-05-03_equation_splits_super_v0\\scores\\source_components\\old731\\qwen3_8b\\opus47_low\\README.md",
+                      "bytes":  1373,
+                      "sha256":  "43fa8d6891c95849cfac7df1ba62c8bc0aec29e9c0d9c8774967185cfa82e61a"
+                  },
+                  {
+                      "path":  "bundles\\2026-05-03_equation_splits_super_v0\\scores\\source_components\\old731\\qwen3_8b\\opus47_low\\run_plan.json",
+                      "bytes":  2691,
+                      "sha256":  "858e559faaed1eeaf2409a1d75b8c0a3cfd716e0225b719f81176bc683840a7c"
+                  },
+                  {
+                      "path":  "bundles\\2026-05-03_equation_splits_super_v0\\scores\\source_components\\old731\\qwen3_8b\\opus47_low\\summary.json",
+                      "bytes":  472,
+                      "sha256":  "ffebeb24d13a7dc7ab6d83faacc0939dc55479ef3e8b8ee24d4ce09407a0f769"
+                  },
+                  {
+                      "path":  "bundles\\2026-05-03_equation_splits_super_v0\\scores\\source_components\\old731\\qwen3_8b\\opus47_medium\\equation_scores.csv",
+                      "bytes":  142590,
+                      "sha256":  "17cdec31fbcb3c75d249856c9b6c37cc04dedf9f0aa9edfdd28ad4b9b0cf6d9d"
+                  },
+                  {
+                      "path":  "bundles\\2026-05-03_equation_splits_super_v0\\scores\\source_components\\old731\\qwen3_8b\\opus47_medium\\equation_target_token_logprobs.csv",
+                      "bytes":  8233371,
+                      "sha256":  "9d48583f78fb64e4649919797b655d4c22122e6b4113de9890af66a3f2deb6b2"
+                  },
+                  {
+                      "path":  "bundles\\2026-05-03_equation_splits_super_v0\\scores\\source_components\\old731\\qwen3_8b\\opus47_medium\\README.md",
+                      "bytes":  1373,
+                      "sha256":  "6c26c50d97cbe902173c0f3ea382a5538707ab6cb2e72501cf94c98aecd0be3b"
+                  },
+                  {
+                      "path":  "bundles\\2026-05-03_equation_splits_super_v0\\scores\\source_components\\old731\\qwen3_8b\\opus47_medium\\run_plan.json",
+                      "bytes":  1235,
+                      "sha256":  "13f113f0c9db748c4ed79c17d5c603b7c63d1225f56cfb860f7ed03687b2ecdf"
+                  },
+                  {
+                      "path":  "bundles\\2026-05-03_equation_splits_super_v0\\scores\\source_components\\old731\\qwen3_8b\\opus47_medium\\summary.json",
+                      "bytes":  473,
+                      "sha256":  "807fe66ab13998dac8d4152b059f8c9d0e430cc2ee96a3fd9ea6a8cc8c0349cc"
+                  },
+                  {
+                      "path":  "bundles\\2026-05-03_equation_splits_super_v0\\scores\\source_components\\old731\\qwen3_8b\\softened_model_summary.json",
+                      "bytes":  38406,
+                      "sha256":  "0fcdc1b5c5e497b04c08902bf9bb3b8a300e870b5e82574b770106e50bd79685"
+                  },
+                  {
+                      "path":  "bundles\\2026-05-03_equation_splits_super_v0\\scripts\\build_equation_cut_dataset.py",
+                      "bytes":  13612,
+                      "sha256":  "ccab8738a8ac2df6cd8876607dcde40cbab7e3ef6f8d3b632f33cc7d0fabf751"
+                  },
+                  {
+                      "path":  "bundles\\2026-05-03_equation_splits_super_v0\\scripts\\create_equation_splits_super_bundle.py",
+                      "bytes":  36660,
+                      "sha256":  "b667beac99442bfb7530fa5f217fbd80b6a22e0644c0199b887474db86d599f6"
+                  },
+                  {
+                      "path":  "bundles\\2026-05-03_equation_splits_super_v0\\scripts\\join_equation_openai_outputs.py",
+                      "bytes":  6758,
+                      "sha256":  "ac4126393c1d9d121892464f9012fa33b367b624b7fc48598a9fb607da913443"
+                  },
+                  {
+                      "path":  "bundles\\2026-05-03_equation_splits_super_v0\\scripts\\manage_equation_openai_batch.py",
+                      "bytes":  7953,
+                      "sha256":  "aa86f302f6e6d2ce5a507eb039263cee0aefa9fbf83771bb546086c28c5ee8d8"
+                  },
+                  {
+                      "path":  "bundles\\2026-05-03_equation_splits_super_v0\\scripts\\prepare_equation_openai_generation_batch.py",
+                      "bytes":  9150,
+                      "sha256":  "bd559c7a2c3b2feebd61f705cc0f4c819562324a8ab572eb5b2afb111d9238d1"
+                  },
+                  {
+                      "path":  "bundles\\2026-05-03_equation_splits_super_v0\\scripts\\run_equation_openai_responses_async.py",
+                      "bytes":  9152,
+                      "sha256":  "4c4915e5ff226b5af30bf9d87138dc0037b86663d4359e9b144d70ac602e0487"
+                  },
+                  {
+                      "path":  "bundles\\2026-05-03_equation_splits_super_v0\\scripts\\score_equation_cut_generations.py",
+                      "bytes":  25013,
+                      "sha256":  "03da7272f0a92d82032ca26891466c0648df7f6da83b2d2626707e284e1cd440"
+                  },
+                  {
+                      "path":  "bundles\\2026-05-03_equation_splits_super_v0\\scripts\\strip_equation_outer_close_from_joined.py",
+                      "bytes":  3105,
+                      "sha256":  "219c8ce05d4b26fed5d04695ed932d0a7b1dda2706dd424d9dbc7e2d60303460"
+                  },
+                  {
+                      "path":  "bundles\\2026-05-03_equation_splits_super_v0\\scripts\\summarize_equation_score_dir.py",
+                      "bytes":  3373,
+                      "sha256":  "7b8f3af1d91e8e7a6445256bda4eb607ba7860b55dba4d52a396d975d845f50d"
+                  },
+                  {
+                      "path":  "README.md",
+                      "bytes":  5149,
+                      "sha256":  "0abace6b3c7b5ed430cb0d1babd34775a8df6d3f016b4246d525507d10631ea0"
+                  },
+                  {
+                      "path":  "derived/opus47_usage_anthropic_token_estimates.csv",
+                      "bytes":  566164,
+                      "sha256":  "e11a56bb478fdcd27e8a8ff2b2c432d0b9bb80fe1a27bb1face5d3724c70bd4c"
+                  },
+                  {
+                      "path":  "derived/opus47_usage_anthropic_token_estimates_summary.json",
+                      "bytes":  1495,
+                      "sha256":  "f2c3b04316975d4453e0f1e3eba52d911fdb669b93b4844f5cdd91510a69cf62"
+                  }
+              ],
+    "generation_lanes":  [
+                             {
+                                 "bundle":  "old731",
+                                 "model_lane":  "gpt55_none",
+                                 "source":  "bundles\\2026-05-01_equation_splits_premier_v1\\generations\\gpt55_none\\gpt55_none_joined_stripped.jsonl",
+                                 "copied_to":  "bundles\\2026-05-03_equation_splits_super_v0\\generations\\old731\\gpt55_none\\gpt55_none_joined_stripped.jsonl",
+                                 "rows":  731,
+                                 "bytes":  20268298,
+                                 "sha256":  "b8ec41a6dd31063f397754c3bdf0b27983ba35b1fdf2f095cce8334a3f19242f"
+                             },
+                             {
+                                 "bundle":  "old731",
+                                 "model_lane":  "gpt55_low",
+                                 "source":  "bundles\\2026-05-01_equation_splits_premier_v1\\generations\\gpt55_low\\gpt55_low_joined_stripped.jsonl",
+                                 "copied_to":  "bundles\\2026-05-03_equation_splits_super_v0\\generations\\old731\\gpt55_low\\gpt55_low_joined_stripped.jsonl",
+                                 "rows":  731,
+                                 "bytes":  20287984,
+                                 "sha256":  "953178d54acb4dd6126b876f602051c4940b486f3ccb3bc636b4c25fc207df4b"
+                             },
+                             {
+                                 "bundle":  "old731",
+                                 "model_lane":  "gpt55_medium",
+                                 "source":  "bundles\\2026-05-01_equation_splits_premier_v1\\generations\\gpt55_medium\\gpt55_medium_joined_stripped.jsonl",
+                                 "copied_to":  "bundles\\2026-05-03_equation_splits_super_v0\\generations\\old731\\gpt55_medium\\gpt55_medium_joined_stripped.jsonl",
+                                 "rows":  731,
+                                 "bytes":  20288950,
+                                 "sha256":  "d8433cccec45fbdfba93ee62998bea1f2412e3abe9f7a72e40818f4fe688986c"
+                             },
+                             {
+                                 "bundle":  "old731",
+                                 "model_lane":  "gpt55_high",
+                                 "source":  "bundles\\2026-05-01_equation_splits_premier_v1\\generations\\gpt55_high\\gpt55_high_joined_stripped.jsonl",
+                                 "copied_to":  "bundles\\2026-05-03_equation_splits_super_v0\\generations\\old731\\gpt55_high\\gpt55_high_joined_stripped.jsonl",
+                                 "rows":  731,
+                                 "bytes":  20287253,
+                                 "sha256":  "1d9353d9f3ff66c91ba48a81a2c86f6b2df3832157e05980cffaa4e2bf242eaf"
+                             },
+                             {
+                                 "bundle":  "old731",
+                                 "model_lane":  "nano_low",
+                                 "source":  "bundles\\2026-05-01_equation_splits_premier_v1\\generations\\nano_low\\nano_low_joined_stripped.jsonl",
+                                 "copied_to":  "bundles\\2026-05-03_equation_splits_super_v0\\generations\\old731\\nano_low\\nano_low_joined_stripped.jsonl",
+                                 "rows":  731,
+                                 "bytes":  20295643,
+                                 "sha256":  "1c5be25337d2bd3e8e930086d950d731fb49d85f99722d6c2938ef6de9791811"
+                             },
+                             {
+                                 "bundle":  "old731",
+                                 "model_lane":  "nano_medium",
+                                 "source":  "bundles\\2026-05-01_equation_splits_premier_v1\\generations\\nano_medium\\nano_medium_joined_stripped.jsonl",
+                                 "copied_to":  "bundles\\2026-05-03_equation_splits_super_v0\\generations\\old731\\nano_medium\\nano_medium_joined_stripped.jsonl",
+                                 "rows":  731,
+                                 "bytes":  20244850,
+                                 "sha256":  "36c17a6171ae7a4ca905f2180ad5387cd75aae95cedfb2b14df7083c446347d3"
+                             },
+                             {
+                                 "bundle":  "old731",
+                                 "model_lane":  "nano_high",
+                                 "source":  "bundles\\2026-05-01_equation_splits_premier_v1\\generations\\nano_high_repair_2026-05-03\\nano_high_joined_repaired731_stripped.jsonl",
+                                 "copied_to":  "bundles\\2026-05-03_equation_splits_super_v0\\generations\\old731\\nano_high\\nano_high_joined_repaired731_stripped.jsonl",
+                                 "rows":  731,
+                                 "bytes":  20242635,
+                                 "sha256":  "16b5446e4df389b5450dcc38ccd7aa778db70ac5d6453bd09beec8081020e656"
+                             },
+                             {
+                                 "bundle":  "new632",
+                                 "model_lane":  "gpt55_none",
+                                 "source":  "experiments\\2026-05-03_equation_cut_prevweek_strict25_all80_fulltexcmd_640_v0\\generation_runs\\2026-05-03_gpt55_none_actual_paper_style_no_exact_y_prompt_match_v0\\gpt55_none_joined_stripped.jsonl",
+                                 "copied_to":  "bundles\\2026-05-03_equation_splits_super_v0\\generations\\new632\\gpt55_none\\gpt55_none_joined_stripped.jsonl",
+                                 "rows":  632,
+                                 "bytes":  17539302,
+                                 "sha256":  "249b3b8bf559931d49dfdb6e5939368c5bc52a19ec39c3c1452e9c95c5be43d0"
+                             },
+                             {
+                                 "bundle":  "new632",
+                                 "model_lane":  "gpt55_low",
+                                 "source":  "experiments\\2026-05-03_equation_cut_prevweek_strict25_all80_fulltexcmd_640_v0\\generation_runs\\2026-05-03_gpt55_low_actual_paper_style_no_exact_y_prompt_match_v0\\gpt55_low_joined_stripped.jsonl",
+                                 "copied_to":  "bundles\\2026-05-03_equation_splits_super_v0\\generations\\new632\\gpt55_low\\gpt55_low_joined_stripped.jsonl",
+                                 "rows":  632,
+                                 "bytes":  17552619,
+                                 "sha256":  "a602bdde732884f3747e37e702fdb9b38ac1431c87c1a43e78e5797844b4d98e"
+                             },
+                             {
+                                 "bundle":  "new632",
+                                 "model_lane":  "gpt55_medium",
+                                 "source":  "experiments\\2026-05-03_equation_cut_prevweek_strict25_all80_fulltexcmd_640_v0\\generation_runs\\2026-05-03_gpt55_medium_actual_paper_style_no_exact_y_prompt_match_with_retry9_v0\\gpt55_medium_joined_stripped.jsonl",
+                                 "copied_to":  "bundles\\2026-05-03_equation_splits_super_v0\\generations\\new632\\gpt55_medium\\gpt55_medium_joined_stripped.jsonl",
+                                 "rows":  632,
+                                 "bytes":  17559304,
+                                 "sha256":  "f12be8c9dbea012731eee1f984346ae48e7c429ea65fadc1b4215b8eb3f47b73"
+                             },
+                             {
+                                 "bundle":  "new632",
+                                 "model_lane":  "gpt55_high",
+                                 "source":  "experiments\\2026-05-03_equation_cut_prevweek_strict25_all80_fulltexcmd_640_v0\\generation_runs\\2026-05-03_gpt55_high_actual_paper_style_no_exact_y_prompt_match_32k_v0\\gpt55_high_joined_stripped.jsonl",
+                                 "copied_to":  "bundles\\2026-05-03_equation_splits_super_v0\\generations\\new632\\gpt55_high\\gpt55_high_joined_stripped.jsonl",
+                                 "rows":  632,
+                                 "bytes":  17558125,
+                                 "sha256":  "8fb6bef0900d289c7e0a133b2cc0dbfe952d2d378cc84be7750b4ac8e0d59ebd"
+                             },
+                             {
+                                 "bundle":  "new632",
+                                 "model_lane":  "nano_low",
+                                 "source":  "experiments\\2026-05-03_equation_cut_prevweek_strict25_all80_fulltexcmd_640_v0\\generation_runs\\2026-05-03_gpt54nano_low_med_high_3shard_actual_paper_style_no_exact_y_v0\\nano_low\\nano_low_joined_stripped.jsonl",
+                                 "copied_to":  "bundles\\2026-05-03_equation_splits_super_v0\\generations\\new632\\nano_low\\nano_low_joined_stripped.jsonl",
+                                 "rows":  632,
+                                 "bytes":  17554143,
+                                 "sha256":  "186979b164f33c6d56eb2a644412f1e4514bf0e0194464151b58b9587d062ba1"
+                             },
+                             {
+                                 "bundle":  "new632",
+                                 "model_lane":  "nano_medium",
+                                 "source":  "experiments\\2026-05-03_equation_cut_prevweek_strict25_all80_fulltexcmd_640_v0\\generation_runs\\2026-05-03_gpt54nano_low_med_high_3shard_actual_paper_style_no_exact_y_v0\\nano_medium\\nano_medium_joined_with_retry5_stripped.jsonl",
+                                 "copied_to":  "bundles\\2026-05-03_equation_splits_super_v0\\generations\\new632\\nano_medium\\nano_medium_joined_with_retry5_stripped.jsonl",
+                                 "rows":  632,
+                                 "bytes":  17502005,
+                                 "sha256":  "295e4a319ee17fbfa2c0df3e72467731bfc1a90fc388e2366535d76c760aabb9"
+                             },
+                             {
+                                 "bundle":  "new632",
+                                 "model_lane":  "nano_high",
+                                 "source":  "experiments\\2026-05-03_equation_cut_prevweek_strict25_all80_fulltexcmd_640_v0\\generation_runs\\2026-05-03_gpt54nano_low_med_high_3shard_actual_paper_style_no_exact_y_v0\\nano_high\\nano_high_joined_with_retry35_stripped.jsonl",
+                                 "copied_to":  "bundles\\2026-05-03_equation_splits_super_v0\\generations\\new632\\nano_high\\nano_high_joined_with_retry35_stripped.jsonl",
+                                 "rows":  632,
+                                 "bytes":  17492107,
+                                 "sha256":  "0a18ff6657420c9265a2019713d1ab993776ceeb7daed826954ac1623c4602e6"
+                             },
+                             {
+                                 "bundle":  "old731",
+                                 "model_lane":  "opus47_medium",
+                                 "source":  "diagnostics\\anthropic_claude_smoke\\2026-05-03_opus47_medium_eq_superbundle_partial_current\\claude_opus47_medium_partial_joined.jsonl",
+                                 "copied_to":  "bundles\\2026-05-03_equation_splits_super_v0\\generations\\old731\\opus47_medium\\claude_opus47_medium_partial_joined.jsonl",
+                                 "rows":  731,
+                                 "bytes":  20284815,
+                                 "sha256":  "b27a645aa3fcb74bb389012959a9560f0fc4d1c06b689912cc711f876183c7c7"
+                             },
+                             {
+                                 "bundle":  "old731",
+                                 "model_lane":  "opus47_low",
+                                 "source":  "diagnostics\\anthropic_claude_smoke\\2026-05-03_opus47_low_eq_full731_partial_current\\claude_opus47_low_partial_joined.jsonl",
+                                 "copied_to":  "bundles\\2026-05-03_equation_splits_super_v0\\generations\\old731\\opus47_low\\claude_opus47_low_partial_joined.jsonl",
+                                 "rows":  731,
+                                 "bytes":  20276060,
+                                 "sha256":  "c66cd526052cc07b289a6f568cfab34e9e851fcbb30bbeaa2bd56d48303a5d10"
+                             },
+                             {
+                                 "bundle":  "new632",
+                                 "model_lane":  "opus47_medium",
+                                 "source":  "diagnostics\\anthropic_claude_smoke\\2026-05-04_opus47_second_subbundle_plan_v0\\claude_opus47_medium_new632_current_joined.jsonl",
+                                 "copied_to":  "bundles\\2026-05-03_equation_splits_super_v0\\generations\\new632\\opus47_medium\\claude_opus47_medium_new632_current_joined.jsonl",
+                                 "rows":  632,
+                                 "bytes":  17578746,
+                                 "sha256":  "83c345ee13e8f679d627108341ea92839fe3e127e3ff0a1469c8a1f1df36abce"
+                             },
+                             {
+                                 "bundle":  "new632",
+                                 "model_lane":  "opus47_low",
+                                 "source":  "diagnostics\\anthropic_claude_smoke\\2026-05-04_opus47_second_subbundle_plan_v0\\claude_opus47_low_new632_current_joined.jsonl",
+                                 "copied_to":  "bundles\\2026-05-03_equation_splits_super_v0\\generations\\new632\\opus47_low\\claude_opus47_low_new632_current_joined.jsonl",
+                                 "rows":  632,
+                                 "bytes":  17571318,
+                                 "sha256":  "c52c10a283f61a1e5305efd0c0683e05dbb5c9d17bb0f2ab675750720d9e729d"
+                             }
+                         ],
+    "score_source_files":  [
+                               {
+                                   "source":  "bundles\\2026-05-01_equation_splits_premier_v1\\scores\\small_qwen_current_full731\\combined_equation_scores.csv",
+                                   "copied_to":  "bundles\\2026-05-03_equation_splits_super_v0\\scores\\source_components\\old731\\qwen3_8b\\combined_equation_scores.csv",
+                                   "bytes":  2000212
+                               },
+                               {
+                                   "source":  "bundles\\2026-05-01_equation_splits_premier_v1\\scores\\small_qwen_current_full731\\combined_target_token_logprobs.csv",
+                                   "copied_to":  "bundles\\2026-05-03_equation_splits_super_v0\\scores\\source_components\\old731\\qwen3_8b\\combined_target_token_logprobs.csv",
+                                   "bytes":  119704622
+                               },
+                               {
+                                   "source":  "bundles\\2026-05-01_equation_splits_premier_v1\\scores\\small_qwen_current_full731\\softened_model_summary.json",
+                                   "copied_to":  "bundles\\2026-05-03_equation_splits_super_v0\\scores\\source_components\\old731\\qwen3_8b\\softened_model_summary.json",
+                                   "bytes":  38406
+                               },
+                               {
+                                   "source":  "bundles\\2026-05-01_equation_splits_premier_v1\\scores\\kimi_k2p6_current_full731\\combined_equation_scores.csv",
+                                   "copied_to":  "bundles\\2026-05-03_equation_splits_super_v0\\scores\\source_components\\old731\\kimi_k2p6\\combined_equation_scores.csv",
+                                   "bytes":  2352519
+                               },
+                               {
+                                   "source":  "bundles\\2026-05-01_equation_splits_premier_v1\\scores\\kimi_k2p6_current_full731\\combined_target_token_logprobs.csv",
+                                   "copied_to":  "bundles\\2026-05-03_equation_splits_super_v0\\scores\\source_components\\old731\\kimi_k2p6\\combined_target_token_logprobs.csv",
+                                   "bytes":  125411640
+                               },
+                               {
+                                   "source":  "bundles\\2026-05-01_equation_splits_premier_v1\\scores\\kimi_k2p6_current_full731\\softened_model_summary.json",
+                                   "copied_to":  "bundles\\2026-05-03_equation_splits_super_v0\\scores\\source_components\\old731\\kimi_k2p6\\softened_model_summary.json",
+                                   "bytes":  50069
+                               },
+                               {
+                                   "source":  "experiments\\2026-05-03_equation_cut_prevweek_strict25_all80_fulltexcmd_640_v0\\qwen_scores\\gpt55_none_direct_bareB_full632_v0\\equation_scores.csv",
+                                   "copied_to":  "bundles\\2026-05-03_equation_splits_super_v0\\scores\\source_components\\new632\\qwen3_8b\\gpt55_none\\equation_scores.csv",
+                                   "bytes":  237562
+                               },
+                               {
+                                   "source":  "experiments\\2026-05-03_equation_cut_prevweek_strict25_all80_fulltexcmd_640_v0\\qwen_scores\\gpt55_none_direct_bareB_full632_v0\\equation_target_token_logprobs.csv",
+                                   "copied_to":  "bundles\\2026-05-03_equation_splits_super_v0\\scores\\source_components\\new632\\qwen3_8b\\gpt55_none\\equation_target_token_logprobs.csv",
+                                   "bytes":  14031588
+                               },
+                               {
+                                   "source":  "experiments\\2026-05-03_equation_cut_prevweek_strict25_all80_fulltexcmd_640_v0\\qwen_scores\\gpt55_none_direct_bareB_full632_v0\\summary.json",
+                                   "copied_to":  "bundles\\2026-05-03_equation_splits_super_v0\\scores\\source_components\\new632\\qwen3_8b\\gpt55_none\\summary.json",
+                                   "bytes":  69923
+                               },
+                               {
+                                   "source":  "experiments\\2026-05-03_equation_cut_prevweek_strict25_all80_fulltexcmd_640_v0\\qwen_scores\\gpt55_none_direct_bareB_full632_v0\\softened_summary.json",
+                                   "copied_to":  "bundles\\2026-05-03_equation_splits_super_v0\\scores\\source_components\\new632\\qwen3_8b\\gpt55_none\\softened_summary.json",
+                                   "bytes":  1471
+                               },
+                               {
+                                   "source":  "experiments\\2026-05-03_equation_cut_prevweek_strict25_all80_fulltexcmd_640_v0\\qwen_scores\\gpt55_low_direct_bareB_full632_v0\\equation_scores.csv",
+                                   "copied_to":  "bundles\\2026-05-03_equation_splits_super_v0\\scores\\source_components\\new632\\qwen3_8b\\gpt55_low\\equation_scores.csv",
+                                   "bytes":  237608
+                               },
+                               {
+                                   "source":  "experiments\\2026-05-03_equation_cut_prevweek_strict25_all80_fulltexcmd_640_v0\\qwen_scores\\gpt55_low_direct_bareB_full632_v0\\equation_target_token_logprobs.csv",
+                                   "copied_to":  "bundles\\2026-05-03_equation_splits_super_v0\\scores\\source_components\\new632\\qwen3_8b\\gpt55_low\\equation_target_token_logprobs.csv",
+                                   "bytes":  14039528
+                               },
+                               {
+                                   "source":  "experiments\\2026-05-03_equation_cut_prevweek_strict25_all80_fulltexcmd_640_v0\\qwen_scores\\gpt55_low_direct_bareB_full632_v0\\summary.json",
+                                   "copied_to":  "bundles\\2026-05-03_equation_splits_super_v0\\scores\\source_components\\new632\\qwen3_8b\\gpt55_low\\summary.json",
+                                   "bytes":  69817
+                               },
+                               {
+                                   "source":  "experiments\\2026-05-03_equation_cut_prevweek_strict25_all80_fulltexcmd_640_v0\\qwen_scores\\gpt55_low_direct_bareB_full632_v0\\softened_summary.json",
+                                   "copied_to":  "bundles\\2026-05-03_equation_splits_super_v0\\scores\\source_components\\new632\\qwen3_8b\\gpt55_low\\softened_summary.json",
+                                   "bytes":  1470
+                               },
+                               {
+                                   "source":  "experiments\\2026-05-03_equation_cut_prevweek_strict25_all80_fulltexcmd_640_v0\\qwen_scores\\gpt55_medium_direct_bareB_full632_v0\\equation_scores.csv",
+                                   "copied_to":  "bundles\\2026-05-03_equation_splits_super_v0\\scores\\source_components\\new632\\qwen3_8b\\gpt55_medium\\equation_scores.csv",
+                                   "bytes":  237571
+                               },
+                               {
+                                   "source":  "experiments\\2026-05-03_equation_cut_prevweek_strict25_all80_fulltexcmd_640_v0\\qwen_scores\\gpt55_medium_direct_bareB_full632_v0\\equation_target_token_logprobs.csv",
+                                   "copied_to":  "bundles\\2026-05-03_equation_splits_super_v0\\scores\\source_components\\new632\\qwen3_8b\\gpt55_medium\\equation_target_token_logprobs.csv",
+                                   "bytes":  14038323
+                               },
+                               {
+                                   "source":  "experiments\\2026-05-03_equation_cut_prevweek_strict25_all80_fulltexcmd_640_v0\\qwen_scores\\gpt55_medium_direct_bareB_full632_v0\\summary.json",
+                                   "copied_to":  "bundles\\2026-05-03_equation_splits_super_v0\\scores\\source_components\\new632\\qwen3_8b\\gpt55_medium\\summary.json",
+                                   "bytes":  69806
+                               },
+                               {
+                                   "source":  "experiments\\2026-05-03_equation_cut_prevweek_strict25_all80_fulltexcmd_640_v0\\qwen_scores\\gpt55_medium_direct_bareB_full632_v0\\softened_summary.json",
+                                   "copied_to":  "bundles\\2026-05-03_equation_splits_super_v0\\scores\\source_components\\new632\\qwen3_8b\\gpt55_medium\\softened_summary.json",
+                                   "bytes":  1464
+                               },
+                               {
+                                   "source":  "experiments\\2026-05-03_equation_cut_prevweek_strict25_all80_fulltexcmd_640_v0\\qwen_scores\\gpt55_high_direct_bareB_full632_v0\\equation_scores.csv",
+                                   "copied_to":  "bundles\\2026-05-03_equation_splits_super_v0\\scores\\source_components\\new632\\qwen3_8b\\gpt55_high\\equation_scores.csv",
+                                   "bytes":  237649
+                               },
+                               {
+                                   "source":  "experiments\\2026-05-03_equation_cut_prevweek_strict25_all80_fulltexcmd_640_v0\\qwen_scores\\gpt55_high_direct_bareB_full632_v0\\equation_target_token_logprobs.csv",
+                                   "copied_to":  "bundles\\2026-05-03_equation_splits_super_v0\\scores\\source_components\\new632\\qwen3_8b\\gpt55_high\\equation_target_token_logprobs.csv",
+                                   "bytes":  14043799
+                               },
+                               {
+                                   "source":  "experiments\\2026-05-03_equation_cut_prevweek_strict25_all80_fulltexcmd_640_v0\\qwen_scores\\gpt55_high_direct_bareB_full632_v0\\summary.json",
+                                   "copied_to":  "bundles\\2026-05-03_equation_splits_super_v0\\scores\\source_components\\new632\\qwen3_8b\\gpt55_high\\summary.json",
+                                   "bytes":  69817
+                               },
+                               {
+                                   "source":  "experiments\\2026-05-03_equation_cut_prevweek_strict25_all80_fulltexcmd_640_v0\\qwen_scores\\gpt55_high_direct_bareB_full632_v0\\softened_summary.json",
+                                   "copied_to":  "bundles\\2026-05-03_equation_splits_super_v0\\scores\\source_components\\new632\\qwen3_8b\\gpt55_high\\softened_summary.json",
+                                   "bytes":  1467
+                               },
+                               {
+                                   "source":  "experiments\\2026-05-03_equation_cut_prevweek_strict25_all80_fulltexcmd_640_v0\\qwen_scores\\nano_low_direct_bareB_full632_v0\\equation_scores.csv",
+                                   "copied_to":  "bundles\\2026-05-03_equation_splits_super_v0\\scores\\source_components\\new632\\qwen3_8b\\nano_low\\equation_scores.csv",
+                                   "bytes":  237455
+                               },
+                               {
+                                   "source":  "experiments\\2026-05-03_equation_cut_prevweek_strict25_all80_fulltexcmd_640_v0\\qwen_scores\\nano_low_direct_bareB_full632_v0\\equation_target_token_logprobs.csv",
+                                   "copied_to":  "bundles\\2026-05-03_equation_splits_super_v0\\scores\\source_components\\new632\\qwen3_8b\\nano_low\\equation_target_token_logprobs.csv",
+                                   "bytes":  14019649
+                               },
+                               {
+                                   "source":  "experiments\\2026-05-03_equation_cut_prevweek_strict25_all80_fulltexcmd_640_v0\\qwen_scores\\nano_low_direct_bareB_full632_v0\\summary.json",
+                                   "copied_to":  "bundles\\2026-05-03_equation_splits_super_v0\\scores\\source_components\\new632\\qwen3_8b\\nano_low\\summary.json",
+                                   "bytes":  70006
+                               },
+                               {
+                                   "source":  "experiments\\2026-05-03_equation_cut_prevweek_strict25_all80_fulltexcmd_640_v0\\qwen_scores\\nano_low_direct_bareB_full632_v0\\softened_summary.json",
+                                   "copied_to":  "bundles\\2026-05-03_equation_splits_super_v0\\scores\\source_components\\new632\\qwen3_8b\\nano_low\\softened_summary.json",
+                                   "bytes":  1480
+                               },
+                               {
+                                   "source":  "experiments\\2026-05-03_equation_cut_prevweek_strict25_all80_fulltexcmd_640_v0\\qwen_scores\\nano_medium_direct_bareB_full632_v0\\equation_scores.csv",
+                                   "copied_to":  "bundles\\2026-05-03_equation_splits_super_v0\\scores\\source_components\\new632\\qwen3_8b\\nano_medium\\equation_scores.csv",
+                                   "bytes":  237506
+                               },
+                               {
+                                   "source":  "experiments\\2026-05-03_equation_cut_prevweek_strict25_all80_fulltexcmd_640_v0\\qwen_scores\\nano_medium_direct_bareB_full632_v0\\equation_target_token_logprobs.csv",
+                                   "copied_to":  "bundles\\2026-05-03_equation_splits_super_v0\\scores\\source_components\\new632\\qwen3_8b\\nano_medium\\equation_target_token_logprobs.csv",
+                                   "bytes":  14019506
+                               },
+                               {
+                                   "source":  "experiments\\2026-05-03_equation_cut_prevweek_strict25_all80_fulltexcmd_640_v0\\qwen_scores\\nano_medium_direct_bareB_full632_v0\\summary.json",
+                                   "copied_to":  "bundles\\2026-05-03_equation_splits_super_v0\\scores\\source_components\\new632\\qwen3_8b\\nano_medium\\summary.json",
+                                   "bytes":  69984
+                               },
+                               {
+                                   "source":  "experiments\\2026-05-03_equation_cut_prevweek_strict25_all80_fulltexcmd_640_v0\\qwen_scores\\nano_medium_direct_bareB_full632_v0\\softened_summary.json",
+                                   "copied_to":  "bundles\\2026-05-03_equation_splits_super_v0\\scores\\source_components\\new632\\qwen3_8b\\nano_medium\\softened_summary.json",
+                                   "bytes":  1470
+                               },
+                               {
+                                   "source":  "experiments\\2026-05-03_equation_cut_prevweek_strict25_all80_fulltexcmd_640_v0\\qwen_scores\\nano_high_direct_bareB_full632_v0\\equation_scores.csv",
+                                   "copied_to":  "bundles\\2026-05-03_equation_splits_super_v0\\scores\\source_components\\new632\\qwen3_8b\\nano_high\\equation_scores.csv",
+                                   "bytes":  237487
+                               },
+                               {
+                                   "source":  "experiments\\2026-05-03_equation_cut_prevweek_strict25_all80_fulltexcmd_640_v0\\qwen_scores\\nano_high_direct_bareB_full632_v0\\equation_target_token_logprobs.csv",
+                                   "copied_to":  "bundles\\2026-05-03_equation_splits_super_v0\\scores\\source_components\\new632\\qwen3_8b\\nano_high\\equation_target_token_logprobs.csv",
+                                   "bytes":  14017013
+                               },
+                               {
+                                   "source":  "experiments\\2026-05-03_equation_cut_prevweek_strict25_all80_fulltexcmd_640_v0\\qwen_scores\\nano_high_direct_bareB_full632_v0\\summary.json",
+                                   "copied_to":  "bundles\\2026-05-03_equation_splits_super_v0\\scores\\source_components\\new632\\qwen3_8b\\nano_high\\summary.json",
+                                   "bytes":  69973
+                               },
+                               {
+                                   "source":  "experiments\\2026-05-03_equation_cut_prevweek_strict25_all80_fulltexcmd_640_v0\\qwen_scores\\nano_high_direct_bareB_full632_v0\\softened_summary.json",
+                                   "copied_to":  "bundles\\2026-05-03_equation_splits_super_v0\\scores\\source_components\\new632\\qwen3_8b\\nano_high\\softened_summary.json",
+                                   "bytes":  1469
+                               },
+                               {
+                                   "source":  "experiments\\2026-05-03_equation_cut_prevweek_strict25_all80_fulltexcmd_640_v0\\qwen_scores\\kimi_k2p6_current_available_v0\\gpt55_none_current_z_vs_bareB\\equation_scores.csv",
+                                   "copied_to":  "bundles\\2026-05-03_equation_splits_super_v0\\scores\\source_components\\new632\\kimi_k2p6\\gpt55_none\\equation_scores.csv",
+                                   "bytes":  238246
+                               },
+                               {
+                                   "source":  "experiments\\2026-05-03_equation_cut_prevweek_strict25_all80_fulltexcmd_640_v0\\qwen_scores\\kimi_k2p6_current_available_v0\\gpt55_none_current_z_vs_bareB\\equation_target_token_logprobs.csv",
+                                   "copied_to":  "bundles\\2026-05-03_equation_splits_super_v0\\scores\\source_components\\new632\\kimi_k2p6\\gpt55_none\\equation_target_token_logprobs.csv",
+                                   "bytes":  12520325
+                               },
+                               {
+                                   "source":  "experiments\\2026-05-03_equation_cut_prevweek_strict25_all80_fulltexcmd_640_v0\\qwen_scores\\kimi_k2p6_current_available_v0\\gpt55_none_current_z_vs_bareB\\summary.json",
+                                   "copied_to":  "bundles\\2026-05-03_equation_splits_super_v0\\scores\\source_components\\new632\\kimi_k2p6\\gpt55_none\\summary.json",
+                                   "bytes":  69948
+                               },
+                               {
+                                   "source":  "experiments\\2026-05-03_equation_cut_prevweek_strict25_all80_fulltexcmd_640_v0\\qwen_scores\\kimi_k2p6_current_available_v0\\gpt55_none_current_z_vs_bareB\\softened_summary.json",
+                                   "copied_to":  "bundles\\2026-05-03_equation_splits_super_v0\\scores\\source_components\\new632\\kimi_k2p6\\gpt55_none\\softened_summary.json",
+                                   "bytes":  1470
+                               },
+                               {
+                                   "source":  "experiments\\2026-05-03_equation_cut_prevweek_strict25_all80_fulltexcmd_640_v0\\qwen_scores\\kimi_k2p6_current_available_v0\\gpt55_low_current_z_vs_bareB\\equation_scores.csv",
+                                   "copied_to":  "bundles\\2026-05-03_equation_splits_super_v0\\scores\\source_components\\new632\\kimi_k2p6\\gpt55_low\\equation_scores.csv",
+                                   "bytes":  238332
+                               },
+                               {
+                                   "source":  "experiments\\2026-05-03_equation_cut_prevweek_strict25_all80_fulltexcmd_640_v0\\qwen_scores\\kimi_k2p6_current_available_v0\\gpt55_low_current_z_vs_bareB\\equation_target_token_logprobs.csv",
+                                   "copied_to":  "bundles\\2026-05-03_equation_splits_super_v0\\scores\\source_components\\new632\\kimi_k2p6\\gpt55_low\\equation_target_token_logprobs.csv",
+                                   "bytes":  12530040
+                               },
+                               {
+                                   "source":  "experiments\\2026-05-03_equation_cut_prevweek_strict25_all80_fulltexcmd_640_v0\\qwen_scores\\kimi_k2p6_current_available_v0\\gpt55_low_current_z_vs_bareB\\summary.json",
+                                   "copied_to":  "bundles\\2026-05-03_equation_splits_super_v0\\scores\\source_components\\new632\\kimi_k2p6\\gpt55_low\\summary.json",
+                                   "bytes":  69961
+                               },
+                               {
+                                   "source":  "experiments\\2026-05-03_equation_cut_prevweek_strict25_all80_fulltexcmd_640_v0\\qwen_scores\\kimi_k2p6_current_available_v0\\gpt55_low_current_z_vs_bareB\\softened_summary.json",
+                                   "copied_to":  "bundles\\2026-05-03_equation_splits_super_v0\\scores\\source_components\\new632\\kimi_k2p6\\gpt55_low\\softened_summary.json",
+                                   "bytes":  1470
+                               },
+                               {
+                                   "source":  "experiments\\2026-05-03_equation_cut_prevweek_strict25_all80_fulltexcmd_640_v0\\qwen_scores\\kimi_k2p6_current_available_v0\\gpt55_medium_current_z_vs_bareB\\equation_scores.csv",
+                                   "copied_to":  "bundles\\2026-05-03_equation_splits_super_v0\\scores\\source_components\\new632\\kimi_k2p6\\gpt55_medium\\equation_scores.csv",
+                                   "bytes":  238240
+                               },
+                               {
+                                   "source":  "experiments\\2026-05-03_equation_cut_prevweek_strict25_all80_fulltexcmd_640_v0\\qwen_scores\\kimi_k2p6_current_available_v0\\gpt55_medium_current_z_vs_bareB\\equation_target_token_logprobs.csv",
+                                   "copied_to":  "bundles\\2026-05-03_equation_splits_super_v0\\scores\\source_components\\new632\\kimi_k2p6\\gpt55_medium\\equation_target_token_logprobs.csv",
+                                   "bytes":  12529201
+                               },
+                               {
+                                   "source":  "experiments\\2026-05-03_equation_cut_prevweek_strict25_all80_fulltexcmd_640_v0\\qwen_scores\\kimi_k2p6_current_available_v0\\gpt55_medium_current_z_vs_bareB\\summary.json",
+                                   "copied_to":  "bundles\\2026-05-03_equation_splits_super_v0\\scores\\source_components\\new632\\kimi_k2p6\\gpt55_medium\\summary.json",
+                                   "bytes":  69920
+                               },
+                               {
+                                   "source":  "experiments\\2026-05-03_equation_cut_prevweek_strict25_all80_fulltexcmd_640_v0\\qwen_scores\\kimi_k2p6_current_available_v0\\gpt55_medium_current_z_vs_bareB\\softened_summary.json",
+                                   "copied_to":  "bundles\\2026-05-03_equation_splits_super_v0\\scores\\source_components\\new632\\kimi_k2p6\\gpt55_medium\\softened_summary.json",
+                                   "bytes":  1468
+                               },
+                               {
+                                   "source":  "experiments\\2026-05-03_equation_cut_prevweek_strict25_all80_fulltexcmd_640_v0\\qwen_scores\\kimi_k2p6_current_available_v0\\gpt55_high_current_z_vs_bareB\\equation_scores.csv",
+                                   "copied_to":  "bundles\\2026-05-03_equation_splits_super_v0\\scores\\source_components\\new632\\kimi_k2p6\\gpt55_high\\equation_scores.csv",
+                                   "bytes":  238513
+                               },
+                               {
+                                   "source":  "experiments\\2026-05-03_equation_cut_prevweek_strict25_all80_fulltexcmd_640_v0\\qwen_scores\\kimi_k2p6_current_available_v0\\gpt55_high_current_z_vs_bareB\\equation_target_token_logprobs.csv",
+                                   "copied_to":  "bundles\\2026-05-03_equation_splits_super_v0\\scores\\source_components\\new632\\kimi_k2p6\\gpt55_high\\equation_target_token_logprobs.csv",
+                                   "bytes":  12536789
+                               },
+                               {
+                                   "source":  "experiments\\2026-05-03_equation_cut_prevweek_strict25_all80_fulltexcmd_640_v0\\qwen_scores\\kimi_k2p6_current_available_v0\\gpt55_high_current_z_vs_bareB\\summary.json",
+                                   "copied_to":  "bundles\\2026-05-03_equation_splits_super_v0\\scores\\source_components\\new632\\kimi_k2p6\\gpt55_high\\summary.json",
+                                   "bytes":  69920
+                               },
+                               {
+                                   "source":  "experiments\\2026-05-03_equation_cut_prevweek_strict25_all80_fulltexcmd_640_v0\\qwen_scores\\kimi_k2p6_current_available_v0\\gpt55_high_current_z_vs_bareB\\softened_summary.json",
+                                   "copied_to":  "bundles\\2026-05-03_equation_splits_super_v0\\scores\\source_components\\new632\\kimi_k2p6\\gpt55_high\\softened_summary.json",
+                                   "bytes":  1470
+                               },
+                               {
+                                   "source":  "experiments\\2026-05-03_equation_cut_prevweek_strict25_all80_fulltexcmd_640_v0\\qwen_scores\\kimi_k2p6_current_available_v0\\nano_low_current_z_vs_bareB\\equation_scores.csv",
+                                   "copied_to":  "bundles\\2026-05-03_equation_splits_super_v0\\scores\\source_components\\new632\\kimi_k2p6\\nano_low\\equation_scores.csv",
+                                   "bytes":  238222
+                               },
+                               {
+                                   "source":  "experiments\\2026-05-03_equation_cut_prevweek_strict25_all80_fulltexcmd_640_v0\\qwen_scores\\kimi_k2p6_current_available_v0\\nano_low_current_z_vs_bareB\\equation_target_token_logprobs.csv",
+                                   "copied_to":  "bundles\\2026-05-03_equation_splits_super_v0\\scores\\source_components\\new632\\kimi_k2p6\\nano_low\\equation_target_token_logprobs.csv",
+                                   "bytes":  12498757
+                               },
+                               {
+                                   "source":  "experiments\\2026-05-03_equation_cut_prevweek_strict25_all80_fulltexcmd_640_v0\\qwen_scores\\kimi_k2p6_current_available_v0\\nano_low_current_z_vs_bareB\\summary.json",
+                                   "copied_to":  "bundles\\2026-05-03_equation_splits_super_v0\\scores\\source_components\\new632\\kimi_k2p6\\nano_low\\summary.json",
+                                   "bytes":  70088
+                               },
+                               {
+                                   "source":  "experiments\\2026-05-03_equation_cut_prevweek_strict25_all80_fulltexcmd_640_v0\\qwen_scores\\kimi_k2p6_current_available_v0\\nano_low_current_z_vs_bareB\\softened_summary.json",
+                                   "copied_to":  "bundles\\2026-05-03_equation_splits_super_v0\\scores\\source_components\\new632\\kimi_k2p6\\nano_low\\softened_summary.json",
+                                   "bytes":  1488
+                               },
+                               {
+                                   "source":  "experiments\\2026-05-03_equation_cut_prevweek_strict25_all80_fulltexcmd_640_v0\\qwen_scores\\kimi_k2p6_current_available_v0\\nano_medium_current_z_vs_bareB\\equation_scores.csv",
+                                   "copied_to":  "bundles\\2026-05-03_equation_splits_super_v0\\scores\\source_components\\new632\\kimi_k2p6\\nano_medium\\equation_scores.csv",
+                                   "bytes":  238385
+                               },
+                               {
+                                   "source":  "experiments\\2026-05-03_equation_cut_prevweek_strict25_all80_fulltexcmd_640_v0\\qwen_scores\\kimi_k2p6_current_available_v0\\nano_medium_current_z_vs_bareB\\equation_target_token_logprobs.csv",
+                                   "copied_to":  "bundles\\2026-05-03_equation_splits_super_v0\\scores\\source_components\\new632\\kimi_k2p6\\nano_medium\\equation_target_token_logprobs.csv",
+                                   "bytes":  12500828
+                               },
+                               {
+                                   "source":  "experiments\\2026-05-03_equation_cut_prevweek_strict25_all80_fulltexcmd_640_v0\\qwen_scores\\kimi_k2p6_current_available_v0\\nano_medium_current_z_vs_bareB\\summary.json",
+                                   "copied_to":  "bundles\\2026-05-03_equation_splits_super_v0\\scores\\source_components\\new632\\kimi_k2p6\\nano_medium\\summary.json",
+                                   "bytes":  70050
+                               },
+                               {
+                                   "source":  "experiments\\2026-05-03_equation_cut_prevweek_strict25_all80_fulltexcmd_640_v0\\qwen_scores\\kimi_k2p6_current_available_v0\\nano_medium_current_z_vs_bareB\\softened_summary.json",
+                                   "copied_to":  "bundles\\2026-05-03_equation_splits_super_v0\\scores\\source_components\\new632\\kimi_k2p6\\nano_medium\\softened_summary.json",
+                                   "bytes":  1482
+                               },
+                               {
+                                   "source":  "experiments\\2026-05-03_equation_cut_prevweek_strict25_all80_fulltexcmd_640_v0\\qwen_scores\\kimi_k2p6_current_available_v0\\nano_high_current_z_vs_bareB\\equation_scores.csv",
+                                   "copied_to":  "bundles\\2026-05-03_equation_splits_super_v0\\scores\\source_components\\new632\\kimi_k2p6\\nano_high\\equation_scores.csv",
+                                   "bytes":  238389
+                               },
+                               {
+                                   "source":  "experiments\\2026-05-03_equation_cut_prevweek_strict25_all80_fulltexcmd_640_v0\\qwen_scores\\kimi_k2p6_current_available_v0\\nano_high_current_z_vs_bareB\\equation_target_token_logprobs.csv",
+                                   "copied_to":  "bundles\\2026-05-03_equation_splits_super_v0\\scores\\source_components\\new632\\kimi_k2p6\\nano_high\\equation_target_token_logprobs.csv",
+                                   "bytes":  12500049
+                               },
+                               {
+                                   "source":  "experiments\\2026-05-03_equation_cut_prevweek_strict25_all80_fulltexcmd_640_v0\\qwen_scores\\kimi_k2p6_current_available_v0\\nano_high_current_z_vs_bareB\\summary.json",
+                                   "copied_to":  "bundles\\2026-05-03_equation_splits_super_v0\\scores\\source_components\\new632\\kimi_k2p6\\nano_high\\summary.json",
+                                   "bytes":  70038
+                               },
+                               {
+                                   "source":  "experiments\\2026-05-03_equation_cut_prevweek_strict25_all80_fulltexcmd_640_v0\\qwen_scores\\kimi_k2p6_current_available_v0\\nano_high_current_z_vs_bareB\\softened_summary.json",
+                                   "copied_to":  "bundles\\2026-05-03_equation_splits_super_v0\\scores\\source_components\\new632\\kimi_k2p6\\nano_high\\softened_summary.json",
+                                   "bytes":  1482
+                               },
+                               {
+                                   "source":  "diagnostics\\anthropic_claude_smoke\\2026-05-03_opus47_medium_eq_superbundle_partial_current\\small_qwen_current_body_plus_close_zonly\\equation_scores.csv",
+                                   "copied_to":  "bundles\\2026-05-03_equation_splits_super_v0\\scores\\source_components\\old731\\qwen3_8b\\opus47_medium\\equation_scores.csv",
+                                   "bytes":  142590
+                               },
+                               {
+                                   "source":  "diagnostics\\anthropic_claude_smoke\\2026-05-03_opus47_medium_eq_superbundle_partial_current\\small_qwen_current_body_plus_close_zonly\\equation_target_token_logprobs.csv",
+                                   "copied_to":  "bundles\\2026-05-03_equation_splits_super_v0\\scores\\source_components\\old731\\qwen3_8b\\opus47_medium\\equation_target_token_logprobs.csv",
+                                   "bytes":  8233371
+                               },
+                               {
+                                   "source":  "diagnostics\\anthropic_claude_smoke\\2026-05-03_opus47_medium_eq_superbundle_partial_current\\small_qwen_current_body_plus_close_zonly\\summary.json",
+                                   "copied_to":  "bundles\\2026-05-03_equation_splits_super_v0\\scores\\source_components\\old731\\qwen3_8b\\opus47_medium\\summary.json",
+                                   "bytes":  473
+                               },
+                               {
+                                   "source":  "diagnostics\\anthropic_claude_smoke\\2026-05-03_opus47_medium_eq_superbundle_partial_current\\small_qwen_current_body_plus_close_zonly\\run_plan.json",
+                                   "copied_to":  "bundles\\2026-05-03_equation_splits_super_v0\\scores\\source_components\\old731\\qwen3_8b\\opus47_medium\\run_plan.json",
+                                   "bytes":  1235
+                               },
+                               {
+                                   "source":  "diagnostics\\anthropic_claude_smoke\\2026-05-03_opus47_medium_eq_superbundle_partial_current\\small_qwen_current_body_plus_close_zonly\\README.md",
+                                   "copied_to":  "bundles\\2026-05-03_equation_splits_super_v0\\scores\\source_components\\old731\\qwen3_8b\\opus47_medium\\README.md",
+                                   "bytes":  1373
+                               },
+                               {
+                                   "source":  "diagnostics\\anthropic_claude_smoke\\2026-05-03_opus47_low_eq_full731_partial_current\\small_qwen_current_body_plus_close_zonly\\equation_scores.csv",
+                                   "copied_to":  "bundles\\2026-05-03_equation_splits_super_v0\\scores\\source_components\\old731\\qwen3_8b\\opus47_low\\equation_scores.csv",
+                                   "bytes":  142709
+                               },
+                               {
+                                   "source":  "diagnostics\\anthropic_claude_smoke\\2026-05-03_opus47_low_eq_full731_partial_current\\small_qwen_current_body_plus_close_zonly\\equation_target_token_logprobs.csv",
+                                   "copied_to":  "bundles\\2026-05-03_equation_splits_super_v0\\scores\\source_components\\old731\\qwen3_8b\\opus47_low\\equation_target_token_logprobs.csv",
+                                   "bytes":  8232533
+                               },
+                               {
+                                   "source":  "diagnostics\\anthropic_claude_smoke\\2026-05-03_opus47_low_eq_full731_partial_current\\small_qwen_current_body_plus_close_zonly\\summary.json",
+                                   "copied_to":  "bundles\\2026-05-03_equation_splits_super_v0\\scores\\source_components\\old731\\qwen3_8b\\opus47_low\\summary.json",
+                                   "bytes":  472
+                               },
+                               {
+                                   "source":  "diagnostics\\anthropic_claude_smoke\\2026-05-03_opus47_low_eq_full731_partial_current\\small_qwen_current_body_plus_close_zonly\\run_plan.json",
+                                   "copied_to":  "bundles\\2026-05-03_equation_splits_super_v0\\scores\\source_components\\old731\\qwen3_8b\\opus47_low\\run_plan.json",
+                                   "bytes":  2691
+                               },
+                               {
+                                   "source":  "diagnostics\\anthropic_claude_smoke\\2026-05-03_opus47_low_eq_full731_partial_current\\small_qwen_current_body_plus_close_zonly\\README.md",
+                                   "copied_to":  "bundles\\2026-05-03_equation_splits_super_v0\\scores\\source_components\\old731\\qwen3_8b\\opus47_low\\README.md",
+                                   "bytes":  1373
+                               },
+                               {
+                                   "source":  "diagnostics\\anthropic_claude_smoke\\2026-05-03_opus47_medium_eq_superbundle_partial_current\\kimi_k2p6_current_body_plus_close_zonly\\equation_scores.csv",
+                                   "copied_to":  "bundles\\2026-05-03_equation_splits_super_v0\\scores\\source_components\\old731\\kimi_k2p6\\opus47_medium\\equation_scores.csv",
+                                   "bytes":  143306
+                               },
+                               {
+                                   "source":  "diagnostics\\anthropic_claude_smoke\\2026-05-03_opus47_medium_eq_superbundle_partial_current\\kimi_k2p6_current_body_plus_close_zonly\\equation_target_token_logprobs.csv",
+                                   "copied_to":  "bundles\\2026-05-03_equation_splits_super_v0\\scores\\source_components\\old731\\kimi_k2p6\\opus47_medium\\equation_target_token_logprobs.csv",
+                                   "bytes":  7371907
+                               },
+                               {
+                                   "source":  "diagnostics\\anthropic_claude_smoke\\2026-05-03_opus47_medium_eq_superbundle_partial_current\\kimi_k2p6_current_body_plus_close_zonly\\summary.json",
+                                   "copied_to":  "bundles\\2026-05-03_equation_splits_super_v0\\scores\\source_components\\old731\\kimi_k2p6\\opus47_medium\\summary.json",
+                                   "bytes":  473
+                               },
+                               {
+                                   "source":  "diagnostics\\anthropic_claude_smoke\\2026-05-03_opus47_medium_eq_superbundle_partial_current\\kimi_k2p6_current_body_plus_close_zonly\\run_plan.json",
+                                   "copied_to":  "bundles\\2026-05-03_equation_splits_super_v0\\scores\\source_components\\old731\\kimi_k2p6\\opus47_medium\\run_plan.json",
+                                   "bytes":  1236
+                               },
+                               {
+                                   "source":  "diagnostics\\anthropic_claude_smoke\\2026-05-03_opus47_medium_eq_superbundle_partial_current\\kimi_k2p6_current_body_plus_close_zonly\\README.md",
+                                   "copied_to":  "bundles\\2026-05-03_equation_splits_super_v0\\scores\\source_components\\old731\\kimi_k2p6\\opus47_medium\\README.md",
+                                   "bytes":  1374
+                               },
+                               {
+                                   "source":  "diagnostics\\anthropic_claude_smoke\\2026-05-03_opus47_low_eq_full731_partial_current\\kimi_k2p6_current_body_plus_close_zonly\\equation_scores.csv",
+                                   "copied_to":  "bundles\\2026-05-03_equation_splits_super_v0\\scores\\source_components\\old731\\kimi_k2p6\\opus47_low\\equation_scores.csv",
+                                   "bytes":  143319
+                               },
+                               {
+                                   "source":  "diagnostics\\anthropic_claude_smoke\\2026-05-03_opus47_low_eq_full731_partial_current\\kimi_k2p6_current_body_plus_close_zonly\\equation_target_token_logprobs.csv",
+                                   "copied_to":  "bundles\\2026-05-03_equation_splits_super_v0\\scores\\source_components\\old731\\kimi_k2p6\\opus47_low\\equation_target_token_logprobs.csv",
+                                   "bytes":  7369972
+                               },
+                               {
+                                   "source":  "diagnostics\\anthropic_claude_smoke\\2026-05-03_opus47_low_eq_full731_partial_current\\kimi_k2p6_current_body_plus_close_zonly\\summary.json",
+                                   "copied_to":  "bundles\\2026-05-03_equation_splits_super_v0\\scores\\source_components\\old731\\kimi_k2p6\\opus47_low\\summary.json",
+                                   "bytes":  473
+                               },
+                               {
+                                   "source":  "diagnostics\\anthropic_claude_smoke\\2026-05-03_opus47_low_eq_full731_partial_current\\kimi_k2p6_current_body_plus_close_zonly\\run_plan.json",
+                                   "copied_to":  "bundles\\2026-05-03_equation_splits_super_v0\\scores\\source_components\\old731\\kimi_k2p6\\opus47_low\\run_plan.json",
+                                   "bytes":  2692
+                               },
+                               {
+                                   "source":  "diagnostics\\anthropic_claude_smoke\\2026-05-03_opus47_low_eq_full731_partial_current\\kimi_k2p6_current_body_plus_close_zonly\\README.md",
+                                   "copied_to":  "bundles\\2026-05-03_equation_splits_super_v0\\scores\\source_components\\old731\\kimi_k2p6\\opus47_low\\README.md",
+                                   "bytes":  1374
+                               },
+                               {
+                                   "source":  "diagnostics\\anthropic_claude_smoke\\2026-05-04_opus47_second_subbundle_plan_v0\\medium_new632_qwen_body_plus_close_zonly\\equation_scores.csv",
+                                   "copied_to":  "bundles\\2026-05-03_equation_splits_super_v0\\scores\\source_components\\new632\\qwen3_8b\\opus47_medium\\equation_scores.csv",
+                                   "bytes":  123472
+                               },
+                               {
+                                   "source":  "diagnostics\\anthropic_claude_smoke\\2026-05-04_opus47_second_subbundle_plan_v0\\medium_new632_qwen_body_plus_close_zonly\\equation_target_token_logprobs.csv",
+                                   "copied_to":  "bundles\\2026-05-03_equation_splits_super_v0\\scores\\source_components\\new632\\qwen3_8b\\opus47_medium\\equation_target_token_logprobs.csv",
+                                   "bytes":  7300415
+                               },
+                               {
+                                   "source":  "diagnostics\\anthropic_claude_smoke\\2026-05-04_opus47_second_subbundle_plan_v0\\medium_new632_qwen_body_plus_close_zonly\\summary.json",
+                                   "copied_to":  "bundles\\2026-05-03_equation_splits_super_v0\\scores\\source_components\\new632\\qwen3_8b\\opus47_medium\\summary.json",
+                                   "bytes":  473
+                               },
+                               {
+                                   "source":  "diagnostics\\anthropic_claude_smoke\\2026-05-04_opus47_second_subbundle_plan_v0\\medium_new632_qwen_body_plus_close_zonly\\run_plan.json",
+                                   "copied_to":  "bundles\\2026-05-03_equation_splits_super_v0\\scores\\source_components\\new632\\qwen3_8b\\opus47_medium\\run_plan.json",
+                                   "bytes":  1230
+                               },
+                               {
+                                   "source":  "diagnostics\\anthropic_claude_smoke\\2026-05-04_opus47_second_subbundle_plan_v0\\medium_new632_qwen_body_plus_close_zonly\\README.md",
+                                   "copied_to":  "bundles\\2026-05-03_equation_splits_super_v0\\scores\\source_components\\new632\\qwen3_8b\\opus47_medium\\README.md",
+                                   "bytes":  1373
+                               },
+                               {
+                                   "source":  "diagnostics\\anthropic_claude_smoke\\2026-05-04_opus47_second_subbundle_plan_v0\\low_new632_qwen_body_plus_close_zonly\\equation_scores.csv",
+                                   "copied_to":  "bundles\\2026-05-03_equation_splits_super_v0\\scores\\source_components\\new632\\qwen3_8b\\opus47_low\\equation_scores.csv",
+                                   "bytes":  123494
+                               },
+                               {
+                                   "source":  "diagnostics\\anthropic_claude_smoke\\2026-05-04_opus47_second_subbundle_plan_v0\\low_new632_qwen_body_plus_close_zonly\\equation_target_token_logprobs.csv",
+                                   "copied_to":  "bundles\\2026-05-03_equation_splits_super_v0\\scores\\source_components\\new632\\qwen3_8b\\opus47_low\\equation_target_token_logprobs.csv",
+                                   "bytes":  7299748
+                               },
+                               {
+                                   "source":  "diagnostics\\anthropic_claude_smoke\\2026-05-04_opus47_second_subbundle_plan_v0\\low_new632_qwen_body_plus_close_zonly\\summary.json",
+                                   "copied_to":  "bundles\\2026-05-03_equation_splits_super_v0\\scores\\source_components\\new632\\qwen3_8b\\opus47_low\\summary.json",
+                                   "bytes":  472
+                               },
+                               {
+                                   "source":  "diagnostics\\anthropic_claude_smoke\\2026-05-04_opus47_second_subbundle_plan_v0\\low_new632_qwen_body_plus_close_zonly\\run_plan.json",
+                                   "copied_to":  "bundles\\2026-05-03_equation_splits_super_v0\\scores\\source_components\\new632\\qwen3_8b\\opus47_low\\run_plan.json",
+                                   "bytes":  2690
+                               },
+                               {
+                                   "source":  "diagnostics\\anthropic_claude_smoke\\2026-05-04_opus47_second_subbundle_plan_v0\\low_new632_qwen_body_plus_close_zonly\\README.md",
+                                   "copied_to":  "bundles\\2026-05-03_equation_splits_super_v0\\scores\\source_components\\new632\\qwen3_8b\\opus47_low\\README.md",
+                                   "bytes":  1374
+                               },
+                               {
+                                   "source":  "diagnostics\\anthropic_claude_smoke\\2026-05-04_opus47_second_subbundle_plan_v0\\medium_new632_kimi_body_plus_close_zonly\\equation_scores.csv",
+                                   "copied_to":  "bundles\\2026-05-03_equation_splits_super_v0\\scores\\source_components\\new632\\kimi_k2p6\\opus47_medium\\equation_scores.csv",
+                                   "bytes":  123680
+                               },
+                               {
+                                   "source":  "diagnostics\\anthropic_claude_smoke\\2026-05-04_opus47_second_subbundle_plan_v0\\medium_new632_kimi_body_plus_close_zonly\\equation_target_token_logprobs.csv",
+                                   "copied_to":  "bundles\\2026-05-03_equation_splits_super_v0\\scores\\source_components\\new632\\kimi_k2p6\\opus47_medium\\equation_target_token_logprobs.csv",
+                                   "bytes":  6527654
+                               },
+                               {
+                                   "source":  "diagnostics\\anthropic_claude_smoke\\2026-05-04_opus47_second_subbundle_plan_v0\\medium_new632_kimi_body_plus_close_zonly\\summary.json",
+                                   "copied_to":  "bundles\\2026-05-03_equation_splits_super_v0\\scores\\source_components\\new632\\kimi_k2p6\\opus47_medium\\summary.json",
+                                   "bytes":  471
+                               },
+                               {
+                                   "source":  "diagnostics\\anthropic_claude_smoke\\2026-05-04_opus47_second_subbundle_plan_v0\\medium_new632_kimi_body_plus_close_zonly\\run_plan.json",
+                                   "copied_to":  "bundles\\2026-05-03_equation_splits_super_v0\\scores\\source_components\\new632\\kimi_k2p6\\opus47_medium\\run_plan.json",
+                                   "bytes":  1231
+                               },
+                               {
+                                   "source":  "diagnostics\\anthropic_claude_smoke\\2026-05-04_opus47_second_subbundle_plan_v0\\medium_new632_kimi_body_plus_close_zonly\\README.md",
+                                   "copied_to":  "bundles\\2026-05-03_equation_splits_super_v0\\scores\\source_components\\new632\\kimi_k2p6\\opus47_medium\\README.md",
+                                   "bytes":  1374
+                               },
+                               {
+                                   "source":  "diagnostics\\anthropic_claude_smoke\\2026-05-04_opus47_second_subbundle_plan_v0\\low_new632_kimi_body_plus_close_zonly\\equation_scores.csv",
+                                   "copied_to":  "bundles\\2026-05-03_equation_splits_super_v0\\scores\\source_components\\new632\\kimi_k2p6\\opus47_low\\equation_scores.csv",
+                                   "bytes":  123568
+                               },
+                               {
+                                   "source":  "diagnostics\\anthropic_claude_smoke\\2026-05-04_opus47_second_subbundle_plan_v0\\low_new632_kimi_body_plus_close_zonly\\equation_target_token_logprobs.csv",
+                                   "copied_to":  "bundles\\2026-05-03_equation_splits_super_v0\\scores\\source_components\\new632\\kimi_k2p6\\opus47_low\\equation_target_token_logprobs.csv",
+                                   "bytes":  6527141
+                               },
+                               {
+                                   "source":  "diagnostics\\anthropic_claude_smoke\\2026-05-04_opus47_second_subbundle_plan_v0\\low_new632_kimi_body_plus_close_zonly\\summary.json",
+                                   "copied_to":  "bundles\\2026-05-03_equation_splits_super_v0\\scores\\source_components\\new632\\kimi_k2p6\\opus47_low\\summary.json",
+                                   "bytes":  471
+                               },
+                               {
+                                   "source":  "diagnostics\\anthropic_claude_smoke\\2026-05-04_opus47_second_subbundle_plan_v0\\low_new632_kimi_body_plus_close_zonly\\run_plan.json",
+                                   "copied_to":  "bundles\\2026-05-03_equation_splits_super_v0\\scores\\source_components\\new632\\kimi_k2p6\\opus47_low\\run_plan.json",
+                                   "bytes":  2691
+                               },
+                               {
+                                   "source":  "diagnostics\\anthropic_claude_smoke\\2026-05-04_opus47_second_subbundle_plan_v0\\low_new632_kimi_body_plus_close_zonly\\README.md",
+                                   "copied_to":  "bundles\\2026-05-03_equation_splits_super_v0\\scores\\source_components\\new632\\kimi_k2p6\\opus47_low\\README.md",
+                                   "bytes":  1374
+                               }
+                           ],
+    "docs_note":  "Source notes and scripts are copied for provenance; source bundles remain canonical.",
+    "counts":  {
+                   "old731":  {
+                                  "cuts":  731,
+                                  "papers":  74
+                              },
+                   "new632":  {
+                                  "cuts":  632,
+                                  "papers":  64
+                              },
+                   "combined":  {
+                                    "cuts":  1363,
+                                    "papers":  138
+                                },
+                   "paper_overlap_old_new":  0,
+                   "row_lifts":  {
+                                     "Kimi:gpt55_high":  1363,
+                                     "Kimi:gpt55_low":  1363,
+                                     "Kimi:gpt55_medium":  1363,
+                                     "Kimi:gpt55_none":  1363,
+                                     "Kimi:nano_high":  1363,
+                                     "Kimi:nano_low":  1363,
+                                     "Kimi:nano_medium":  1363,
+                                     "Kimi:opus47_low":  1363,
+                                     "Kimi:opus47_medium":  1363,
+                                     "Qwen:gpt55_high":  1363,
+                                     "Qwen:gpt55_low":  1363,
+                                     "Qwen:gpt55_medium":  1363,
+                                     "Qwen:gpt55_none":  1363,
+                                     "Qwen:nano_high":  1363,
+                                     "Qwen:nano_low":  1363,
+                                     "Qwen:nano_medium":  1363,
+                                     "Qwen:opus47_low":  1363,
+                                     "Qwen:opus47_medium":  1363
+                                 }
+               }
+}

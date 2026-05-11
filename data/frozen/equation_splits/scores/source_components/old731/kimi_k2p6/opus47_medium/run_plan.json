@@ -1,0 +1,42 @@
+{
+  "created_utc": "2026-05-04T21:59:33.707497+00:00",
+  "script": "scripts/score_equation_cut_generations.py",
+  "joined_path": "diagnostics\\anthropic_claude_smoke\\2026-05-03_opus47_medium_eq_superbundle_partial_current\\claude_opus47_medium_partial_joined.jsonl",
+  "judge_model": "accounts/fireworks/models/kimi-k2p6",
+  "base_url": "https://api.fireworks.ai/inference/v1",
+  "batch_size": 4,
+  "target_mode": "body_plus_close",
+  "bare_multipliers": [],
+  "include_bare_controls": false,
+  "comparison_baseline": "bare_B",
+  "scaffold_variant": "current",
+  "limit": 0,
+  "include_scaffold_empty": false,
+  "include_oracle": false,
+  "include_scaffold_raw_precontext": false,
+  "only_conditions": [
+    "scaffold_z_predictor"
+  ],
+  "resume": true,
+  "force_row_ids": [
+    452
+  ],
+  "existing_score_rows": 730,
+  "existing_token_rows": 40978,
+  "skipped_existing_jobs": 730,
+  "conditions": [
+    "scaffold_z_predictor"
+  ],
+  "row_count": 731,
+  "job_count": 1,
+  "jobs_preview": [
+    {
+      "dataset_row_index": 452,
+      "paper_id": "2604.20066",
+      "equation_index": 89,
+      "condition": "scaffold_z_predictor",
+      "prompt_chars": 281,
+      "target_chars": 66
+    }
+  ]
+}

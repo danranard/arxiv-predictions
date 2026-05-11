@@ -1,0 +1,441 @@
+{
+  "created_utc": "2026-05-01T01:49:54.997712+00:00",
+  "script": "scripts/strip_equation_outer_close_from_joined.py",
+  "row_count": 731,
+  "changed_count": 48,
+  "changed": [
+    {
+      "dataset_row_index": 18,
+      "env": "align",
+      "close": "\\end{align}",
+      "old_len": 197,
+      "new_len": 185,
+      "old_tail": "-2\\varepsilon^2 d_1 \\nonumber\\\\\n\\geq& \\frac{\\sr^{3/2}}{2300}\\varepsilon d_1-2\\varepsilon^2 d_1\n\\geq \\frac{\\sr^{3/2}}{4600}\\varepsilon d_1. \\nonumber\n\\end{align}",
+      "new_tail": "g)\\bigg\\|_1 -2\\varepsilon^2 d_1 \\nonumber\\\\\n\\geq& \\frac{\\sr^{3/2}}{2300}\\varepsilon d_1-2\\varepsilon^2 d_1\n\\geq \\frac{\\sr^{3/2}}{4600}\\varepsilon d_1. \\nonumber"
+    },
+    {
+      "dataset_row_index": 27,
+      "env": "align",
+      "close": "\\end{align}",
+      "old_len": 82,
+      "new_len": 71,
+      "old_tail": "S_k}\\delta^{a_1}_{b_{\\sigma(1)}}\\cdots \\delta^{a_k}_{b_{\\sigma(k)}} \\ .\\end{align}",
+      "new_tail": "S_k}\\delta^{a_1}_{b_{\\sigma(1)}}\\cdots \\delta^{a_k}_{b_{\\sigma(k)}} \\ ."
+    },
+    {
+      "dataset_row_index": 33,
+      "env": "align",
+      "close": "\\end{align}",
+      "old_len": 117,
+      "new_len": 105,
+      "old_tail": "L_{\\theta_2}L_{\\theta_1}), \\\\\n&B(\\alpha, \\beta, \\gamma):=e^{-i\\alpha L_z}e^{-i\\beta L_y}e^{-i\\gamma L_z}.\n\\end{align}",
+      "new_tail": "L_{\\theta_2}L_{\\theta_1}), \\\\\n&B(\\alpha, \\beta, \\gamma):=e^{-i\\alpha L_z}e^{-i\\beta L_y}e^{-i\\gamma L_z}."
+    },
+    {
+      "dataset_row_index": 35,
+      "env": "align",
+      "close": "\\end{align}",
+      "old_len": 47,
+      "new_len": 35,
+      "old_tail": "\\epsilon^{-2}\\,\\dot{g}_2) \\big] \\,.\n\\end{align}",
+      "new_tail": "\\epsilon^{-2}\\,\\dot{g}_2) \\big] \\,."
+    },
+    {
+      "dataset_row_index": 37,
+      "env": "equation",
+      "close": "\\end{equation}",
+      "old_len": 144,
+      "new_len": 129,
+      "old_tail": "\\operatorname{span}\\{|e_1\\rangle,\\ldots,|e_6\\rangle\\},\\\\\nV_{1/2} &= \\operatorname{span}\\{|f_1\\rangle,|f_2\\rangle\\}.\n\\end{aligned}\n\\end{equation}",
+      "new_tail": "\\operatorname{span}\\{|e_1\\rangle,\\ldots,|e_6\\rangle\\},\\\\\nV_{1/2} &= \\operatorname{span}\\{|f_1\\rangle,|f_2\\rangle\\}.\n\\end{aligned}"
+    },
+    {
+      "dataset_row_index": 65,
+      "env": "equation",
+      "close": "\\end{equation}",
+      "old_len": 229,
+      "new_len": 214,
+      "old_tail": "{\\th})}{r}+\\frac{J^2}{m^2}\\cos^2{\\th}\\,,\\quad\\b_{\\phi\\phi}=\\left(-\\frac{2 GQP_2(\\cos{\\th})}{r}+\\frac{J^2}{m^2}\\right)\\sin^2{\\th}\\,.\n\\end{aligned}\n\\end{equation}",
+      "new_tail": "ac{2 GQP_2(\\cos{\\th})}{r}+\\frac{J^2}{m^2}\\cos^2{\\th}\\,,\\quad\\b_{\\phi\\phi}=\\left(-\\frac{2 GQP_2(\\cos{\\th})}{r}+\\frac{J^2}{m^2}\\right)\\sin^2{\\th}\\,.\n\\end{aligned}"
+    },
+    {
+      "dataset_row_index": 77,
+      "env": "align",
+      "close": "\\end{align}",
+      "old_len": 80,
+      "new_len": 68,
+      "old_tail": "ft(\\nabla_i\\nabla_j-\\gamma_{ij}\\nabla^2\\right)M=0\\,.\n\\label{weaklin}\n\\end{align}",
+      "new_tail": "ft(\\nabla_i\\nabla_j-\\gamma_{ij}\\nabla^2\\right)M=0\\,.\n\\label{weaklin}"
+    },
+    {
+      "dataset_row_index": 85,
+      "env": "align",
+      "close": "\\end{align}",
+      "old_len": 142,
+      "new_len": 130,
+      "old_tail": "\\sum_{\\mu,\\,\\nu=1}^L\\text{Tr}[\\rho_0h^{[\\mu]}_{\\mathrm{sp}}(t)]\\text{Tr}[\\rho_0h^{[\\nu]}_{\\mathrm{sp}}(t)] .\\label{eq:QFI_rqc_sp2}\n\\end{align}",
+      "new_tail": "\\sum_{\\mu,\\,\\nu=1}^L\\text{Tr}[\\rho_0h^{[\\mu]}_{\\mathrm{sp}}(t)]\\text{Tr}[\\rho_0h^{[\\nu]}_{\\mathrm{sp}}(t)] .\\label{eq:QFI_rqc_sp2}"
+    },
+    {
+      "dataset_row_index": 106,
+      "env": "gather",
+      "close": "\\end{gather}",
+      "old_len": 136,
+      "new_len": 123,
+      "old_tail": "d (\\gamma  {k_1}+1)-\\gamma  (2 b+\\gamma )\\right)}{\\gamma  (2 b+\\gamma )}e^{(-2 b-\\gamma +{k_1})\\f}+\\cdots =0\\,.\\label{yza4}\n\\end{gather}",
+      "new_tail": "d (\\gamma  {k_1}+1)-\\gamma  (2 b+\\gamma )\\right)}{\\gamma  (2 b+\\gamma )}e^{(-2 b-\\gamma +{k_1})\\f}+\\cdots =0\\,.\\label{yza4}"
+    },
+    {
+      "dataset_row_index": 111,
+      "env": "multline",
+      "close": "\\end{multline}",
+      "old_len": 102,
+      "new_len": 87,
+      "old_tail": "mq,l} \\, dz\n                = \\sum_{m\\in\\Z} (\\Phi(H_{\\alpha,\\lambda,\\theta}))_{j+mq,l}.\n\\end{multline}",
+      "new_tail": "mq,l} \\, dz\n                = \\sum_{m\\in\\Z} (\\Phi(H_{\\alpha,\\lambda,\\theta}))_{j+mq,l}."
+    },
+    {
+      "dataset_row_index": 145,
+      "env": "eqnarray",
+      "close": "\\end{eqnarray}",
+      "old_len": 177,
+      "new_len": 162,
+      "old_tail": "lpha]} + B_{\\gamma[\\alpha\\beta]} = 0;\\qquad B^\\gamma_{\\alpha\\beta} = - B^\\gamma_{\\beta\\alpha};\\qquad B^\\alpha_{\\alpha\\beta} = 0.\n\\vphantom{\\Big(}\n\\end{eqnarray}",
+      "new_tail": "{\\beta[\\gamma\\alpha]} + B_{\\gamma[\\alpha\\beta]} = 0;\\qquad B^\\gamma_{\\alpha\\beta} = - B^\\gamma_{\\beta\\alpha};\\qquad B^\\alpha_{\\alpha\\beta} = 0.\n\\vphantom{\\Big(}"
+    },
+    {
+      "dataset_row_index": 150,
+      "env": "equation",
+      "close": "\\end{equation}",
+      "old_len": 273,
+      "new_len": 258,
+      "old_tail": "ht) + 2 n_{(\\mu} \\partial_{\\nu)} N + 2 \\nabla_{(\\mu} N_{\\nu)} + N^\\alpha \\left( Q_{\\alpha\\mu\\nu} - 2 Q_{(\\mu\\nu)\\alpha} \\right) \\, .\n\t\\end{split}\n\\end{equation}",
+      "new_tail": "a} \\right) \\right) + 2 n_{(\\mu} \\partial_{\\nu)} N + 2 \\nabla_{(\\mu} N_{\\nu)} + N^\\alpha \\left( Q_{\\alpha\\mu\\nu} - 2 Q_{(\\mu\\nu)\\alpha} \\right) \\, .\n\t\\end{split}"
+    },
+    {
+      "dataset_row_index": 167,
+      "env": "align",
+      "close": "\\end{align}",
+      "old_len": 158,
+      "new_len": 146,
+      "old_tail": "\\frac{\\zeta u^{\\prime}\\phi}{8u^{2}},E_{Y}=\\frac{u\\phi}{64L^{2}},P=-\\frac{a\\zeta u^{\\prime}}{8u},Q=-\\frac{\\phi^{\\prime}}{8}.\\tag{C-4}\\label{eq:C-4}\n\\end{align}",
+      "new_tail": "\\frac{\\zeta u^{\\prime}\\phi}{8u^{2}},E_{Y}=\\frac{u\\phi}{64L^{2}},P=-\\frac{a\\zeta u^{\\prime}}{8u},Q=-\\frac{\\phi^{\\prime}}{8}.\\tag{C-4}\\label{eq:C-4}"
+    },
+    {
+      "dataset_row_index": 168,
+      "env": "align",
+      "close": "\\end{align}",
+      "old_len": 149,
+      "new_len": 137,
+      "old_tail": "D_n} |m_{j,k}\\rangle\n\\Bigr)\n\\prod_{(j,k) \\in D_n}\n \\frac{Q_{j,k}^{m_{j,k}(m_{j,k}-1)/2}t_{j,k}^{\\,m_{j,k}}}{(Q_{j,k};Q_{j,k})_{m_{j,k}}}.\n\\end{align}",
+      "new_tail": "D_n} |m_{j,k}\\rangle\n\\Bigr)\n\\prod_{(j,k) \\in D_n}\n \\frac{Q_{j,k}^{m_{j,k}(m_{j,k}-1)/2}t_{j,k}^{\\,m_{j,k}}}{(Q_{j,k};Q_{j,k})_{m_{j,k}}}."
+    },
+    {
+      "dataset_row_index": 175,
+      "env": "equation",
+      "close": "\\end{equation}",
+      "old_len": 345,
+      "new_len": 330,
+      "old_tail": "\\cdots x_n,x_{n+1}}-\\sum_{i=1}^{n} {\\Gamma^y_{x_{n+1}x_i}}\\mathcal{M}_{x_1\\cdots \\hat{x_i}y\\cdots x_n}+\\mathcal{E}_{n+1}(\\mathcal{M}).\\end{split}\n\\end{equation}",
+      "new_tail": "mathcal{M}_{x_1\\cdots x_n,x_{n+1}}-\\sum_{i=1}^{n} {\\Gamma^y_{x_{n+1}x_i}}\\mathcal{M}_{x_1\\cdots \\hat{x_i}y\\cdots x_n}+\\mathcal{E}_{n+1}(\\mathcal{M}).\\end{split}"
+    },
+    {
+      "dataset_row_index": 219,
+      "env": "align",
+      "close": "\\end{align}",
+      "old_len": 51,
+      "new_len": 38,
+      "old_tail": "R\\mathbf{1}_{d_R} &= \\mathbf{1}_{d_Q}. \n\\end{align}",
+      "new_tail": "R\\mathbf{1}_{d_R} &= \\mathbf{1}_{d_Q}."
+    },
+    {
+      "dataset_row_index": 240,
+      "env": "align",
+      "close": "\\end{align}",
+      "old_len": 120,
+      "new_len": 108,
+      "old_tail": "ft(\\,\\begin{smallmatrix}\\tfrac{1}{3}&\\tfrac{2}{3}&1\\\\0&0&0\\end{smallmatrix}\\;\\middle|\\;27z\\right)\\right) \\,.\n\\end{align}",
+      "new_tail": "ft(\\,\\begin{smallmatrix}\\tfrac{1}{3}&\\tfrac{2}{3}&1\\\\0&0&0\\end{smallmatrix}\\;\\middle|\\;27z\\right)\\right) \\,."
+    },
+    {
+      "dataset_row_index": 246,
+      "env": "eqnarray",
+      "close": "\\end{eqnarray}",
+      "old_len": 54,
+      "new_len": 39,
+      "old_tail": "i^z\\gamma^x\\partial_x^z-m^z\\right)\\Psi,\n\\end{eqnarray}",
+      "new_tail": "i^z\\gamma^x\\partial_x^z-m^z\\right)\\Psi,"
+    },
+    {
+      "dataset_row_index": 273,
+      "env": "align",
+      "close": "\\end{align}",
+      "old_len": 87,
+      "new_len": 75,
+      "old_tail": "(r^2), \\\\\nP(r)&\\sim -\\frac{6 M}{|q|^3}+\\frac{36 M r}{q^4}+\\mathcal{O}(r^2).\n\\end{align}",
+      "new_tail": "(r^2), \\\\\nP(r)&\\sim -\\frac{6 M}{|q|^3}+\\frac{36 M r}{q^4}+\\mathcal{O}(r^2)."
+    },
+    {
+      "dataset_row_index": 291,
+      "env": "align",
+      "close": "\\end{align}",
+      "old_len": 82,
+      "new_len": 70,
+      "old_tail": "\\frac{1}{2}D_{\\alpha}\\varphi^{i}D^{\\alpha}\\varphi_{i}\\right].\\tag{B-3}\n\\end{align}",
+      "new_tail": "\\frac{1}{2}D_{\\alpha}\\varphi^{i}D^{\\alpha}\\varphi_{i}\\right].\\tag{B-3}"
+    },
+    {
+      "dataset_row_index": 321,
+      "env": "align",
+      "close": "\\end{align}",
+      "old_len": 128,
+      "new_len": 116,
+      "old_tail": "V,\\\\\n& \\sum_{i\\in V} d_i y_{ik} \\le Q && \\forall k=1,\\dots,K,\\\\\n& y_{ik}\\in\\{0,1\\} && \\forall i\\in V,\\; k=1,\\dots,K.\n\\end{align}",
+      "new_tail": "V,\\\\\n& \\sum_{i\\in V} d_i y_{ik} \\le Q && \\forall k=1,\\dots,K,\\\\\n& y_{ik}\\in\\{0,1\\} && \\forall i\\in V,\\; k=1,\\dots,K."
+    },
+    {
+      "dataset_row_index": 346,
+      "env": "align",
+      "close": "\\end{align}",
+      "old_len": 104,
+      "new_len": 92,
+      "old_tail": "ft( {\\cal M}^{-1} \\frac{\\partial {\\cal M}}{\\partial (A_i)_{ba}} \\right) \\ ,\n\\label{drift_Pf}\n\\end{align}",
+      "new_tail": "ft( {\\cal M}^{-1} \\frac{\\partial {\\cal M}}{\\partial (A_i)_{ba}} \\right) \\ ,\n\\label{drift_Pf}"
+    },
+    {
+      "dataset_row_index": 355,
+      "env": "equation",
+      "close": "\\end{equation}",
+      "old_len": 239,
+      "new_len": 224,
+      "old_tail": "            & \\qw         & \\qw \\\\\n        \\lstick{} & \\qwbundle{} & \\gate{W} & \\octrl[style=octrlsquare]{-1} & \\gate{V} & \\qw\n    \\end{quantikz}\n\\end{equation}",
+      "new_tail": "te{R_z}                    & \\qw         & \\qw \\\\\n        \\lstick{} & \\qwbundle{} & \\gate{W} & \\octrl[style=octrlsquare]{-1} & \\gate{V} & \\qw\n    \\end{quantikz}"
+    },
+    {
+      "dataset_row_index": 386,
+      "env": "equation",
+      "close": "\\end{equation}",
+      "old_len": 142,
+      "new_len": 127,
+      "old_tail": "\\frac{Y_\\pm^M}{\\sqrt{Y_-\\cdot Y_-}}\\,,\n&\\quad\n\\bar{D}_{+-}^{MN}&=\\frac{D_{+-}^{MN}}{\\sqrt{D_{+-}\\cdot D_{+-}}}\\,.\n\\end{aligned}\n\\end{equation}",
+      "new_tail": "\\frac{Y_\\pm^M}{\\sqrt{Y_-\\cdot Y_-}}\\,,\n&\\quad\n\\bar{D}_{+-}^{MN}&=\\frac{D_{+-}^{MN}}{\\sqrt{D_{+-}\\cdot D_{+-}}}\\,.\n\\end{aligned}"
+    },
+    {
+      "dataset_row_index": 389,
+      "env": "align",
+      "close": "\\end{align}",
+      "old_len": 84,
+      "new_len": 72,
+      "old_tail": "ft(\\frac{8}{\\varepsilon^\\prime}\\right)}{\\varepsilon^\\prime}\\right\\rceil.\n\\end{align}",
+      "new_tail": "ft(\\frac{8}{\\varepsilon^\\prime}\\right)}{\\varepsilon^\\prime}\\right\\rceil."
+    },
+    {
+      "dataset_row_index": 407,
+      "env": "equation",
+      "close": "\\end{equation}",
+      "old_len": 254,
+      "new_len": 239,
+      "old_tail": "} + R^\\rho{}_{\\lambda[\\mu\\nu]} \\delta \\kappa_\\rho{}^\\lambda{}_{[\\alpha\\beta]}  \\right) \\,\\, dx^\\mu \\wedge \\dots \\wedge dx^\\beta \\, .\n\t\\end{split}\n\\end{equation}",
+      "new_tail": "}_{\\alpha\\beta]} + R^\\rho{}_{\\lambda[\\mu\\nu]} \\delta \\kappa_\\rho{}^\\lambda{}_{[\\alpha\\beta]}  \\right) \\,\\, dx^\\mu \\wedge \\dots \\wedge dx^\\beta \\, .\n\t\\end{split}"
+    },
+    {
+      "dataset_row_index": 413,
+      "env": "bracket-display",
+      "close": "\\]",
+      "old_len": 71,
+      "new_len": 69,
+      "old_tail": "ft\\|\\rho-\\mathcal{E}(\\ketbra{0}{0})\\right\\|_1\\leq\\varepsilon\\right\\}.\\]",
+      "new_tail": "ft\\|\\rho-\\mathcal{E}(\\ketbra{0}{0})\\right\\|_1\\leq\\varepsilon\\right\\}."
+    },
+    {
+      "dataset_row_index": 440,
+      "env": "equation",
+      "close": "\\end{equation}",
+      "old_len": 53,
+      "new_len": 38,
+      "old_tail": "|\\partial_p \\Phi| \\ge \\theta_0 |kt|/2.\n\\end{equation}",
+      "new_tail": "|\\partial_p \\Phi| \\ge \\theta_0 |kt|/2."
+    },
+    {
+      "dataset_row_index": 443,
+      "env": "equation",
+      "close": "\\end{equation}",
+      "old_len": 216,
+      "new_len": 201,
+      "old_tail": "ta^{ij})(K_{kl}K^{kl}-K^2)\n+3\\,K^{ij}K^{kl}\\beta_{ik}\\beta_{jl}\n-2\\,K\\,K^{ij}\\beta_i{}^k\\beta_{jk}\n-(K^{ij}\\beta_{ij})^2\n\\Bigg\\}\\,.\n\\end{aligned}\n\\end{equation}",
+      "new_tail": "-2\\beta_{ij}\\beta^{ij})(K_{kl}K^{kl}-K^2)\n+3\\,K^{ij}K^{kl}\\beta_{ik}\\beta_{jl}\n-2\\,K\\,K^{ij}\\beta_i{}^k\\beta_{jk}\n-(K^{ij}\\beta_{ij})^2\n\\Bigg\\}\\,.\n\\end{aligned}"
+    },
+    {
+      "dataset_row_index": 459,
+      "env": "eqnarray",
+      "close": "\\end{eqnarray}",
+      "old_len": 57,
+      "new_len": 41,
+      "old_tail": "{\\mathcal O}(\\bar\\varepsilon ^5)\\Big)\\, . \n\\end{eqnarray}",
+      "new_tail": "{\\mathcal O}(\\bar\\varepsilon ^5)\\Big)\\, ."
+    },
+    {
+      "dataset_row_index": 477,
+      "env": "eqnarray",
+      "close": "\\end{eqnarray}",
+      "old_len": 101,
+      "new_len": 85,
+      "old_tail": "q_3 (q_3 + {1 \\over \\ell}) {r \\ell \\over k} {16 \\pi^4 \\alpha'^2 \\over V_{\\T^4}}} =1~, \n\\end{eqnarray}",
+      "new_tail": "q_3 (q_3 + {1 \\over \\ell}) {r \\ell \\over k} {16 \\pi^4 \\alpha'^2 \\over V_{\\T^4}}} =1~,"
+    },
+    {
+      "dataset_row_index": 481,
+      "env": "eqnarray",
+      "close": "\\end{eqnarray}",
+      "old_len": 134,
+      "new_len": 119,
+      "old_tail": "6}\\epsilon_{1}\\otimes {\\cal T}_i+\\frac{1}{4\\sqrt{2}r'^2}\\epsilon_{ijk}\\Gamma^{i+6\\,\\,j+6}\\epsilon_{1}\\otimes {\\cal T}_k\n\\end{eqnarray}",
+      "new_tail": "6}\\epsilon_{1}\\otimes {\\cal T}_i+\\frac{1}{4\\sqrt{2}r'^2}\\epsilon_{ijk}\\Gamma^{i+6\\,\\,j+6}\\epsilon_{1}\\otimes {\\cal T}_k"
+    },
+    {
+      "dataset_row_index": 484,
+      "env": "equation",
+      "close": "\\end{equation}",
+      "old_len": 119,
+      "new_len": 104,
+      "old_tail": "\\varnothing,\\qquad\n\\Sigma^{\\mathrm{proj}}_{4,C_5}(\\boldsymbol{E})\\approx\\left[0,\\frac{1}{\\sqrt5}\\right].\n\\end{equation}",
+      "new_tail": "\\varnothing,\\qquad\n\\Sigma^{\\mathrm{proj}}_{4,C_5}(\\boldsymbol{E})\\approx\\left[0,\\frac{1}{\\sqrt5}\\right]."
+    },
+    {
+      "dataset_row_index": 493,
+      "env": "eqnarray",
+      "close": "\\end{eqnarray}",
+      "old_len": 100,
+      "new_len": 85,
+      "old_tail": "\\frac{2 M \\left(r+8 |q|\\sqrt{r}-14 q^2\\right)}{\\left( |q|+\\sqrt{r}\\right)^8}\n\t\\Bigg].\n\\end{eqnarray}",
+      "new_tail": "\\frac{2 M \\left(r+8 |q|\\sqrt{r}-14 q^2\\right)}{\\left( |q|+\\sqrt{r}\\right)^8}\n\t\\Bigg]."
+    },
+    {
+      "dataset_row_index": 506,
+      "env": "align",
+      "close": "\\end{align}",
+      "old_len": 100,
+      "new_len": 88,
+      "old_tail": "j,\\\\\nX_i(y)X_i(x) & i=j,\\\\\n\\frac{x}{y}X_i(y)X_j(x) & i>j.\n\\end{array}\n\\right. \\label{ZF}\n\\end{align}",
+      "new_tail": "j,\\\\\nX_i(y)X_i(x) & i=j,\\\\\n\\frac{x}{y}X_i(y)X_j(x) & i>j.\n\\end{array}\n\\right. \\label{ZF}"
+    },
+    {
+      "dataset_row_index": 536,
+      "env": "equation",
+      "close": "\\end{equation}",
+      "old_len": 83,
+      "new_len": 68,
+      "old_tail": "q^{i,-},\\\\\n[\\T{f}^{-},p^{i,+}]=[\\T{f}^{+},q^{i,-}]=0.\n\\end{gathered}\n\\end{equation}",
+      "new_tail": "q^{i,-},\\\\\n[\\T{f}^{-},p^{i,+}]=[\\T{f}^{+},q^{i,-}]=0.\n\\end{gathered}"
+    },
+    {
+      "dataset_row_index": 549,
+      "env": "align",
+      "close": "\\end{align}",
+      "old_len": 166,
+      "new_len": 155,
+      "old_tail": "D_x X}{D_\\sigma X}\\dow_\\sigma D_\\sigma X \\right)\n    + i T^2\\kappa(T)\n    \\left( D_x X_a - \\frac{D_x X}{D_\\sigma X} D_\\sigma X_a \\right)^2\n    \\Bigg]\\end{align}",
+      "new_tail": "\\frac{D_x X}{D_\\sigma X}\\dow_\\sigma D_\\sigma X \\right)\n    + i T^2\\kappa(T)\n    \\left( D_x X_a - \\frac{D_x X}{D_\\sigma X} D_\\sigma X_a \\right)^2\n    \\Bigg]"
+    },
+    {
+      "dataset_row_index": 560,
+      "env": "equation",
+      "close": "\\end{equation}",
+      "old_len": 171,
+      "new_len": 156,
+      "old_tail": "T}_n^{\\delta_1,\\ldots,\\delta_n}} \\int \\mu^L(\\dd \\omega_1)\\cdots \\mu^L(\\dd \\omega_n) \\prod_{\\{i,j\\} \\in \\mathcal  T} |\\xi^L(\\omega_i,\\omega_j)|\\,.\n\\end{equation}",
+      "new_tail": "{\\mathfrak T}_n^{\\delta_1,\\ldots,\\delta_n}} \\int \\mu^L(\\dd \\omega_1)\\cdots \\mu^L(\\dd \\omega_n) \\prod_{\\{i,j\\} \\in \\mathcal  T} |\\xi^L(\\omega_i,\\omega_j)|\\,."
+    },
+    {
+      "dataset_row_index": 601,
+      "env": "equation",
+      "close": "\\end{equation}",
+      "old_len": 59,
+      "new_len": 43,
+      "old_tail": "1)} \\cF_{\\gamma_1,\\ldots,\\gamma_n}^{(n)}\\,, \n\\end{equation}",
+      "new_tail": "1)} \\cF_{\\gamma_1,\\ldots,\\gamma_n}^{(n)}\\,,"
+    },
+    {
+      "dataset_row_index": 603,
+      "env": "multline",
+      "close": "\\end{multline}",
+      "old_len": 120,
+      "new_len": 105,
+      "old_tail": "(\\nabla \\Psi_k(z_k^*)-\\nabla \\Psi_k(z_k^0))\\cdot z\\right|\\le C\\frac{r_k}{\\e_k}|z|^2\\le C\\frac{r_k}{\\e_k}.\n\\end{multline}",
+      "new_tail": "(\\nabla \\Psi_k(z_k^*)-\\nabla \\Psi_k(z_k^0))\\cdot z\\right|\\le C\\frac{r_k}{\\e_k}|z|^2\\le C\\frac{r_k}{\\e_k}."
+    },
+    {
+      "dataset_row_index": 608,
+      "env": "align*",
+      "close": "\\end{align*}",
+      "old_len": 100,
+      "new_len": 87,
+      "old_tail": "|b_{4}|)} (-1)^{|b_{4}||a_{5}|}\n     \\cdot \\sigma(a_{2},b_{2}) \\sigma'(a_{4},b_{4}) \\,.\n\\end{align*}",
+      "new_tail": "|b_{4}|)} (-1)^{|b_{4}||a_{5}|}\n     \\cdot \\sigma(a_{2},b_{2}) \\sigma'(a_{4},b_{4}) \\,."
+    },
+    {
+      "dataset_row_index": 644,
+      "env": "equation",
+      "close": "\\end{equation}",
+      "old_len": 185,
+      "new_len": 170,
+      "old_tail": "artial}{\\partial \\phi_a}\\right]\\Gamma^{(n)}_{a_1\\dots a_n}(p_1,\\dots,p_{n-1})=\\mathcal{R}^{(n)}_{a_1\\dots a_n}(p_1,\\dots,p_{n-1}),\n\t\\end{aligned}\n\\end{equation}",
+      "new_tail": "}\\phi_a\\frac{\\partial}{\\partial \\phi_a}\\right]\\Gamma^{(n)}_{a_1\\dots a_n}(p_1,\\dots,p_{n-1})=\\mathcal{R}^{(n)}_{a_1\\dots a_n}(p_1,\\dots,p_{n-1}),\n\t\\end{aligned}"
+    },
+    {
+      "dataset_row_index": 659,
+      "env": "align",
+      "close": "\\end{align}",
+      "old_len": 125,
+      "new_len": 113,
+      "old_tail": "m+n\n\\end{pmatrix}\n\\begin{pmatrix}\nl-g \\\\\nn\n\\end{pmatrix}u^{l+m-n}v^{g-m+n}{u^*}^{l-g-n}{v^*}^{n}. \\label{intmono}\n\\end{align}",
+      "new_tail": "m+n\n\\end{pmatrix}\n\\begin{pmatrix}\nl-g \\\\\nn\n\\end{pmatrix}u^{l+m-n}v^{g-m+n}{u^*}^{l-g-n}{v^*}^{n}. \\label{intmono}"
+    },
+    {
+      "dataset_row_index": 664,
+      "env": "align*",
+      "close": "\\end{align*}",
+      "old_len": 62,
+      "new_len": 48,
+      "old_tail": "C_\\beta\\,\\mathfrak r^{\\rm tail}_{\\beta,\\lambda}. \n\\end{align*}",
+      "new_tail": "C_\\beta\\,\\mathfrak r^{\\rm tail}_{\\beta,\\lambda}."
+    },
+    {
+      "dataset_row_index": 666,
+      "env": "align",
+      "close": "\\end{align}",
+      "old_len": 176,
+      "new_len": 164,
+      "old_tail": "ge {\\cal F}\\right) =\n    \\frac{N+1}{4\\pi}\\int_{\\mathbb{R}^{1,2}} \\Tr\\left({\\cal A} \\wedge d{\\cal A} - \\frac{2i}{3} {\\cal A}^3\\right) \\ .\n\\end{split}\n\\end{align}",
+      "new_tail": "\\cal F} \\wedge {\\cal F}\\right) =\n    \\frac{N+1}{4\\pi}\\int_{\\mathbb{R}^{1,2}} \\Tr\\left({\\cal A} \\wedge d{\\cal A} - \\frac{2i}{3} {\\cal A}^3\\right) \\ .\n\\end{split}"
+    },
+    {
+      "dataset_row_index": 690,
+      "env": "equation",
+      "close": "\\end{equation}",
+      "old_len": 224,
+      "new_len": 209,
+      "old_tail": "     -\\displaystyle\\sum_{i=1}^N \\ln x_i,& \\alpha=0\\\\\n            \\ln\\displaystyle\\sum_{i=1}^N x_i^{\\alpha},& -\\infty<\\alpha<0\n        \\end{cases}\n\\end{equation}",
+      "new_tail": "pha<1\\\\\n            -\\displaystyle\\sum_{i=1}^N \\ln x_i,& \\alpha=0\\\\\n            \\ln\\displaystyle\\sum_{i=1}^N x_i^{\\alpha},& -\\infty<\\alpha<0\n        \\end{cases}"
+    },
+    {
+      "dataset_row_index": 694,
+      "env": "align",
+      "close": "\\end{align}",
+      "old_len": 39,
+      "new_len": 27,
+      "old_tail": "z_{i+1}s_i f}{z_i-z_{i+1}},\n\\end{align}",
+      "new_tail": "z_{i+1}s_i f}{z_i-z_{i+1}},"
+    },
+    {
+      "dataset_row_index": 735,
+      "env": "align",
+      "close": "\\end{align}",
+      "old_len": 182,
+      "new_len": 170,
+      "old_tail": "\\tilde{\\phi}[g] \\tilde{\\phi}[f_j]) \\left(:\\tilde{\\phi}[f_1] \\dots \\hat{\\tilde{\\phi}[f_j]} \\dots \\tilde{\\phi}[f_n]:|\\omega\\rangle\\right).\n\\end{split}\n\\end{align}",
+      "new_tail": "^{n} \\omega(\\tilde{\\phi}[g] \\tilde{\\phi}[f_j]) \\left(:\\tilde{\\phi}[f_1] \\dots \\hat{\\tilde{\\phi}[f_j]} \\dots \\tilde{\\phi}[f_n]:|\\omega\\rangle\\right).\n\\end{split}"
+    }
+  ],
+  "frozen_generation_file": "generations/gpt55_low/gpt55_low_joined_stripped.jsonl"
+}

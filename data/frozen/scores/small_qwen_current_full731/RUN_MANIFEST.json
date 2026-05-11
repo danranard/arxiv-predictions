@@ -1,0 +1,14 @@
+{
+  "created_utc": "2026-05-01T10:46:14.938048+00:00",
+  "artifact_role": "canonical frozen judge-score bundle manifest",
+  "judge_model": "accounts/fireworks/models/qwen3-8b",
+  "scaffold_variant": "current",
+  "score_rows": 6569,
+  "token_rows": 417748,
+  "files": {
+    "combined_equation_scores": "scores/small_qwen_current_full731/combined_equation_scores.csv",
+    "combined_target_token_logprobs": "scores/small_qwen_current_full731/combined_target_token_logprobs.csv",
+    "softened_summary": "scores/small_qwen_current_full731/softened_model_summary.json"
+  },
+  "historical_note": "Internal partial-run/reuse paths are intentionally omitted from the public artifact; the combined CSVs are the source of truth."
+}

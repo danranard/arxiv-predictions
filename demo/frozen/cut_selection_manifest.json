@@ -1,0 +1,30 @@
+{
+  "created_utc": "2026-05-03T21:53:21.739190+00:00",
+  "source_tex": "demo\\arxiv_2307_05326\\arxiv-2307-05326.tex",
+  "paper_id": "2307.05326",
+  "accepted_cut_count": 180,
+  "selected_source_cut_indices": [
+    0,
+    20,
+    40,
+    60,
+    80,
+    99,
+    119,
+    139,
+    159,
+    179
+  ],
+  "selection_rule": "10 evenly spaced accepted cuts in source order",
+  "extractor_stats": {
+    "display_equations": 269,
+    "nonempty_equations": 269,
+    "operator_candidates_mid_third": 592,
+    "accepted_cuts": 180,
+    "reject_y_too_short": 59,
+    "reject_y_too_long": 46,
+    "reject_no_mid_operator": 41,
+    "reject_insufficient_predictor_context": 3,
+    "reject_unsupported_display_markup": 0
+  }
+}

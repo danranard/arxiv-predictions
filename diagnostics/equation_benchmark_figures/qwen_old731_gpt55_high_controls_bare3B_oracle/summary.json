@@ -1,0 +1,25 @@
+{
+  "n_pairs": 0,
+  "comparison": "scaffold_z_predictor - bare_B",
+  "mean_diff_per_token": null,
+  "stderr_diff_per_token": null,
+  "median_diff_per_token": null,
+  "positive_count": 0,
+  "positive_rate": null,
+  "condition_means": {
+    "bare_3B": {
+      "n": 731,
+      "mean_score_per_token": -0.8275823608598233,
+      "stderr": 0.016744999383926568,
+      "median": -0.7514597696666667
+    },
+    "scaffold_oracle_Y": {
+      "n": 731,
+      "mean_score_per_token": -0.09746083514475053,
+      "stderr": 0.0016075465488825868,
+      "median": -0.0958770448275862
+    }
+  },
+  "by_paper_diff": {},
+  "diffs": []
+}
