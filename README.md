@@ -4,6 +4,8 @@ Companion artifact for the manuscript:
 
 > **Likelihood scoring for continuations of mathematical text: a
 > self-supervised benchmark with tests for shortcut vulnerabilities**
+>
+> [arXiv:2605.10810](https://arxiv.org/abs/2605.10810)
 
 The paper studies a label-free benchmark for technical-paper prediction. A paper
 provides visible context `X` and a hidden continuation `Y`; the evaluated model
