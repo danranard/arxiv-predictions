@@ -20,7 +20,7 @@ For public packaging, the artifact can be distributed as:
 - a release zip;
 - a small repository plus frozen-data mirror.
 
-The intended reproducibility promise is independent of that choice:
+The reproducibility promise is independent of that choice:
 
 1. equation headline tables reproduce from frozen data without API calls;
 2. the context-only SFT control reproduces from frozen score files without GPU

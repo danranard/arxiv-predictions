@@ -1,5 +1,8 @@
 # Likelihood Scoring for Continuations of Mathematical Text
 
+An automatically generated benchmark for predicting hidden text in technical
+papers — code, frozen data, and reproduction scripts.
+
 Companion artifact for the manuscript:
 
 > **Likelihood scoring for continuations of mathematical text: a
@@ -7,19 +10,23 @@ Companion artifact for the manuscript:
 >
 > [arXiv:2605.10810](https://arxiv.org/abs/2605.10810)
 
-The paper studies a label-free benchmark for technical-paper prediction. A paper
-provides visible context `X` and a hidden continuation `Y`; the evaluated model
-writes an auxiliary forecast string `Z`; and a separate frozen language model is
-used only as a likelihood scorer for the true `Y`. The key question is whether
-`Z` makes the true continuation more likely than matched controls, especially
-controls that spend the same side-channel budget on recent context rather than
-on a forecast.
+Technical papers offer a natural source of prediction tasks: guessing the
+next lines of a derivation, equation, or proof. The manuscript asks whether
+such tasks can be assembled into a useful, automatically generated benchmark.
+
+A paper supplies visible context `X` and a hidden continuation `Y`. The model
+under evaluation writes an auxiliary string `Z`, intended to help predict `Y`.
+A separate language model, used only as a likelihood scorer, then assigns
+next-token likelihood to the true `Y` under prompts with and without `Z`. The
+benchmark asks whether `Z` improves this likelihood, and compares the forecast
+against controls that replace `Z` with nearby context of equal length rather
+than a genuine prediction.
 
 This repository contains the frozen data, model generations, token-level
 likelihood scores, plotting inputs, and reproduction scripts for the manuscript
-results. It is designed to reproduce the paper-facing numerical claims without
-making new paid API calls. Live API scripts are included only as optional smoke
-tests for provider interfaces.
+results. It is designed to reproduce the numerical claims without making new paid API
+calls. Live API scripts are included only as optional smoke tests for provider
+interfaces.
 
 ## Main Benchmark
 
@@ -49,14 +56,30 @@ The primary headline contrast is:
 forecast score - same-budget recent-context control score
 ```
 
-The primary metric is `clip2` (called `clipLL_2` in the manuscript), a
-token-level clipped log-likelihood that floors each target-token logprob at
-`-2` before averaging. This keeps the benchmark from being dominated by a few
-severe local TeX mismatches.
+The primary metric is `clip2` (called `clipLL_2` in the manuscript): a
+softened log-likelihood that clips each per-token logprob from below at `-2`
+before averaging. This still rewards making target tokens likely, while
+preventing a small number of catastrophic local mismatches from erasing an
+otherwise useful forecast.
 
-For a paper-style narrative of the main findings, controls, `clip2`, the toy
+For a narrative summary of the main findings, controls, `clip2`, the toy
 equation-ordering diagnostic, and the prose/TeX follow-up, see
 `RESULTS_SUMMARY.md`.
+
+## Terminology
+
+- `X`: context before the hidden continuation.
+- `Y`: true hidden text being scored.
+- `Z`: model forecast string intended to help predict `Y`.
+- `bare_B`: same-budget recent-context control.
+- `component_bundle`: provenance label in the merged equation rows,
+  currently `old731` or `new632`.
+- `super_key`: stable merged equation key, `component_bundle:paper_id:cut_id`.
+- `clip2`: clipped log-likelihood reward, flooring each target-token logprob
+  at `-2` before averaging.
+
+The labels `old731` and `new632` are construction-wave metadata, not separate
+benchmark families.
 
 ## Repository Map
 
@@ -74,20 +97,39 @@ equation-ordering diagnostic, and the prose/TeX follow-up, see
 - `scripts/`: offline reproduction, audit, and live-interface smoke scripts.
 
 The data preserve construction-wave labels such as `component_bundle`,
-`old731`, and `new632` for provenance. Public-facing analyses should treat the
-combined 1363-cut equation benchmark as the default target unless explicitly
-checking construction-wave robustness.
+`old731`, and `new632` for provenance. By default, analyses should target the
+combined 1363-cut equation benchmark; the construction-wave labels are for
+robustness checks.
 
-## Quick Start
+## Installation
 
-This repository uses Git LFS for large frozen CSV/JSONL artifacts. If cloned
-from GitHub, install LFS and pull the large files before running reproduction
-scripts:
+Requires Python 3.10+ (the pinned development environment uses 3.13).
+Dependencies are declared in `pyproject.toml`; an exact lockfile is provided
+for both [uv](https://docs.astral.sh/uv/) and pip users.
+
+With uv (recommended):
 
 ```bash
-git lfs install
-git lfs pull
+uv sync
 ```
+
+With pip and a venv:
+
+```bash
+python -m venv .venv && source .venv/bin/activate
+pip install -e .                       # base deps
+pip install -e ".[sft-gpu]"            # optional, for the SFT/GPU path
+# or, for an exact match of the development environment:
+pip install -r requirements.txt
+```
+
+Large frozen data artifacts are tracked with Git LFS:
+
+```bash
+git lfs install && git lfs pull
+```
+
+## Quick Start
 
 ```bash
 python scripts/verify_manifest.py
@@ -100,8 +142,8 @@ python scripts/build_multi_softening_tables.py
 
 The generated headline tables are written to `outputs/headlines/`.
 
-Paper-facing cached figures, their plotting scripts, and their CSV summaries
-are included under:
+Cached figures from the manuscript, with their plotting scripts and CSV
+summaries, are included under:
 
 ```text
 diagnostics/equation_benchmark_figures/
@@ -111,7 +153,7 @@ For a concrete walkthrough of equation splits, see `EXAMPLES.md`. For the small
 mechanism diagnostic that probes equation ordering and `clip2`, see
 `diagnostics/toy_equation_order_probe/`.
 
-For a paper-appendix style page of randomly sampled equation-forecast examples,
+For an appendix-style page of randomly sampled equation-forecast examples,
 see:
 
 ```text
@@ -199,9 +241,8 @@ forecast string `Z` is absent, then evaluated on source-disjoint held-out
 papers. This control was run on the first construction component and should be
 read as a held-out shortcut audit, not as the default full-benchmark table.
 
-In this artifact, "frozen scorer" means frozen during evaluation or
-hypothetical RLVR use, not necessarily never adapted during reward-model
-construction. A scaffold-aware real-Z SFT scorer would be an intended frozen
+"Frozen scorer" means frozen during evaluation or hypothetical RLVR use, not
+necessarily never adapted during reward-model construction. A scaffold-aware real-Z SFT scorer would be an intended frozen
 reward scorer: tune once, on disjoint data, so it understands forecast notes as
 forecast notes, then freeze it. By contrast, the context-only SFT control is an
 adversarial control: it emulates a degenerate predictor strategy that spends
@@ -209,7 +250,7 @@ the side-channel budget on extra previous context and, in effect, has found
 prompt-engineering-like ways to make that context unusually useful to the
 scorer without providing a genuine forecast.
 
-The clean manuscript-facing claim is:
+The headline claim in the manuscript is:
 
 ```text
 forecast-scaffold score - context-only SFT score, source-disjoint test, clip2
@@ -253,22 +294,6 @@ smaller. Raw logprob is negative in that specific comparison, which is coherent
 because the SFT objective was based on `clipLL_2` with only a small raw
 negative-log-likelihood residual.
 
-## Terminology
-
-- `X`: context before the hidden continuation.
-- `Y`: true hidden text being scored.
-- `Z`: model forecast string intended to help predict `Y`.
-- `bare_B`: same-budget recent-context control.
-- `component_bundle`: provenance label in the merged equation rows,
-  currently `old731` or `new632`.
-- `super_key`: stable merged equation key, `component_bundle:paper_id:cut_id`.
-- `clip2`: clipped log-likelihood reward, flooring each target-token logprob
-  at `-2` before averaging.
-
-In public-facing text, call `Z` a forecast string and `bare_B` the same-budget
-recent-context control. The labels `old731` and `new632` are construction-wave
-metadata, not separate benchmark families.
-
 ## Data Selection
 
 The source-manuscript slate is a documented pre-outcome convenience sample of
@@ -293,6 +318,22 @@ python scripts/live_openai_generation_smoke.py --call
 
 These require `FIREWORKS_API_KEY` and/or `OPENAI_API_KEY`. If a hosted
 serverless model disappears, the frozen data path remains authoritative.
+
+## Citation
+
+If you use this artifact, please cite:
+
+```bibtex
+@misc{ranard2026likelihood,
+  title  = {Likelihood scoring for continuations of mathematical text:
+            a self-supervised benchmark with tests for shortcut vulnerabilities},
+  author = {Ranard, Daniel},
+  year   = {2026},
+  eprint = {2605.10810},
+  archivePrefix = {arXiv},
+  primaryClass  = {cs.LG}
+}
+```
 
 ## License
 

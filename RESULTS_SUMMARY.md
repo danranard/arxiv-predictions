@@ -78,7 +78,7 @@ The two scorers differ in absolute scale, but both say the same main thing:
 real forecasts carry useful information beyond the same-budget recent-context
 control.
 
-The corresponding paper-facing benchmark figure is cached at:
+The corresponding benchmark figure from the manuscript is cached at:
 
 ```text
 diagnostics/equation_benchmark_figures/
@@ -188,9 +188,8 @@ real-Z scaffold SFT:
 The equation-suffix module includes a severe context-only SFT control on the
 first 731-cut construction wave. A Qwen3-8B LoRA is trained on context-only
 continuation examples where `Z` is absent, then evaluated on source-disjoint
-papers. This is not an intended reward scorer. It is a static adversarial
-stress test for the claim that forecast information can beat a strong
-context-only shortcut.
+papers. This is not a reward scorer. It is a static adversarial stress test for the
+claim that forecast information can beat a strong context-only shortcut.
 
 On held-out papers, real GPT-5.5 forecasts still beat this context-only SFT
 control under `clip2`:
@@ -252,8 +251,8 @@ paper-clustered SE bars:
 modules/prose_continuation/diagnostics/window_lift_figure/
 ```
 
-The figure shows the same qualitative pattern in a more paper-facing form:
-forecast lift is strongest at short scored horizons and decays with length;
+The figure shows the same qualitative pattern: forecast lift is strongest at
+short scored horizons and decays with length;
 GPT-5.5 lanes are clearly above nano lanes; nano shows a visible
 thinking-effort gradient; within GPT-5.5, the reasoning-effort ordering is not
 clean in this prose/TeX continuation setting.
